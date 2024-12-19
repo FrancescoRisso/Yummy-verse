@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CharacterViewPitch : MonoBehaviour {
@@ -9,9 +10,15 @@ public class CharacterViewPitch : MonoBehaviour {
 
 	private float pitch = 0.0f;
 
+	public Action<float> RotatePitch;
+
 	void Update() {
+		float prev_pitch = pitch;
+
 		pitch -= Input.GetAxisRaw("Mouse Y");
 		pitch = Utilities.Angles.ClampAngle(pitch, MinPitch, MaxPitch);
 		transform.localEulerAngles = new Vector3(pitch, 0.0f, 0.0f);
+
+		RotatePitch?.Invoke(pitch - prev_pitch);
 	}
 }

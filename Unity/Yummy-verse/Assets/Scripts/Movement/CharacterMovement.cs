@@ -17,12 +17,14 @@
 // }
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour {
+public class CharacterMovement : MonoBehaviour {
 	[SerializeField]
 	private float MoveSpeed = 10;
 
@@ -30,7 +32,8 @@ public class PlayerController : MonoBehaviour {
 	private float SprintSpeed = 30;
 
 	protected CharacterController movementController;
-	// protected Camera playerCamera;
+
+	public Action<Vector3> Movement;
 
 	private Vector3 velocity;
 
@@ -40,6 +43,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void Update() {
+		Vector3 prev_pos = transform.position;
+
 		Vector3 direction = Vector3.zero;
 		direction += transform.forward * Input.GetAxisRaw("Vertical");
 		direction += transform.right * Input.GetAxisRaw("Horizontal");
@@ -56,5 +61,7 @@ public class PlayerController : MonoBehaviour {
 
 		direction += velocity * Time.deltaTime;
 		movementController.Move(Time.deltaTime * currMoveSpeed * direction);
+
+		Movement?.Invoke(transform.position - prev_pos);
 	}
 }
