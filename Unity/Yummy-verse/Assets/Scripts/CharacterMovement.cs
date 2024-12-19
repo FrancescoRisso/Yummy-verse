@@ -40,8 +40,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void Update() {
-		if(Input.GetKeyDown(KeyCode.R)) transform.position = new Vector3(3, 0, 0);  // Hit "R" to spawn in this position
-
 		Vector3 direction = Vector3.zero;
 		direction += transform.forward * Input.GetAxisRaw("Vertical");
 		direction += transform.right * Input.GetAxisRaw("Horizontal");
