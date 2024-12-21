@@ -33,8 +33,6 @@ public class CharacterMovement : MonoBehaviour {
 
 	protected CharacterController movementController;
 
-	public Action<Vector3> Movement;
-
 	private Vector3 velocity;
 
 
@@ -61,7 +59,5 @@ public class CharacterMovement : MonoBehaviour {
 
 		direction += velocity * Time.deltaTime;
 		movementController.Move(Time.deltaTime * currMoveSpeed * direction);
-
-		Movement?.Invoke(transform.position - prev_pos);
 	}
 }
