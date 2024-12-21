@@ -6,6 +6,10 @@ public class CharacterViewYaw : MonoBehaviour {
 
 	public Action<float> RotateYaw;
 
+	void Start() {
+		Cursor.lockState = CursorLockMode.Locked;  // keep confined to center of screen
+	}
+
 	void Update() {
 		RotateYaw?.Invoke(Input.GetAxisRaw("Mouse X"));
 
