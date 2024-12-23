@@ -9,6 +9,7 @@ public class PlayerMouseInteract : MonoBehaviour {
 			Ray ray = new(transform.position, transform.forward);
 			if(Physics.Raycast(ray, out RaycastHit hit, _interact_distance)) {
 				MouseInteractable target = hit.collider.GetComponent<MouseInteractable>();
+				Debug.Log(target);
 				if(target != null) target.StartProcessing();
 			}
 		}

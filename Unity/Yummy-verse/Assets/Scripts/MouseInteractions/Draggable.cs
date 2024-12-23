@@ -1,6 +1,5 @@
-using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.Assertions;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Draggable : MouseInteractable {
@@ -10,13 +9,15 @@ public class Draggable : MouseInteractable {
 
 	void Start() {
 		_rigidbody = GetComponent<Rigidbody>();
-		Assert.NotNull(_rigidbody, $"{name} cannot find its rigidbody");
+		Assert.IsNotNull(_rigidbody, $"{name} cannot find its rigidbody");
 
 		_character_pitch = FindAnyObjectByType<CharacterViewPitch>();
-		Assert.NotNull(_character_pitch, $"{name} cannot find the player pitch");
+		Assert.IsNotNull(_character_pitch, $"{name} cannot find the player pitch");
 	}
 
 	protected override void OnMouseClick() {
+		Debug.Log("QUI");
+
 		// Abilita il movimento cinematico per disattivare il movimento fisico
 		_rigidbody.isKinematic = true;
 
@@ -26,6 +27,7 @@ public class Draggable : MouseInteractable {
 	}
 	protected override void OnMouseHold() {}
 	protected override void OnMouseRelease() {
+		Debug.Log("QUA");
 		// Disabilita il movimento cinematico per ri-attivare il movimento fisico
 		_rigidbody.isKinematic = false;
 
