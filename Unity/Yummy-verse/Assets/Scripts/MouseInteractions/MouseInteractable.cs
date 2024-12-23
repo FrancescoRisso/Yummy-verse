@@ -9,13 +9,15 @@ public abstract class MouseInteractable : MonoBehaviour {
 
 	public void StartProcessing() {
 		_processing = true;
+		OnMouseClick();
 	}
 
 	void Update() {
 		if(!_processing) return;
 
-		if(Input.GetMouseButtonDown(0)) OnMouseClick();
+		Debug.Log($"{Input.GetMouseButtonDown(0)} - {Input.GetMouseButtonUp(0)} - {Input.GetMouseButton(0)}");
+
 		if(Input.GetMouseButtonUp(0)) OnMouseRelease();
-		if(Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) OnMouseHold();
+		if(Input.GetMouseButton(0)) OnMouseHold();
 	}
 }
