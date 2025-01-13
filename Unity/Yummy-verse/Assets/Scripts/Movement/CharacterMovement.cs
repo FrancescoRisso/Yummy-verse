@@ -24,10 +24,7 @@ public class CharacterMovement : MonoBehaviour {
 
 		walkDirection.Normalize();
 
-		if(movementController.isGrounded)
-			fallVelocity = Vector3.zero;
-		else
-			fallVelocity += -9.81f * Time.deltaTime * transform.up;  // Gravity
+		fallVelocity += -9.81f * Time.deltaTime * transform.up;  // Gravity
 
 		float currMoveSpeed = Input.GetKey(KeyCode.LeftShift) ? SprintSpeed : MoveSpeed;
 
