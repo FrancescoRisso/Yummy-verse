@@ -1,26 +1,3 @@
-// using UnityEngine;
-
-// public class CharacterMovement : MonoBehaviour {
-// 	[SerializeField]
-// 	private float speed;
-
-// 	// [SerializeField]
-
-// 	void Start() {}
-// 	void Update() {}
-
-
-// 	private Vector3 GetKeyboardMovementVector() {
-// 		Vector3 movement = new(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-// 		return movement.normalized;
-// 	}
-// }
-
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -33,7 +10,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	protected CharacterController movementController;
 
-	private Vector3 velocity;
+	private Vector3 fallVelocity;
 
 
 	private void Start() {
@@ -41,23 +18,19 @@ public class CharacterMovement : MonoBehaviour {
 	}
 
 	private void Update() {
-		Vector3 prev_pos = transform.position;
+		Vector3 walkDirection = Vector3.zero;
+		walkDirection += transform.forward * Input.GetAxisRaw("Vertical");
+		walkDirection += transform.right * Input.GetAxisRaw("Horizontal");
 
-		Vector3 direction = Vector3.zero;
-		direction += transform.forward * Input.GetAxisRaw("Vertical");
-		direction += transform.right * Input.GetAxisRaw("Horizontal");
-
-		direction.Normalize();
+		walkDirection.Normalize();
 
 		if(movementController.isGrounded)
-			velocity = Vector3.zero;
+			fallVelocity = Vector3.zero;
 		else
-			velocity += -transform.up * (9.81f * 10) * Time.deltaTime;  // Gravity
-
+			fallVelocity += -9.81f * Time.deltaTime * transform.up;  // Gravity
 
 		float currMoveSpeed = Input.GetKey(KeyCode.LeftShift) ? SprintSpeed : MoveSpeed;
 
-		direction += velocity * Time.deltaTime;
-		movementController.Move(Time.deltaTime * currMoveSpeed * direction);
+		movementController.Move(Time.deltaTime * (currMoveSpeed * walkDirection + fallVelocity));
 	}
 }
