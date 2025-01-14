@@ -26,7 +26,7 @@ public class PercentageDecayManager : MonoBehaviour {
 
 	void Update() {
 		_percentage = Math.Clamp(_percentage, 0, 1);
-		OnPercentageChange.Invoke(_percentage);
+		OnPercentageChange?.Invoke(_percentage);
 		_percentage -= _decaySpeed * Time.deltaTime;
 	}
 }
