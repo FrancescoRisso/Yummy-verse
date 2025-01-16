@@ -15,8 +15,6 @@ public abstract class MouseInteractable : MonoBehaviour {
 	void Update() {
 		if(!_processing) return;
 
-		Debug.Log($"{Input.GetMouseButtonDown(0)} - {Input.GetMouseButtonUp(0)} - {Input.GetMouseButton(0)}");
-
 		if(Input.GetMouseButtonUp(0)) OnMouseRelease();
 		if(Input.GetMouseButton(0)) OnMouseHold();
 	}

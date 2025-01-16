@@ -16,8 +16,6 @@ public class Draggable : MouseInteractable {
 	}
 
 	protected override void OnMouseClick() {
-		Debug.Log("QUI");
-
 		// Abilita il movimento cinematico per disattivare il movimento fisico
 		_rigidbody.isKinematic = true;
 
@@ -27,7 +25,6 @@ public class Draggable : MouseInteractable {
 	}
 	protected override void OnMouseHold() {}
 	protected override void OnMouseRelease() {
-		Debug.Log("QUA");
 		// Disabilita il movimento cinematico per ri-attivare il movimento fisico
 		_rigidbody.isKinematic = false;
 
