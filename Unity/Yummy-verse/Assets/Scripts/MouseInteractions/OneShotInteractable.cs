@@ -5,7 +5,7 @@ public abstract class OneShotInteractable : MouseInteractable {
 	public Action activated;
 
 	protected override void OnMouseClick() {
-		activated.Invoke();
+		activated?.Invoke();
 		_processing = false;
 		LocalActionOnClick();
 	}
