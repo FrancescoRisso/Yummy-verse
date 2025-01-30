@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-enum Operation { Stopped, Increasing, Decreasing }
+public enum Operation { Stopped, Increasing, Decreasing }
 
 static class OperationMethods {
 	public static Operation GetOpposite(Operation op) {
@@ -32,8 +32,7 @@ public class PercentageToggleManager : MonoBehaviour {
 
 	public Action _toggle;
 
-	[SerializeField]
-	private float _speed;
+	public float _speed;
 
 	[SerializeField]
 	private Operation _initialOperation = Operation.Stopped;
@@ -77,5 +76,9 @@ public class PercentageToggleManager : MonoBehaviour {
 				_previous = Operation.Stopped;
 				break;
 		}
+	}
+
+	public Operation CurrentStatus(){
+		return _current;
 	}
 }
