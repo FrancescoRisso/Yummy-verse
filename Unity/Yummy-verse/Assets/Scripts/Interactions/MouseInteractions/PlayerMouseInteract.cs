@@ -4,12 +4,20 @@ public class PlayerMouseInteract : InteractionManager {
 	[SerializeField]
 	private float _interact_distance = 10.0f;
 
-	protected override bool ShouldCheckMouseClick { get; set; } = true;
-	protected override bool ShouldCheckEkey { get; set; } = true;
+	protected override bool ShouldCheckMouseClick() {
+		return true;
+	}
+	protected override bool ShouldCheckEkey() {
+		return true;
+	}
 
 
-	protected override bool MouseClickWithRaycast { get; set; } = true;
-	protected override bool EkeyWithRaycast { get; set; } = true;
+	protected override bool MouseClickWithRaycast() {
+		return true;
+	}
+	protected override bool EkeyWithRaycast() {
+		return true;
+	}
 
 
 	protected override float MouseClickRaycastRange() {
