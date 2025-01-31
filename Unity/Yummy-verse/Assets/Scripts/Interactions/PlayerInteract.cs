@@ -12,5 +12,13 @@ public class PlayerMouseInteract : MonoBehaviour {
 				if(target != null) target.StartProcessing();
 			}
 		}
+
+		if(Input.GetKeyDown(KeyCode.E)) {
+			Ray ray = new(transform.position, transform.forward);
+			if(Physics.Raycast(ray, out RaycastHit hit, _interact_distance)) {
+				EkeyInteractable target = hit.collider.GetComponent<EkeyInteractable>();
+				if(target != null) target.StartProcessing();
+			}
+		}
 	}
 }
