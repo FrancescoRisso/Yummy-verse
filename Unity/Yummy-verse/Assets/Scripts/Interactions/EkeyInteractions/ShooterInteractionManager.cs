@@ -36,7 +36,7 @@ public class ShooterInteractionManager : InteractionManager {
 	}
 
 	protected override void MouseClickAction(MouseInteractable target) {
-		throw new System.NotImplementedException();
+		// TODO shoot
 	}
 
 	void Start() {
