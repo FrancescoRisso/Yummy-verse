@@ -6,6 +6,12 @@ public class PlayerMouseInteract : InteractionManager {
 
 	protected override bool ShouldCheckMouseClick { get; set; } = true;
 	protected override bool ShouldCheckEkey { get; set; } = true;
+
+
+	protected override bool MouseClickWithRaycast { get; set; } = true;
+	protected override bool EkeyWithRaycast { get; set; } = true;
+
+
 	protected override float MouseClickRaycastRange() {
 		return _interact_distance;
 	}
@@ -19,23 +25,5 @@ public class PlayerMouseInteract : InteractionManager {
 
 	protected override void MouseClickAction(MouseInteractable target) {
 		target.StartProcessing();
-	}
-
-	void Update() {
-		if(Input.GetMouseButtonDown(0)) {
-			Ray ray = new(transform.position, transform.forward);
-			if(Physics.Raycast(ray, out RaycastHit hit, _interact_distance)) {
-				MouseInteractable target = hit.collider.GetComponent<MouseInteractable>();
-				if(target != null) target.StartProcessing();
-			}
-		}
-
-		if(Input.GetKeyDown(KeyCode.E)) {
-			Ray ray = new(transform.position, transform.forward);
-			if(Physics.Raycast(ray, out RaycastHit hit, _interact_distance)) {
-				EkeyInteractable target = hit.collider.GetComponent<EkeyInteractable>();
-				if(target != null) target.StartProcessing();
-			}
-		}
 	}
 }
