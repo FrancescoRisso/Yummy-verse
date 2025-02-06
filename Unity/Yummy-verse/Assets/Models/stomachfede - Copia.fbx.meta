@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: casetta
-    second: {fileID: 2100000, guid: 1f5c116fc05bae04095e4b2325318e82, type: 2}
+    second: {fileID: 2100000, guid: d8f995d5acc96694abc2ccd1c02c5510, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
