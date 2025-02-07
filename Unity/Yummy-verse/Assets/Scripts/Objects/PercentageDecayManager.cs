@@ -9,9 +9,11 @@ public class PercentageDecayManager : MonoBehaviour {
 	private float _percentage;
 
 	[SerializeField]
+	[Range(0, 1)]
 	float _increasePerClick;
 
 	[SerializeField]
+	[Range(0, 3)]
 	float _decaySpeed;
 
 	[SerializeField]
