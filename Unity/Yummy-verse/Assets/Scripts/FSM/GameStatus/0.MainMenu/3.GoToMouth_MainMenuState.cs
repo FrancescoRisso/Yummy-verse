@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GoToMouth_MainMenuState : MainMenuState {
-	public override void StateAction(MainMenuParameter param) {
-		SceneManager.LoadScene(param._next_scene.SceneName, LoadSceneMode.Additive);
-		SceneManager.UnloadSceneAsync(param._this_scene.SceneName);
+	public override void PrepareBeforeAction(MainMenuParameter param) {
+		param._monoBehaviour.StartCoroutine(SceneLoader.SwitchScene(param._next_scene.SceneName, param._this_scene.SceneName));
 	}
+
+	public override void StateAction(MainMenuParameter param) {}
 
 	public override MainMenuState Transition(MainMenuParameter param) {
 		return this;

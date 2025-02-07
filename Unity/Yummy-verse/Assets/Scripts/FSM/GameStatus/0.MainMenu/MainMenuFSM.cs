@@ -1,18 +1,19 @@
 using UnityEngine;
 using UnityEngine.Assertions;
-using UnityEngine.SceneManagement;
 using Utilities;
 
 public class MainMenuParameter {
-	public float _darkening_speed { get; set; }
-	public SceneReference _this_scene { get; set; }
-	public SceneReference _next_scene { get; set; }
-
-	public MainMenuParameter(float darkening_speed, SceneReference this_scene, SceneReference next_scene) {
+	public MainMenuParameter(float darkening_speed, SceneReference this_scene, SceneReference next_scene, MonoBehaviour monoBehaviour) {
 		_darkening_speed = darkening_speed;
 		_this_scene = this_scene;
 		_next_scene = next_scene;
+		_monoBehaviour = monoBehaviour;
 	}
+
+	public float _darkening_speed { get; set; }
+	public SceneReference _this_scene { get; set; }
+	public SceneReference _next_scene { get; set; }
+	public MonoBehaviour _monoBehaviour { get; set; }
 }
 
 public abstract class MainMenuState : FSMState<MainMenuState, MainMenuParameter> {}
@@ -36,6 +37,6 @@ public class MainMenuFSM : FSM<MainMenuState, MainMenuParameter> {
 	}
 
 	protected override MainMenuParameter GetParams() {
-		return new MainMenuParameter(_darkening_speed, _this_scene, _next_scene);
+		return new MainMenuParameter(_darkening_speed, _this_scene, _next_scene, this);
 	}
 }
