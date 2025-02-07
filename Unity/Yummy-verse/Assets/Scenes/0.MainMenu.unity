@@ -158,8 +158,8 @@ MonoBehaviour:
     m_ScenePath: Assets/Scenes/0.MainMenu.unity
   _next_scene:
     m_SceneAsset: {fileID: 102900000, guid: 0ccac78630510f341ac534b56240f4c8, type: 3}
-    m_IsDirty: 0
-    m_ScenePath: Assets/Scenes/1.Bocca.unity
+    m_IsDirty: 1
+    m_ScenePath: Assets/Scenes/1.Mouth.unity
 --- !u!4 &737013520
 Transform:
   m_ObjectHideFlags: 0
