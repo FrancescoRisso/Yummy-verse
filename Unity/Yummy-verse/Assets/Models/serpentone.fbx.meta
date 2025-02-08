@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c665da31dabf69740bdd45f59d136bbf
+guid: fa842a087b2a31543becb8673c8080df
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,48 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: eb314933498918c4c96a7f7e67517a00, type: 2}
+      name: intestino
+    second: {fileID: 2100000, guid: ce71f3217212bc741bae4c11ca52d213, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 61d6ccb4ddd33014f9a77284ec29156b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: casetta
-    second: {fileID: 2100000, guid: d8f995d5acc96694abc2ccd1c02c5510, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: metallic
-    second: {fileID: 2100000, guid: 2d662a267f132704a9966842294b1b57, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: metallic.001
-    second: {fileID: 2100000, guid: 397653bf1100d594c97fe0a5b5516b4d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pavimentoNero
-    second: {fileID: 2100000, guid: 927fbbd732e5d4e47866510fc52e9f52, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pavimentoStomaco
-    second: {fileID: 2100000, guid: 4652aa24ad0453544bf2b06476a5fcce, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rampa
-    second: {fileID: 2100000, guid: c6046149ca05e3143910ba4301fe3c6b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: stomaco
-    second: {fileID: 2100000, guid: 12917c84e7718a145a6daa1c93f5fd1a, type: 2}
+      name: pavimento serpent
+    second: {fileID: 2100000, guid: c7290e2f233ca4f4b95f82859401d3e3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
