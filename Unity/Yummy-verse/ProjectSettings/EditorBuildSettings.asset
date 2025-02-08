@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1.Mouth.unity
     guid: 0ccac78630510f341ac534b56240f4c8
+  - enabled: 1
+    path: Assets/Scenes/4.SmallIntestin.unity
+    guid: 9cb4789bc91b7944e986a651aca79c80
   m_configObjects: {}
