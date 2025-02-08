@@ -5,6 +5,9 @@ public class PlaneLowering : MonoBehaviour {
 	private float _start_h;
 
 	[SerializeField]
+	private bool _destroy = true;
+
+	[SerializeField]
 	private float _final_h = 0;
 
 	[SerializeField]
@@ -22,7 +25,7 @@ public class PlaneLowering : MonoBehaviour {
 		_start_h = transform.position.y;
 		_emptying_speed = (_final_h - _start_h) / _emptying_time;
 
-		OnEmptied += () => Destroy(gameObject);
+		if(_destroy) OnEmptied += () => Destroy(gameObject);
 		StartEmptying += () => _emptying = true;
 	}
 
