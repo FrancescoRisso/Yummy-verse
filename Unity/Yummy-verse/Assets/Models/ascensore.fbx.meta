@@ -7,6 +7,41 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Esofago-09-02-2025
+    second: {fileID: 2100000, guid: c4d4533e0b1db194f95b64424a699d6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faringe-09-02-2025
+    second: {fileID: 2100000, guid: d3c7bf631de289846b89c0073104d823, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Laringe-09-02-2025
+    second: {fileID: 2100000, guid: c9e62f7167b4c30469c291ee9151c87a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pulsante esofago
+    second: {fileID: 2100000, guid: a8a07a5a2aa154c4c8d6f5de4b3dcc4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pulsante faringe
+    second: {fileID: 2100000, guid: 565a0b8359df20e4cbe38fd3019f288b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pulsante laringe
+    second: {fileID: 2100000, guid: a8a07a5a2aa154c4c8d6f5de4b3dcc4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartello
+    second: {fileID: 2100000, guid: 8ea27da329a84eb499e8bb62a714d304, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cromato corrimano
     second: {fileID: 2100000, guid: 617d592d8e4085d4c921f0727bddc721, type: 2}
   - first:
