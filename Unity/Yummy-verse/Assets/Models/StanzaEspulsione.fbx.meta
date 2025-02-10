@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c665da31dabf69740bdd45f59d136bbf
+guid: 89bfdd2e4a352794e812b4ca62245821
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,48 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: eb314933498918c4c96a7f7e67517a00, type: 2}
+      name: Material
+    second: {fileID: 2100000, guid: c0fa5ae1976d1a242bf3cca71bf8f516, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 61d6ccb4ddd33014f9a77284ec29156b, type: 2}
+      name: gialloNero
+    second: {fileID: 2100000, guid: 2e18e36e433c96f44ba66d3955e12ec6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: casetta
-    second: {fileID: 2100000, guid: d8f995d5acc96694abc2ccd1c02c5510, type: 2}
+      name: metalloBase
+    second: {fileID: 2100000, guid: 06474a314426a754099c18a76ce4c650, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: metallic
-    second: {fileID: 2100000, guid: 2d662a267f132704a9966842294b1b57, type: 2}
+      name: pareti
+    second: {fileID: 2100000, guid: 2e292682ce11fa84da580a84e39790a9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: metallic.001
-    second: {fileID: 2100000, guid: 397653bf1100d594c97fe0a5b5516b4d, type: 2}
+      name: passerella
+    second: {fileID: 2100000, guid: cb3e0f1ece96a35409cd8b03d27c3ffa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pavimentoNero
-    second: {fileID: 2100000, guid: 927fbbd732e5d4e47866510fc52e9f52, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pavimentoStomaco
-    second: {fileID: 2100000, guid: 4652aa24ad0453544bf2b06476a5fcce, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rampa
-    second: {fileID: 2100000, guid: c6046149ca05e3143910ba4301fe3c6b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: stomaco
-    second: {fileID: 2100000, guid: 12917c84e7718a145a6daa1c93f5fd1a, type: 2}
+      name: pavimento
+    second: {fileID: 2100000, guid: 0f6dae6433ff93346995a75a1d4ed6a8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

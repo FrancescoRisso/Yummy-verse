@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c665da31dabf69740bdd45f59d136bbf
+guid: e1926ed05a20b29428cea0b5aecd2b63
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,48 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: eb314933498918c4c96a7f7e67517a00, type: 2}
+      name: GialloMatita
+    second: {fileID: 2100000, guid: 9cd7c7315f930134ba60e13b9a84e562, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 61d6ccb4ddd33014f9a77284ec29156b, type: 2}
+      name: NeroMatita
+    second: {fileID: 2100000, guid: 48bae64d700445648af46e6df6ed667d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: casetta
-    second: {fileID: 2100000, guid: d8f995d5acc96694abc2ccd1c02c5510, type: 2}
+      name: Pagina diario e libro
+    second: {fileID: 2100000, guid: b944ecf62f0ac734da1447522167bf5d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: metallic
-    second: {fileID: 2100000, guid: 2d662a267f132704a9966842294b1b57, type: 2}
+      name: Tavolo legno
+    second: {fileID: 2100000, guid: c66bb2b35a3a95042879990b76f24b02, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: metallic.001
-    second: {fileID: 2100000, guid: 397653bf1100d594c97fe0a5b5516b4d, type: 2}
+      name: copertinaDiario
+    second: {fileID: 2100000, guid: dd7cdf58c372a0647bd77368ddb61cdd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pavimentoNero
-    second: {fileID: 2100000, guid: 927fbbd732e5d4e47866510fc52e9f52, type: 2}
+      name: copertinaDiario.001
+    second: {fileID: 2100000, guid: dd7cdf58c372a0647bd77368ddb61cdd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pavimentoStomaco
-    second: {fileID: 2100000, guid: 4652aa24ad0453544bf2b06476a5fcce, type: 2}
+      name: diario
+    second: {fileID: 2100000, guid: 02fce829b7858ee41a4b96e12def06c4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: rampa
-    second: {fileID: 2100000, guid: c6046149ca05e3143910ba4301fe3c6b, type: 2}
+      name: gomma
+    second: {fileID: 2100000, guid: ba5833ad6520d4b4ebbebf4a95cf43ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: stomaco
-    second: {fileID: 2100000, guid: 12917c84e7718a145a6daa1c93f5fd1a, type: 2}
+      name: matita rossa
+    second: {fileID: 2100000, guid: 250a031512debcd468c8d0808fb1550c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parte metallo
+    second: {fileID: 2100000, guid: 993224fffda2741458f075a4cae9b873, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: punta
+    second: {fileID: 2100000, guid: 6f89a85918c2eb741ae07dba2b109ed0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
