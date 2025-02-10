@@ -11,4 +11,8 @@ public class SubstanceBoxLights : MonoBehaviour {
 	}
 
 	void Update() {}
+
+	public Transform GetTransform() {
+		return transform;
+	}
 }

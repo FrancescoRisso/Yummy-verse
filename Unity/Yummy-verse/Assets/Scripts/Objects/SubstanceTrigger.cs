@@ -9,11 +9,12 @@ public class SubstanceTrigger : MonoBehaviour {
 	private Shape _shape;
 
 	[SerializeField]
-	private GameObject _box;
+	private SubstanceBoxLights _box;
 
 	private Action _delete;
 
 	void Start() {
+		_box = GetComponentInParent<SubstanceBoxLights>();
 		Assert.IsNotNull(_box, $"{name} does not have a box assigned");
 
 		_delete += () => Destroy(this);

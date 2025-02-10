@@ -11,7 +11,7 @@ public class PositionPreparing_SubstanceBoxState : SubstanceBoxState {
 	private float _elapsed = 0;
 
 	public override void PrepareBeforeAction(SubstanceBoxParam param) {
-		_initial_pos = param._game_object.transform.position;
+		_initial_pos = param._game_object.transform.localPosition;
 
 		switch(param._shape) {
 			case Shape.Square: _final_pos = new Vector3(-0.0292000007f, 0.107600003f, 0.121699996f); break;
@@ -34,12 +34,12 @@ public class PositionPreparing_SubstanceBoxState : SubstanceBoxState {
 	public override void StateAction(SubstanceBoxParam param) {
 		_elapsed += Time.deltaTime;
 		float perc = _elapsed / param._position_preparing_time;
-		param._game_object.transform.position = perc * _final_pos + (1 - perc) * _initial_pos;
+		param._game_object.transform.localPosition = perc * _final_pos + (1 - perc) * _initial_pos;
 
 		if(_elapsed < param._position_preparing_time)
 			param._game_object.transform.Rotate(_rotation_per_sec * Time.deltaTime);
 		else
-			param._game_object.transform.eulerAngles = new Vector3(0, 0, 0);
+			param._game_object.transform.localEulerAngles = new Vector3(0, 0, 0);
 	}
 
 	public override SubstanceBoxState Transition(SubstanceBoxParam param) {

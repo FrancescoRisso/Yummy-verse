@@ -9,7 +9,7 @@ public class Insertion_SubstanceBoxState : SubstanceBoxState {
 	private float _elapsed = 0;
 
 	public override void PrepareBeforeAction(SubstanceBoxParam param) {
-		_initial_pos = param._game_object.transform.position;
+		_initial_pos = param._game_object.transform.localPosition;
 		_final_pos = _initial_pos;
 
 		switch(param._shape) {
@@ -23,7 +23,7 @@ public class Insertion_SubstanceBoxState : SubstanceBoxState {
 	public override void StateAction(SubstanceBoxParam param) {
 		_elapsed += Time.deltaTime;
 		float perc = _elapsed / param._insertion_time;
-		param._game_object.transform.position = perc * _final_pos + (1 - perc) * _initial_pos;
+		param._game_object.transform.localPosition = perc * _final_pos + (1 - perc) * _initial_pos;
 	}
 
 	public override SubstanceBoxState Transition(SubstanceBoxParam param) {
