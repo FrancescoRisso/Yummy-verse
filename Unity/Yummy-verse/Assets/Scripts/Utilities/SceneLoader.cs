@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour {
 		callback();
 	}
 
-	public static IEnumerator UnoadScene(SceneReference scene) {
+	public static IEnumerator UnloadScene(SceneReference scene) {
 		AsyncOperation loadOperation = SceneManager.UnloadSceneAsync(scene.SceneName);
 		while(!loadOperation.isDone) yield return null;
 	}
