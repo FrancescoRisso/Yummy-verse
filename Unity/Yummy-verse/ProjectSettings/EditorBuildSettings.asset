@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4.SmallIntestin.unity
     guid: 9cb4789bc91b7944e986a651aca79c80
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 2a9279b027a280141af001f7385170c6
+  - enabled: 1
+    path: Assets/Scenes/2.Lift.unity
+    guid: 0a118933a526c6b41bf7feadb0d14fc6
   m_configObjects: {}

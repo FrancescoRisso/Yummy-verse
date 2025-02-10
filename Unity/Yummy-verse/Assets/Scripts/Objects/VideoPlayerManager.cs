@@ -21,7 +21,6 @@ public class VideoPlayerManager : MonoBehaviour {
 	public void Play() {
 		if(!_init_called) Start();
 
-		Debug.Log("Play");
 		_player.Play();
 	}
 }

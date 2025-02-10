@@ -307,6 +307,7 @@ MonoBehaviour:
     m_ScenePath: Assets/Scenes/1.Mouth.unity
   _start_game_button: {fileID: 259529011}
   _video_player: {fileID: 1443160544}
+  _camera: {fileID: 278860361}
 --- !u!4 &737013520
 Transform:
   m_ObjectHideFlags: 0

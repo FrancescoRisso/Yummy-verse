@@ -4,7 +4,6 @@ public class DarknessFadingOut_MouthState : MouthState {
 	private bool _finished = false;
 
 	public override void PrepareBeforeAction(MouthParameter param) {
-		param._player_enabler.Disable();
 		param._video_player.VideoFinished += () => { _finished = true; };
 	}
 
