@@ -1,18 +1,17 @@
 using UnityEngine;
 
 public class DarknessFadingOut_MouthState : MouthState {
-	private float _perc = 0;
+	private bool _finished = false;
 
 	public override void PrepareBeforeAction(MouthParameter param) {
 		param._player_enabler.Disable();
+		param._video_player.VideoFinished += () => { _finished = true; };
 	}
 
-	public override void StateAction(MouthParameter param) {
-		_perc += param._fading_duration * Time.deltaTime;
-	}
+	public override void StateAction(MouthParameter param) {}
 
 	public override MouthState Transition(MouthParameter param) {
-		if(_perc > 1) return new Chewing_MouthState();
+		if(_finished) return new Chewing_MouthState();
 		return this;
 	}
 }

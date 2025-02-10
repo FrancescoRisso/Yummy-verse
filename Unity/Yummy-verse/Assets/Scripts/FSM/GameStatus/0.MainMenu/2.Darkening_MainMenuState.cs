@@ -2,16 +2,17 @@ using System;
 using UnityEngine;
 
 public class Darkening_MainMenuState : MainMenuState {
-	private float _darkness_perc = 0;
+	private bool _finished = false;
 
-	public override void StateAction(MainMenuParameter param) {
-		_darkness_perc = Math.Clamp(_darkness_perc + param._darkening_speed * Time.deltaTime, 0, 1);
-		// TODO far scurire lo schermo
-		Debug.Log($"Diventa buioooo ({100 * _darkness_perc}%)");
+	public override void PrepareBeforeAction(MainMenuParameter param) {
+		param._video_player.Play();
+		param._video_player.VideoFinished += () => { _finished = true; };
 	}
 
+	public override void StateAction(MainMenuParameter param) {}
+
 	public override MainMenuState Transition(MainMenuParameter param) {
-		if(_darkness_perc == 1) return new GoToMouth_MainMenuState();
+		if(_finished == true) return new Dark_MainMenuState();
 
 		return this;
 	}

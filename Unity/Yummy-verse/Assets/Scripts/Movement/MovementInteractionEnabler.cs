@@ -7,6 +7,8 @@ public class MovementInteractionEnabler : MonoBehaviour {
 	private PlayerMouseInteract _mouse_interact;
 	private CharacterMovement _movement;
 
+	private bool _init_called;
+
 	void Start() {
 		_yaw_controller = GetComponentInChildren<CharacterViewYaw>();
 		_pitch_controller = GetComponentInChildren<CharacterViewPitch>();
@@ -15,9 +17,13 @@ public class MovementInteractionEnabler : MonoBehaviour {
 
 		Assert.IsNotNull(_yaw_controller, $"{name} cannot find the yaw controller");
 		Assert.IsNotNull(_pitch_controller, $"{name} cannot find the pitch controller");
+
+		_init_called = true;
 	}
 
 	public void Enable() {
+		if(!_init_called) Start();
+
 		_yaw_controller.enabled = true;
 		_pitch_controller.enabled = true;
 		if(_mouse_interact) _mouse_interact.enabled = true;
@@ -25,6 +31,8 @@ public class MovementInteractionEnabler : MonoBehaviour {
 	}
 
 	public void Disable() {
+		if(!_init_called) Start();
+
 		_yaw_controller.enabled = false;
 		_pitch_controller.enabled = false;
 		if(_mouse_interact) _mouse_interact.enabled = false;

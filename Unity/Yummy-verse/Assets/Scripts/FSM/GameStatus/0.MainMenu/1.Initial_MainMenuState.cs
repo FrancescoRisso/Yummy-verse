@@ -1,9 +1,7 @@
 using UnityEngine;
 
 public class Initial_MainMenuState : MainMenuState {
-	public override void StateAction(MainMenuParameter param) {
-		Debug.Log("Stato iniziale");
-	}
+	public override void StateAction(MainMenuParameter param) {}
 
 	public override MainMenuState Transition(MainMenuParameter param) {
 		if(Input.GetMouseButtonDown(0)) {
