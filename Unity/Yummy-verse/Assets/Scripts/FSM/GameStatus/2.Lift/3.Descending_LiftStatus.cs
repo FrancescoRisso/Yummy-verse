@@ -11,7 +11,6 @@ public class Descending_LiftStatus : LiftState {
 
 	public override void StateAction(LiftProps param) {
 		param._mono_behaviour.StartCoroutine(Wait(param._descend_time));
-		_arrived = true;
 	}
 
 	public override LiftState Transition(LiftProps param) {
@@ -21,5 +20,6 @@ public class Descending_LiftStatus : LiftState {
 
 	private IEnumerator Wait(float time) {
 		yield return new WaitForSeconds(time);
+		_arrived = true;
 	}
 }
