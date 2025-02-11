@@ -50,6 +50,7 @@ public class PercentageToggleManager : MonoBehaviour {
 		_percentage = _initialPercentage;
 		_current = _initialOperation;
 		_previous = OperationMethods.GetOpposite(_firstMovement);
+		OnPercentageChange?.Invoke(_percentage);
 	}
 
 	void Update() {
@@ -78,7 +79,7 @@ public class PercentageToggleManager : MonoBehaviour {
 		}
 	}
 
-	public Operation CurrentStatus(){
+	public Operation CurrentStatus() {
 		return _current;
 	}
 }

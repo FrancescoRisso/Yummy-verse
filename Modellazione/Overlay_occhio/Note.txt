@@ -1,0 +1,3 @@
+Generato il video da blender, va reso compatibile con il formato di unity con il comando:
+
+ffmpeg -i [file video] -vcodec vp8 -pix_fmt yuva420p -metadata:s:v:0 alpha_mode="1" -auto-alt-ref 0 -color_primaries bt709 [file output].webm

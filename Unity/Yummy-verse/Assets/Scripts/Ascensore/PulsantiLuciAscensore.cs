@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Utilities;
@@ -12,6 +13,8 @@ public class PulsantiLuciAscensore : MonoBehaviour {
 
 	private Material _active_light;
 	private Material _inactive_light;
+
+	public Action OnCorrectButtonPress;
 
 	void Start() {
 		_faringe_button = Children.FindChild(gameObject, "Button (1)").GetComponent<Button>();
@@ -40,9 +43,14 @@ public class PulsantiLuciAscensore : MonoBehaviour {
 		_laringe_button.activated += WrongChoice;
 	}
 
-	private void CorrectChoice() {}
+	private void CorrectChoice() {
+		OnCorrectButtonPress?.Invoke();
+		
+	}
 
-	private void WrongChoice() {}
+	private void WrongChoice() {
+		// TODO accendere luce "Pericolo cibo traverso
+	}
 
 	public void LeavingFaringe() {
 		_faringe_light.material = _inactive_light;
