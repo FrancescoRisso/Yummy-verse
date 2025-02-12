@@ -29,7 +29,6 @@ public class Insertion_SubstanceBoxState : SubstanceBoxState {
 	public override SubstanceBoxState Transition(SubstanceBoxParam param) {
 		if(_elapsed >= param._insertion_time) {
 			param._notify_box.Invoke();
-			param._delete_trigger.Invoke();
 			MonoBehaviour.Destroy(param._mono_behaviour);
 		}
 		return this;
