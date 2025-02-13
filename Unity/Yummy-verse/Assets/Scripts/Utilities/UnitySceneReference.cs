@@ -7,6 +7,7 @@ using System.IO;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEngine.Assertions;
 using UnityEditor.SceneManagement;
 #endif
 
@@ -71,7 +72,7 @@ namespace Utilities {
 				}
 
 				m_SceneAsset = AssetDatabase.LoadAssetAtPath<SceneAsset>(m_ScenePath);
-				if(m_SceneAsset == null) { Debug.LogError($"Setting {nameof(SceneReference)} to {value}, but no scene could be located there."); }
+				Assert.IsNotNull(m_SceneAsset, $"Setting {nameof(SceneReference)} to {value}, but no scene could be located there.");
 #endif
 			}
 		}
