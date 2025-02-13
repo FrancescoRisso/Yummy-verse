@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3.Stomach.unity
     guid: a230c7e1f57085d46aecd0ee200d85be
   - enabled: 1
-    path: Assets/Scenes/5.Serpentone.unity
+    path: Assets/Scenes/5.LargeIntestin.unity
     guid: 661ba08aeb0c627438256b1fe07daee7
+  - enabled: 1
+    path: Assets/Scenes/6.ExpulsionRoom.unity
+    guid: 67b7b4cc7bf6f9441933b0ee62d3ec1d
   m_configObjects: {}
