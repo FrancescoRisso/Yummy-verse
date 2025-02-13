@@ -15,6 +15,8 @@ public abstract class InteractionManager : MonoBehaviour {
 	protected abstract void MouseClickAction(MouseInteractable target);
 	protected abstract void EkeyAction(EkeyInteractable target);
 
+	protected virtual void ExtraUpdateAction() {}
+
 
 	void Update() {
 		if(ShouldCheckMouseClick() && Input.GetMouseButtonDown(0)) {
@@ -40,5 +42,7 @@ public abstract class InteractionManager : MonoBehaviour {
 				EkeyAction(null);
 			}
 		}
+
+		ExtraUpdateAction();
 	}
 }

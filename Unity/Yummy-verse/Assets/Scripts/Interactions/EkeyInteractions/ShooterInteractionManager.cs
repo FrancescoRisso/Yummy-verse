@@ -19,11 +19,6 @@ public class ShooterInteractionManager : InteractionManager {
 	[SerializeField]
 	private GameObject _corpo_principale;
 
-
-	// Velocità di interpolazione (smooth)
-	[SerializeField]
-	private float smoothSpeed = 5f;
-
 	protected override bool ShouldCheckMouseClick() {
 		return true;
 	}
@@ -45,7 +40,6 @@ public class ShooterInteractionManager : InteractionManager {
 	protected override void EkeyAction(EkeyInteractable target) {
 		_player_camera_enabler.Enable();
 		_my_camera_enabler.Disable();
-		this.enabled = false;
 	}
 
 	// Metodo invocato al click del mouse.
@@ -79,10 +73,7 @@ public class ShooterInteractionManager : InteractionManager {
 		}
 	}
 
-	void Update() {
-		// Gestione dei comandi del mouse
-		if(Input.GetMouseButtonDown(0) && !isShooting) StartShooting();
-
+	protected override void ExtraUpdateAction() {
 		if(isShooting && Input.GetMouseButtonUp(0)) StopShooting();
 	}
 

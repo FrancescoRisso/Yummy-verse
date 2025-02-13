@@ -3,6 +3,7 @@ public class ClosingDoors_LiftStatus : LiftState {
 
 	public override void PrepareBeforeAction(LiftProps param) {
 		param._porte._toggle.Invoke();
+		param._audio.Play();
 		param._porte.OnPercentageChange += (float perc) => {
 			if(perc == 1) {
 				_finished = true;
