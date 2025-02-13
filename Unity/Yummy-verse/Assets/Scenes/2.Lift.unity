@@ -492,6 +492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Porta ascensore
       objectReference: {fileID: 0}
+    - target: {fileID: 3449553404668806386, guid: 729f33872edfaa043b1516b0b4f6ff05, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4455213528508291734, guid: 729f33872edfaa043b1516b0b4f6ff05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
