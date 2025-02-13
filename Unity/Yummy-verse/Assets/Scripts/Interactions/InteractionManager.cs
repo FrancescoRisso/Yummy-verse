@@ -15,6 +15,8 @@ public abstract class InteractionManager : MonoBehaviour {
 	protected abstract void MouseClickAction(MouseInteractable target);
 	protected abstract void EkeyAction(EkeyInteractable target);
 
+	protected virtual void ExtraUpdateAction() {}
+
 
 	void Update() {
 		if(ShouldCheckMouseClick() && Input.GetMouseButtonDown(0)) {
@@ -29,16 +31,23 @@ public abstract class InteractionManager : MonoBehaviour {
 			}
 		}
 
+		// Debug.Log("Qui");
+
 		if(ShouldCheckEkey() && Input.GetKeyDown(KeyCode.E)) {
+			// Debug.Log("Quo");
 			if(EkeyWithRaycast()) {
 				Ray ray = new(transform.position, transform.forward);
 				if(Physics.Raycast(ray, out RaycastHit hit, EkeyRaycastRange())) {
+					// Debug.Log(hit.collider);
 					EkeyInteractable target = hit.collider.GetComponent<EkeyInteractable>();
+					// Debug.Log(target);
 					if(target != null) EkeyAction(target);
 				}
 			} else {
 				EkeyAction(null);
 			}
 		}
+
+		ExtraUpdateAction();
 	}
 }
