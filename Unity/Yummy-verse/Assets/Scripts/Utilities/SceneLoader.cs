@@ -31,6 +31,11 @@ public class SceneLoader : MonoBehaviour {
 		while(!loadOperation.isDone) yield return null;
 	}
 
+	public static IEnumerator LoadSceneReplace(SceneReference scene) {
+		AsyncOperation loadOperation = SceneManager.LoadSceneAsync(scene.SceneName, LoadSceneMode.Single);
+		while(!loadOperation.isDone) yield return null;
+	}
+
 	public static void SetActiveScene(SceneReference scene) {
 		SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene.SceneName));
 	}

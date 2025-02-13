@@ -31,16 +31,11 @@ public abstract class InteractionManager : MonoBehaviour {
 			}
 		}
 
-		// Debug.Log("Qui");
-
 		if(ShouldCheckEkey() && Input.GetKeyDown(KeyCode.E)) {
-			// Debug.Log("Quo");
 			if(EkeyWithRaycast()) {
 				Ray ray = new(transform.position, transform.forward);
 				if(Physics.Raycast(ray, out RaycastHit hit, EkeyRaycastRange())) {
-					// Debug.Log(hit.collider);
 					EkeyInteractable target = hit.collider.GetComponent<EkeyInteractable>();
-					// Debug.Log(target);
 					if(target != null) EkeyAction(target);
 				}
 			} else {

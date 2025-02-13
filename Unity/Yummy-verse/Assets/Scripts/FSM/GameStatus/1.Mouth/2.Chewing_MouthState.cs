@@ -12,7 +12,6 @@ public class Chewing_MouthState : MouthState {
 		}));
 		_num_chewings = param._num_chewings;
 		param._chewings_counter.OnNewIteration += (int num) => {
-			Debug.Log(_num_chewings);
 			if(num == _num_chewings - 1) param._mono_behaivour.StartCoroutine(SceneLoader.LoadScene(param._next_scene));
 			if(num == _num_chewings) _all_chewings_done = true;
 		};
