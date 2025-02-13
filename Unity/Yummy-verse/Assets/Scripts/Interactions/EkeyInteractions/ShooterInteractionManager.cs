@@ -43,9 +43,9 @@ public class ShooterInteractionManager : InteractionManager {
 		throw new System.NotImplementedException();
 	}
 	protected override void EkeyAction(EkeyInteractable target) {
+		Debug.Log("E");
 		_player_camera_enabler.Enable();
 		_my_camera_enabler.Disable();
-		this.enabled = false;
 	}
 
 	// Metodo invocato al click del mouse.
@@ -79,10 +79,7 @@ public class ShooterInteractionManager : InteractionManager {
 		}
 	}
 
-	void Update() {
-		// Gestione dei comandi del mouse
-		if(Input.GetMouseButtonDown(0) && !isShooting) StartShooting();
-
+	protected override void ExtraUpdateAction() {
 		if(isShooting && Input.GetMouseButtonUp(0)) StopShooting();
 	}
 

@@ -4,6 +4,7 @@ public class Shooting_StomachState : StomachState {
 
 	public override void PrepareBeforeAction(StomachParameter param) {
 		param._chain.OnEmptied += () => _chain_pulled = true;
+		param._audio.Play();
 	}
 
 	public override void StateAction(StomachParameter param) {}
