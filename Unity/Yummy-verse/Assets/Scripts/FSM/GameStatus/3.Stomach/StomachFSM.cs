@@ -3,8 +3,8 @@ using UnityEngine.Assertions;
 using Utilities;
 
 public class StomachParameter {
-	public PlaneLowering _chain;
-	public PlaneLowering _acid_plane;
+	public PercentageToggleManager _chain;
+	public PercentageToggleManager _acid_plane;
 	public PercentageToggleManager _doors;
 	public SceneReference _next_scene;
 	public MonoBehaviour _monoBehaviour;
@@ -13,8 +13,9 @@ public class StomachParameter {
 	public AudioSource _audio;
 	public SceneReference _prev_scene;
 
-	public StomachParameter(PlaneLowering chain, PlaneLowering acid_plane, PercentageToggleManager doors, SceneReference next_scene,
-		MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio, SceneReference prev_scene) {
+	public StomachParameter(PercentageToggleManager chain, PercentageToggleManager acid_plane, PercentageToggleManager doors,
+		SceneReference next_scene, MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio,
+		SceneReference prev_scene) {
 		_chain = chain;
 		_acid_plane = acid_plane;
 		_doors = doors;
@@ -31,10 +32,10 @@ public abstract class StomachState : FSMState<StomachState, StomachParameter> {}
 
 public class StomachFSM : FSM<StomachState, StomachParameter> {
 	[SerializeField]
-	private PlaneLowering _chain;
+	private PercentageToggleManager _chain;
 
 	[SerializeField]
-	private PlaneLowering _acid_plane;
+	private PercentageToggleManager _acid_plane;
 
 	[SerializeField]
 	private PercentageToggleManager _doors;
