@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Utilities;
@@ -13,9 +11,10 @@ public class StomachParameter {
 	public StomachFSM _stomachFsm;
 	public Trigger _exit_trigger;
 	public AudioSource _audio;
+	public SceneReference _prev_scene;
 
 	public StomachParameter(PlaneLowering chain, PlaneLowering acid_plane, PercentageToggleManager doors, SceneReference next_scene,
-		MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio) {
+		MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio, SceneReference prev_scene) {
 		_chain = chain;
 		_acid_plane = acid_plane;
 		_doors = doors;
@@ -24,6 +23,7 @@ public class StomachParameter {
 		_stomachFsm = stomachFsm;
 		_exit_trigger = exit_trigger;
 		_audio = audio;
+		_prev_scene = prev_scene;
 	}
 }
 
@@ -48,6 +48,9 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 	[SerializeField]
 	private AudioSource _audio;
 
+	[SerializeField]
+	private SceneReference _prev_scene;
+
 	protected override StomachState GetInitialState() {
 		Assert.IsNotNull(_acid_plane, $"{name} is not assigned its acid plane");
 		Assert.IsNotNull(_chain, $"{name} is not assigned its chain");
@@ -55,11 +58,12 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 		Assert.AreNotEqual(_next_scene.SceneName, "", $"{name} is not assigned the next scene");
 		Assert.IsNotNull(_exit_trigger, $"{name} is not assigned the exit trigger");
 		Assert.IsNotNull(_audio, $"{name} is missing a reference to the music source");
+		Assert.AreNotEqual(_prev_scene.SceneName, "", $"{name} is missing a reference to the previous scene");
 
 		return new LiftArriving_StomachState();
 	}
 
 	protected override StomachParameter GetParams() {
-		return new StomachParameter(_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio);
+		return new StomachParameter(_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene);
 	}
 }

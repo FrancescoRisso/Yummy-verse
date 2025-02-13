@@ -43,7 +43,6 @@ public class ShooterInteractionManager : InteractionManager {
 		throw new System.NotImplementedException();
 	}
 	protected override void EkeyAction(EkeyInteractable target) {
-		Debug.Log("E");
 		_player_camera_enabler.Enable();
 		_my_camera_enabler.Disable();
 	}

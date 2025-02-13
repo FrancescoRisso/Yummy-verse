@@ -4,7 +4,11 @@ using UnityEngine;
 public class Left_StomachState : StomachState {
 	public override void PrepareBeforeAction(StomachParameter param) {
 		param._stomachFsm.enabled = false;
-		Debug.Log("Exited");
+		param._audio.Pause();
+		
+		Debug.Log(param._monoBehaviour);
+		Debug.Log(param._prev_scene);
+		param._monoBehaviour.StartCoroutine(SceneLoader.UnloadScene(param._prev_scene));
 	}
 
 	public override void StateAction(StomachParameter param) {}

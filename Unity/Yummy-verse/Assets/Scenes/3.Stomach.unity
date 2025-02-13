@@ -792,6 +792,10 @@ MonoBehaviour:
     m_ScenePath: Assets/Scenes/4.SmallIntestin.unity
   _exit_trigger: {fileID: 1613097905}
   _audio: {fileID: 1254919889}
+  _prev_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 0a118933a526c6b41bf7feadb0d14fc6, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/2.Lift.unity
 --- !u!114 &2131859230 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2341486612491796674, guid: 729f33872edfaa043b1516b0b4f6ff05, type: 3}
