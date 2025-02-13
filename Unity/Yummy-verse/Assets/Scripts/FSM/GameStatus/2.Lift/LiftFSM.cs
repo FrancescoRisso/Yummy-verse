@@ -11,9 +11,10 @@ public class LiftProps {
 	public MonoBehaviour _mono_behaviour;
 	public float _descend_time;
 	public AudioSource _audio;
+	public GameObject gameObject;
 
 	public LiftProps(PulsantiLuciAscensore ascensore, PercentageToggleManager porte, SceneReference next_scene, SceneReference prev_scene,
-		MonoBehaviour mono_behaviour, float descend_time, AudioSource audio) {
+		MonoBehaviour mono_behaviour, float descend_time, AudioSource audio, GameObject gameObject) {
 		_ascensore = ascensore;
 		_porte = porte;
 		_next_scene = next_scene;
@@ -21,6 +22,7 @@ public class LiftProps {
 		_mono_behaviour = mono_behaviour;
 		_descend_time = descend_time;
 		_audio = audio;
+		this.gameObject = gameObject;
 	}
 }
 
@@ -57,6 +59,6 @@ public class LiftFSM : FSM<LiftState, LiftProps> {
 	}
 
 	protected override LiftProps GetParams() {
-		return new LiftProps(_ascensore, _porte, _next_scene, _prev_scene, this, _descend_time, _audio);
+		return new LiftProps(_ascensore, _porte, _next_scene, _prev_scene, this, _descend_time, _audio, gameObject);
 	}
 }
