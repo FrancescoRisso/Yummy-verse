@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd515f54b03766b44bfc7cff722a143f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _num_chewings: 4
+  _num_chewings: 2
   _chewings_counter: {fileID: 1554894239}
   _lift_doors: {fileID: 966643531}
   _video_player: {fileID: 1244312153}

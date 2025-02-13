@@ -6,8 +6,6 @@ public class Left_StomachState : StomachState {
 		param._stomachFsm.enabled = false;
 		param._audio.Pause();
 		
-		Debug.Log(param._monoBehaviour);
-		Debug.Log(param._prev_scene);
 		param._monoBehaviour.StartCoroutine(SceneLoader.UnloadScene(param._prev_scene));
 	}
 
