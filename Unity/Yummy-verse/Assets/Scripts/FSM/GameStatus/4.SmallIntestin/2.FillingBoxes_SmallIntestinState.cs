@@ -11,7 +11,7 @@ public class FillingBoxes_SmallIntestinState : SmallIntestinState {
 	public override void StateAction(SmallIntestinParam param) {}
 
 	public override SmallIntestinState Transition(SmallIntestinParam param) {
-		if(_count == param._boxes.Length) throw new System.NotImplementedException();
+		if(_count == param._boxes.Length) return new Exiting_SmallIntestinState();
 		return this;
 	}
 }

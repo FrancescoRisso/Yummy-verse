@@ -157,6 +157,15 @@ MonoBehaviour:
   - {fileID: 1401882360}
   _audio: {fileID: 1245354277}
   _enter_trigger: {fileID: 46881705}
+  _next_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 661ba08aeb0c627438256b1fe07daee7, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/5.Serpentone.unity
+  _exit_trigger: {fileID: 2041383925}
+  _prev_scene:
+    m_SceneAsset: {fileID: 102900000, guid: a230c7e1f57085d46aecd0ee200d85be, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/3.Stomach.unity
 --- !u!4 &10778141
 Transform:
   m_ObjectHideFlags: 0
@@ -903,7 +912,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.09
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
