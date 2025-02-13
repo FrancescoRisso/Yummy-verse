@@ -144,4 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _perc_notifier: {fileID: 0}
-  step: {fileID: 7881824427509947396, guid: 20259692724dc574aa5009846ccf61a7, type: 3}
+  step: {fileID: 0}
