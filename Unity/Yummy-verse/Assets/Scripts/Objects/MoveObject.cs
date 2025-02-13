@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public enum Direction { Vertical, Right }
+public enum Direction { Vertical, Right, LocalUp }
 
 public class MoveObject : MonoBehaviour {
 	[SerializeField]
@@ -31,6 +31,7 @@ public class MoveObject : MonoBehaviour {
 		switch(_movement_direction) {
 			case Direction.Vertical: dir = new Vector3(0, 1, 0); break;
 			case Direction.Right: dir = transform.right; break;
+			case Direction.LocalUp: dir = transform.up; break;
 			default: dir = new Vector3(0, 0, 0); break;
 		}
 

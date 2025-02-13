@@ -16,6 +16,8 @@ public class ShooterInteractionManager : InteractionManager {
 	// Flag per verificare se il Particle System sta "sparando"
 	private bool isShooting = false;
 
+	private AcidShoot _shooter;
+
 	[SerializeField]
 	private GameObject _corpo_principale;
 
@@ -60,6 +62,7 @@ public class ShooterInteractionManager : InteractionManager {
 		}
 		currentParticleSystem.Play();
 		isShooting = true;
+		_shooter.enabled = true;
 	}
 
 	// Ferma il Particle System e lo distrugge
@@ -70,6 +73,7 @@ public class ShooterInteractionManager : InteractionManager {
 			Destroy(currentParticleSystem.gameObject);
 			currentParticleSystem = null;
 			isShooting = false;
+			_shooter.enabled = false;
 		}
 	}
 
@@ -90,5 +94,9 @@ public class ShooterInteractionManager : InteractionManager {
 			_my_camera_enabler, $"{name} non ha trovato un CameraEnabler nei suoi figli. Assicurati che ci sia un componente CameraEnabler!");
 
 		Assert.IsNotNull(_corpo_principale, $"{name} does not have the \"Corpo principale\" assigned");
+
+		_shooter = GetComponentInChildren<AcidShoot>();
+		Assert.IsNotNull(_shooter, $"{name} cannot find the shooter script");
+		_shooter.enabled = false;
 	}
 }
