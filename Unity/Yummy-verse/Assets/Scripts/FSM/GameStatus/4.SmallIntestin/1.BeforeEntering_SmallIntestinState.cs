@@ -3,7 +3,6 @@ public class BeforeEntering_SmallIntestinState : SmallIntestinState {
 
 	public override void PrepareBeforeAction(SmallIntestinParam param) {
 		param._enter_trigger.Triggered += () => _entered = true;
-		param._mono_behaviour.StartCoroutine(SceneLoader.LoadScene(param._next_scene));
 	}
 
 	public override void StateAction(SmallIntestinParam param) {}
