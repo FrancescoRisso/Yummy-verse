@@ -9,18 +9,16 @@ public class SubstanceBoxParam {
 	public float _position_preparing_time;
 	public float _insertion_time;
 	public Shape _shape;
-	public Action _delete_trigger;
 	public Action _notify_box;
 
 	public SubstanceBoxParam(MonoBehaviour mono_behaviour, GameObject game_object, Action<Action<SubstanceBoxLights>> addInsertIntoBoxListener,
-		float position_preparing_time, float insertion_time, Shape shape, Action delete_trigger, Action notify_box) {
+		float position_preparing_time, float insertion_time, Shape shape, Action notify_box) {
 		_mono_behaviour = mono_behaviour;
 		_game_object = game_object;
 		_addInsertIntoBoxListener = addInsertIntoBoxListener;
 		_position_preparing_time = position_preparing_time;
 		_insertion_time = insertion_time;
 		_shape = shape;
-		_delete_trigger = delete_trigger;
 		_notify_box = notify_box;
 	}
 }
@@ -41,13 +39,7 @@ public class SubstanceBoxFSM : FSM<SubstanceBoxState, SubstanceBoxParam> {
 	[Range(0.1f, 3)]
 	private float _insertion_time;
 
-	private Action _delete_trigger;
-
 	private SubstanceBoxLights _notify_box;
-
-	public void SetDeleteTrigger(Action action) {
-		_delete_trigger = action;
-	}
 
 	private void AddInsertIntoBoxListener(Action<SubstanceBoxLights> handler) {
 		InsertIntoBox += handler;
@@ -63,8 +55,8 @@ public class SubstanceBoxFSM : FSM<SubstanceBoxState, SubstanceBoxParam> {
 	}
 
 	protected override SubstanceBoxParam GetParams() {
-		return new SubstanceBoxParam(this, gameObject, AddInsertIntoBoxListener, _position_preparing_time, _insertion_time, _shape, _delete_trigger,
-			_notify_box?.InsertSubstance);
+		return new SubstanceBoxParam(
+			this, gameObject, AddInsertIntoBoxListener, _position_preparing_time, _insertion_time, _shape, _notify_box?.InsertSubstance);
 	}
 
 	public bool IsSameShape(Shape s) {
