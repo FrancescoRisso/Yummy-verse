@@ -19,11 +19,6 @@ public class ShooterInteractionManager : InteractionManager {
 	[SerializeField]
 	private GameObject _corpo_principale;
 
-
-	// Velocità di interpolazione (smooth)
-	[SerializeField]
-	private float smoothSpeed = 5f;
-
 	protected override bool ShouldCheckMouseClick() {
 		return true;
 	}
