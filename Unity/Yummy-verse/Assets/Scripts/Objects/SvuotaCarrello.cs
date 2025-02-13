@@ -4,39 +4,54 @@ using UnityEngine.Assertions;
 
 public class SvuotaCarrello : MonoBehaviour {
     [SerializeField]
-    private OneShotInteractable _activator;
+    private Button _activator;
     
     [SerializeField]
     private Transform piattaformaInclinabile;
     
     [SerializeField]
-    private float angoloInclinazione = 30f; 
+    private Transform posizioneFinale;
     
     [SerializeField]
-    private float durataInclinazione = 0.5f;
+    private float durataInclinazione = 0.5f; 
+    
+    private Vector3 posizioneIniziale;
+    private Quaternion rotazioneIniziale;
+    private bool inPosizioneFinale = false;
     
     void Start() {
         Assert.IsNotNull(_activator, $"{name} does not have a one shot interactable");
         Assert.IsNotNull(piattaformaInclinabile, $"{name} does not have a valid piattaforma inclinabile");
-        _activator.activated += svuotaCarrello;
+        Assert.IsNotNull(posizioneFinale, $"{name} does not have a valid final position");
+        
+        posizioneIniziale = piattaformaInclinabile.position;
+        rotazioneIniziale = piattaformaInclinabile.rotation;
+        
+        _activator.activated += TogglePosizione;
     }
 
-    private void svuotaCarrello() {
-        Vector3 puntoRotazione = piattaformaInclinabile.position + (piattaformaInclinabile.right * (piattaformaInclinabile.localScale.x / 2));
-        StartCoroutine(InclinaPiattaforma(puntoRotazione));
+    private void TogglePosizione() {
+        if (inPosizioneFinale) {
+            StartCoroutine(InterpolazionePiattaforma(posizioneIniziale, rotazioneIniziale));
+        } else {
+            StartCoroutine(InterpolazionePiattaforma(posizioneFinale.position, posizioneFinale.rotation));
+        }
+        inPosizioneFinale = !inPosizioneFinale;
     }
 
-    private System.Collections.IEnumerator InclinaPiattaforma(Vector3 puntoRotazione) {
-        Quaternion rotazioneIniziale = piattaformaInclinabile.rotation;
-        Quaternion rotazioneFinale = Quaternion.Euler(piattaformaInclinabile.eulerAngles.x, piattaformaInclinabile.eulerAngles.y, piattaformaInclinabile.eulerAngles.z + angoloInclinazione);
+    private System.Collections.IEnumerator InterpolazionePiattaforma(Vector3 posizioneTarget, Quaternion rotazioneTarget) {
+        Vector3 posizioneStart = piattaformaInclinabile.position;
+        Quaternion rotazioneStart = piattaformaInclinabile.rotation;
         
         float tempoTrascorso = 0f;
         while (tempoTrascorso < durataInclinazione) {
             float t = tempoTrascorso / durataInclinazione;
-            piattaformaInclinabile.RotateAround(puntoRotazione, Vector3.forward, (angoloInclinazione / durataInclinazione) * Time.deltaTime);
+            piattaformaInclinabile.position = Vector3.Lerp(posizioneStart, posizioneTarget, t);
+            piattaformaInclinabile.rotation = Quaternion.Slerp(rotazioneStart, rotazioneTarget, t);
             tempoTrascorso += Time.deltaTime;
             yield return null;
         }
-        piattaformaInclinabile.rotation = rotazioneFinale;
+        piattaformaInclinabile.position = posizioneTarget;
+        piattaformaInclinabile.rotation = rotazioneTarget;
     }
 }
