@@ -114,19 +114,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.012
+      value: 0.90816283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.058
+      value: 0.27800003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.276
+      value: 0.6983597
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00000032782552
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1
+      value: 0.0000001490116
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalRotation.z
@@ -146,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -307,6 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f67a4dc167995439b960acef835c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liquidParticleSystem: {fileID: 4738632990131993032, guid: 9a5128077ed498d46b237a1a9d9a1e53, type: 3}
+  _corpo_principale: {fileID: 8754261745958022358}
 --- !u!114 &7798401741913842530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36b7082c303209468b2425714d0985f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _has_pitch_controller: 1
+  _movement_managers_are_in_parent: 0
 --- !u!4 &6192595773306559054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2235667379748931682, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
