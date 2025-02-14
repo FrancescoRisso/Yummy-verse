@@ -101,7 +101,6 @@ public class ExpulsionRoomFSM : FSM<ExpulsionRoomState, ExpulsionRoomParam> {
 		_video = FindObjectOfType<VideoPlayerManager>();
 		Assert.IsNotNull(_video, $"{name} cannot find the video player");
 
-		return new EmptyingCart_ExpulsionRoomState();
 		return new BeforeEntering_ExpulsionRoomState();
 	}
 
