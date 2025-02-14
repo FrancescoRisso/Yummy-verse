@@ -1776,6 +1776,16 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7036763976694259515}
   m_SourcePrefab: {fileID: 100100000, guid: 7e2d2080f76e9d349a0f9267027e9a23, type: 3}
+--- !u!1 &1075983761597716435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3958956196218878545, guid: 7e2d2080f76e9d349a0f9267027e9a23, type: 3}
+  m_PrefabInstance: {fileID: 4044127086660283778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3734987488081052190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 849763593698307996, guid: 7e2d2080f76e9d349a0f9267027e9a23, type: 3}
+  m_PrefabInstance: {fileID: 4044127086660283778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3809704408215113939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e2d2080f76e9d349a0f9267027e9a23, type: 3}
@@ -1793,6 +1803,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0de30a9580a5c0c43bfbd70ba7cfbca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lucina_rossa: {fileID: 3734987488081052190}
+  lucina_verde: {fileID: 1075983761597716435}
+  emissionIntensity: 2
 --- !u!4 &4581596052613139049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7e2d2080f76e9d349a0f9267027e9a23, type: 3}

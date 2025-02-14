@@ -328,6 +328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7377225302476356227}
   - component: {fileID: 5189087429546764672}
+  - component: {fileID: 8004239658991943038}
   m_Layer: 0
   m_Name: Ringhiera (7)
   m_TagString: Untagged
@@ -343,13 +344,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768314089611930188}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9918777, z: -0, w: -0.12719575}
-  m_LocalPosition: {x: 1.911, y: -1.259, z: -2.251}
+  m_LocalRotation: {x: -0.09057245, y: 0.9877337, z: 0.011614768, w: -0.12666434}
+  m_LocalPosition: {x: 2.015, y: -1.841, z: -2.278}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5979384327038838075}
-  m_LocalEulerAnglesHint: {x: 0, y: 194.615, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 194.615, z: -10.478}
 --- !u!65 &5189087429546764672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -371,6 +372,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 1, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8004239658991943038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768314089611930188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6dada3dac7ca48b7bee1fcc68120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroy: 0
+  _delta: 0.5
+  _perc: {fileID: 0}
+  _movement_direction: 2
 --- !u!1 &1039399434515708387
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +600,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.0531708, z: 1}
   m_Center: {x: 0, y: -0.0020899773, z: 0}
+--- !u!1 &1262171905093236685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4774254742167895970}
+  - component: {fileID: 2739831953780898999}
+  m_Layer: 0
+  m_Name: Fronte (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4774254742167895970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262171905093236685}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7070526, z: -0, w: 0.70716107}
+  m_LocalPosition: {x: 2.209, y: 0, z: 1.878}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3667200593175916028}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.991, z: 0}
+--- !u!65 &2739831953780898999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262171905093236685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.064842224, y: 0.88436544, z: 1.042675}
+  m_Center: {x: -0.00000014725937, y: 0.6538866, z: 0.6176735}
 --- !u!1 &1300380851429319568
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,8 +704,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.064842224, y: 1.2609521, z: 2.2780218}
-  m_Center: {x: 0, y: 0.46559328, z: 0}
+  m_Size: {x: 0.064842224, y: 0.2587856, z: 1.3101639}
+  m_Center: {x: 0.00000011537467, y: -0.035490006, z: -0.48392904}
 --- !u!1 &1341867664230474723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2814703956117299795}
   - component: {fileID: 4592148429414782117}
+  - component: {fileID: 4358867529762158480}
   m_Layer: 0
   m_Name: Ringhiera (4)
   m_TagString: Untagged
@@ -1383,13 +1454,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016802118743636361}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.90988874, z: -0, w: 0.41485226}
-  m_LocalPosition: {x: 4.373, y: -0.814, z: -1.494}
+  m_LocalRotation: {x: -0.09222152, y: 0.90520316, z: -0.042047225, w: 0.41271597}
+  m_LocalPosition: {x: 4.435, y: -1.271, z: -1.423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5979384327038838075}
-  m_LocalEulerAnglesHint: {x: 0, y: 130.98, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 130.98, z: -11.634}
 --- !u!65 &4592148429414782117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1411,6 +1482,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 1, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4358867529762158480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016802118743636361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6dada3dac7ca48b7bee1fcc68120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroy: 0
+  _delta: 0.5
+  _perc: {fileID: 0}
+  _movement_direction: 2
 --- !u!1 &2055651839412975015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +4027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8984467807360866578}
   - component: {fileID: 269910969651506586}
+  - component: {fileID: 6197044695943369536}
   m_Layer: 0
   m_Name: Ringhiera (5)
   m_TagString: Untagged
@@ -3955,13 +4043,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5388000507166717531}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.97646075, z: -0, w: 0.2156955}
-  m_LocalPosition: {x: 3.689, y: -0.947, z: -2.092}
+  m_LocalRotation: {x: -0.083056234, y: 0.972922, z: -0.01834673, w: 0.21491383}
+  m_LocalPosition: {x: 3.775, y: -1.497, z: -2.052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5979384327038838075}
-  m_LocalEulerAnglesHint: {x: 0, y: 155.087, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 155.087, z: -9.759}
 --- !u!65 &269910969651506586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3983,6 +4071,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 1, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6197044695943369536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5388000507166717531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6dada3dac7ca48b7bee1fcc68120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroy: 0
+  _delta: 0.5
+  _perc: {fileID: 0}
+  _movement_direction: 2
 --- !u!1 &5428866084488311261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,6 +4309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2964449304341794220}
   - component: {fileID: 643358073008333944}
+  - component: {fileID: 2032529568733762430}
   m_Layer: 0
   m_Name: Ringhiera (6)
   m_TagString: Untagged
@@ -4220,13 +4325,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5677835063375240682}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9981189, z: -0, w: 0.061309103}
-  m_LocalPosition: {x: 2.819, y: -1.09, z: -2.321}
+  m_LocalRotation: {x: -0.107935004, y: 0.9922657, z: -0.0066298703, w: 0.060949568}
+  m_LocalPosition: {x: 2.939, y: -1.64, z: -2.306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5979384327038838075}
-  m_LocalEulerAnglesHint: {x: 0, y: 172.97, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 172.97, z: -12.416}
 --- !u!65 &643358073008333944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4248,6 +4353,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 1, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2032529568733762430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5677835063375240682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6dada3dac7ca48b7bee1fcc68120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroy: 0
+  _delta: 0.5
+  _perc: {fileID: 0}
+  _movement_direction: 2
 --- !u!1 &5689037863626455092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4389,6 +4510,7 @@ Transform:
   - {fileID: 8247435781653569628}
   - {fileID: 6457674392324186622}
   - {fileID: 5201903201624248565}
+  - {fileID: 4774254742167895970}
   - {fileID: 9007686688730406572}
   - {fileID: 1336261197029477285}
   - {fileID: 2354243236573894775}
@@ -4459,6 +4581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6788647307706951542}
   - component: {fileID: 8017743503013699249}
+  - component: {fileID: 264411480550901295}
   m_Layer: 0
   m_Name: Ringhiera (3)
   m_TagString: Untagged
@@ -4474,13 +4597,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6192858983506985220}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.79123306, z: -0, w: 0.61151475}
-  m_LocalPosition: {x: 4.795, y: -0.733, z: -0.712}
+  m_LocalRotation: {x: -0.099670015, y: 0.7849303, z: -0.07703128, w: 0.60664356}
+  m_LocalPosition: {x: 4.816, y: -1.058, z: -0.631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5979384327038838075}
-  m_LocalEulerAnglesHint: {x: 0, y: 104.602, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 104.602, z: -14.473}
 --- !u!65 &8017743503013699249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4502,6 +4625,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 1, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &264411480550901295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6192858983506985220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6dada3dac7ca48b7bee1fcc68120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroy: 0
+  _delta: 0.5
+  _perc: {fileID: 0}
+  _movement_direction: 2
 --- !u!1 &6299150835377126614
 GameObject:
   m_ObjectHideFlags: 0

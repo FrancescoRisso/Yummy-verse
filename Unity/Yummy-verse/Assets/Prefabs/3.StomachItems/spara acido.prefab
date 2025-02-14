@@ -215,6 +215,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5509230529443610886, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2800322103211312456}
+    - targetCorrespondingSourceObject: {fileID: 5509230529443610886, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 640254153919155079}
   m_SourcePrefab: {fileID: 100100000, guid: 5a2de5caffe9a2f4dabbaa6c50f34a54, type: 3}
 --- !u!1 &4163785142833909889 stripped
 GameObject:
@@ -233,8 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ccc715e22fb6c459fca729452c10d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinYaw: -30
-  MaxYaw: 30
+  MinYaw: -40
+  MaxYaw: 40
   _clamp: 1
 --- !u!114 &446941813441853882
 MonoBehaviour:
@@ -347,3 +350,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinPitch: -25
   MaxPitch: 25
+--- !u!114 &640254153919155079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8754261745958022358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c35cac6ec57b0f4eb7fdd4b8a62877f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
