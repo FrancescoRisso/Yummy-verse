@@ -10,7 +10,7 @@ public class Button : OneShotInteractable {
 	[SerializeField]
 	private float _release_speed;
 
-	private PercentageToggleManager _perc;
+	public PercentageToggleManager _perc;
 
 	private Vector3 _original_pos;
 	private float _delta_h = 0.01f;

@@ -1,135 +1,138 @@
 using UnityEngine;
 
+public enum Movimenti { ascensore2bocca, bocca2ascensore, ascensore2finestra, finestra2sotto }
+
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(Animator))]
-public class NPCPredefinedPathCharacterController : MonoBehaviour
-{
-    [Header("Waypoints")]
-    [SerializeField] private Transform[] waypoints;
+public class NPCPredefinedPathCharacterController : MonoBehaviour {
+	[SerializeField]
+	public Movimenti Movimento;
 
-    [Header("Movement")]
-    [SerializeField] private float moveSpeed = 3f;
-    [SerializeField] private float reachThreshold = 0.2f;
+	[Header("Waypoints")]
+	[SerializeField]
+	private Transform[] waypoints;
 
-    [Header("Gravity")]
-    [SerializeField] private float gravity = 20f;
+	[Header("Movement")]
+	[SerializeField]
+	private float moveSpeed = 3f;
+	[SerializeField]
+	private float reachThreshold = 0.2f;
 
-    [Header("Idle Settings")]
-    [SerializeField] private float idleHeight = 2f;
-    [SerializeField] private float idlePivotY = 1f;  // Valore Y del centro in idle
+	[Header("Gravity")]
+	[SerializeField]
+	private float gravity = 20f;
 
-    [Header("Walking Settings")]
-    [SerializeField] private float walkingHeight = 1.8f;
-    [SerializeField] private float walkingPivotY = 0.9f;  // Valore Y del centro in walking
+	[Header("Idle Settings")]
+	[SerializeField]
+	private float idleHeight = 2f;
+	[SerializeField]
+	private float idlePivotY = 1f;  // Valore Y del centro in idle
 
-    [Header("Transition")]
-    [SerializeField] private float transitionSpeed = 5f; // Velocità di transizione tra gli stati
+	[Header("Walking Settings")]
+	[SerializeField]
+	private float walkingHeight = 1.8f;
+	[SerializeField]
+	private float walkingPivotY = 0.9f;  // Valore Y del centro in walking
 
-    private int currentWaypointIndex = 0;
-    private CharacterController controller;
-    private Animator animator;
-    private Vector3 verticalVelocity = Vector3.zero;
-    private bool pathCompleted = false;
-    private bool isWalking = false;
+	[Header("Transition")]
+	[SerializeField]
+	private float transitionSpeed = 5f;  // Velocità di transizione tra gli stati
 
-    void Start()
-    {
-        controller = GetComponent<CharacterController>();
-        animator = GetComponent<Animator>();
+	private int currentWaypointIndex = 0;
+	private CharacterController controller;
+	private Animator animator;
+	private Vector3 verticalVelocity = Vector3.zero;
+	private bool pathCompleted = false;
+	private bool isWalking = false;
 
-        animator.SetBool("IsWalking", false);
+	void Start() {
+		controller = GetComponent<CharacterController>();
+		animator = GetComponent<Animator>();
 
-        if (waypoints == null || waypoints.Length == 0)
-        {
-            Debug.LogWarning("No waypoints assigned. NPC will remain idle.");
-            pathCompleted = true;
-        }
+		animator.SetBool("IsWalking", false);
 
-        // Imposta inizialmente le impostazioni idle.
-        controller.height = idleHeight;
-        Vector3 center = controller.center;
-        center.y = idlePivotY;
-        controller.center = center;
-    }
+		if(waypoints == null || waypoints.Length == 0) {
+			Debug.LogWarning("No waypoints assigned. NPC will remain idle.");
+			pathCompleted = true;
+		}
 
-    void Update()
-    {
-        Vector3 horizontalMovement = Vector3.zero;
+		// Imposta inizialmente le impostazioni idle.
+		controller.height = idleHeight;
+		Vector3 center = controller.center;
+		center.y = idlePivotY;
+		controller.center = center;
+	}
 
-        if (pathCompleted)
-        {
-            animator.SetBool("IsWalking", false);
+	void Update() {
+		Vector3 horizontalMovement = Vector3.zero;
 
-            // Gestione della gravità in idle.
-            if (controller.isGrounded)
-                verticalVelocity.y = 0;
-            else
-                verticalVelocity.y += -gravity * Time.deltaTime;
+		if(pathCompleted) {
+			animator.SetBool("IsWalking", false);
 
-            controller.Move(verticalVelocity * Time.deltaTime);
-            // Transizione graduale verso le impostazioni idle.
-            SmoothTransitionSettings(false);
-            return;
-        }
+			// Gestione della gravità in idle.
+			if(controller.isGrounded)
+				verticalVelocity.y = 0;
+			else
+				verticalVelocity.y += -gravity * Time.deltaTime;
 
-        // Calcola il movimento orizzontale (solo X e Z).
-        Transform targetWaypoint = waypoints[currentWaypointIndex];
-        Vector3 targetPos = new Vector3(targetWaypoint.position.x, transform.position.y, targetWaypoint.position.z);
-        Vector3 direction = targetPos - transform.position;
-        float distance = direction.magnitude;
+			controller.Move(verticalVelocity * Time.deltaTime);
+			// Transizione graduale verso le impostazioni idle.
+			SmoothTransitionSettings(false);
+			this.enabled = false;
+			return;
+		}
 
-        if (distance <= reachThreshold)
-        {
-            if (currentWaypointIndex == waypoints.Length - 1)
-            {
-                pathCompleted = true;
-                animator.SetBool("IsWalking", false);
-                SmoothTransitionSettings(false);
-            }
-            else
-            {
-                currentWaypointIndex++;
-            }
-        }
-        else
-        {
-            horizontalMovement = direction.normalized * moveSpeed;
-            // Ruota gradualmente verso il target.
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * moveSpeed);
-        }
+		// Calcola il movimento orizzontale (solo X e Z).
+		Transform targetWaypoint = waypoints[currentWaypointIndex];
+		Vector3 targetPos = new Vector3(targetWaypoint.position.x, transform.position.y, targetWaypoint.position.z);
+		Vector3 direction = targetPos - transform.position;
+		float distance = direction.magnitude;
 
-        isWalking = horizontalMovement.magnitude > 0.01f;
-        animator.SetBool("IsWalking", isWalking);
+		if(distance <= reachThreshold) {
+			if(currentWaypointIndex == waypoints.Length - 1) {
+				pathCompleted = true;
+				animator.SetBool("IsWalking", false);
+				SmoothTransitionSettings(false);
+			} else {
+				currentWaypointIndex++;
+			}
+		} else {
+			horizontalMovement = direction.normalized * moveSpeed;
+			// Ruota gradualmente verso il target.
+			Quaternion targetRotation = Quaternion.LookRotation(direction);
+			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * moveSpeed);
+		}
 
-        // Transizione graduale: se cammina, passa alle impostazioni walking, altrimenti idle.
-        SmoothTransitionSettings(isWalking);
+		isWalking = horizontalMovement.magnitude > 0.01f;
+		animator.SetBool("IsWalking", isWalking);
 
-        // Gestione della gravità.
-        if (!controller.isGrounded)
-            verticalVelocity.y += -gravity * Time.deltaTime;
-        else
-            verticalVelocity.y = 0;
+		// Transizione graduale: se cammina, passa alle impostazioni walking, altrimenti idle.
+		SmoothTransitionSettings(isWalking);
 
-        Vector3 movement = (horizontalMovement + verticalVelocity) * Time.deltaTime;
-        controller.Move(movement);
-    }
+		// Gestione della gravità.
+		if(!controller.isGrounded)
+			verticalVelocity.y += -gravity * Time.deltaTime;
+		else
+			verticalVelocity.y = 0;
 
-    /// <summary>
-    /// Aggiorna in maniera fluida l'altezza e il pivot del CharacterController in base allo stato (walking o idle).
-    /// </summary>
-    /// <param name="walking">Se true applica le impostazioni walking, altrimenti quelle idle.</param>
-    void SmoothTransitionSettings(bool walking)
-    {
-        float targetHeight = walking ? walkingHeight : idleHeight;
-        float targetPivotY = walking ? walkingPivotY : idlePivotY;
+		Vector3 movement = (horizontalMovement + verticalVelocity) * Time.deltaTime;
+		controller.Move(movement);
+	}
 
-        // Interpola l'altezza.
-        controller.height = Mathf.Lerp(controller.height, targetHeight, transitionSpeed * Time.deltaTime);
+	/// <summary>
+	/// Aggiorna in maniera fluida l'altezza e il pivot del CharacterController in base allo stato (walking o idle).
+	/// </summary>
+	/// <param name="walking">Se true applica le impostazioni walking, altrimenti quelle idle.</param>
+	void SmoothTransitionSettings(bool walking) {
+		float targetHeight = walking ? walkingHeight : idleHeight;
+		float targetPivotY = walking ? walkingPivotY : idlePivotY;
 
-        // Interpola il centro (pivot) in Y.
-        Vector3 center = controller.center;
-        center.y = Mathf.Lerp(center.y, targetPivotY, transitionSpeed * Time.deltaTime);
-        controller.center = center;
-    }
+		// Interpola l'altezza.
+		controller.height = Mathf.Lerp(controller.height, targetHeight, transitionSpeed * Time.deltaTime);
+
+		// Interpola il centro (pivot) in Y.
+		Vector3 center = controller.center;
+		center.y = Mathf.Lerp(center.y, targetPivotY, transitionSpeed * Time.deltaTime);
+		controller.center = center;
+	}
 }

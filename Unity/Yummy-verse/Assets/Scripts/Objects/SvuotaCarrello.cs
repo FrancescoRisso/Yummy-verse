@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 
 public class SvuotaCarrello : MonoBehaviour {
     [SerializeField]
-    private Button _activator;
+    public Button _activator;
     
     [SerializeField]
     private Transform piattaformaInclinabile;

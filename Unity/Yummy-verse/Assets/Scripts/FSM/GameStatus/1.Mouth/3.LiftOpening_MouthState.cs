@@ -13,7 +13,7 @@ public class LiftOpening_MouthState : MouthState {
 	public override void StateAction(MouthParameter param) {}
 
 	public override MouthState Transition(MouthParameter param) {
-		if(_done) throw new System.NotImplementedException();
+		if(_done) return new NPCExiting_MouthState();
 		return this;
 	}
 
