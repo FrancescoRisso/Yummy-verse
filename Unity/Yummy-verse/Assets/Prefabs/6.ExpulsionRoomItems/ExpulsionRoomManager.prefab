@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5632917932691627103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3456578326267923112}
+  - component: {fileID: 2641540291650827208}
+  m_Layer: 0
+  m_Name: ExpulsionRoomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3456578326267923112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632917932691627103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.349705, y: -7.7963257, z: 75.78122}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3144387443218051760}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2641540291650827208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632917932691627103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3d815fef9e5ce4f9458dd24cc95471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prev_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 661ba08aeb0c627438256b1fe07daee7, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/5.LargeIntestin.unity
+  _next_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 3702b81a84d4d714ab1a09887a7270f2, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/7.Water.unity
+  _this_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 67b7b4cc7bf6f9441933b0ee62d3ec1d, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/6.ExpulsionRoom.unity
+  _final_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 465939b909d8ea343bc34618b0760f04, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/8.MainMenuOpeningEye.unity
+  _game_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 2a9279b027a280141af001f7385170c6, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/Game.unity
+  _enter_trigger: {fileID: 0}
+  _audio: {fileID: 0}
+  _expulsion_button: {fileID: 0}
+  _botola_state: {fileID: 0}
+  _attractor: {fileID: 0}
+  _wait_before_restarting: 2
+--- !u!1 &7073388285703853979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3144387443218051760}
+  - component: {fileID: 7096259989720587335}
+  m_Layer: 0
+  m_Name: OpeningManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3144387443218051760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073388285703853979}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.788065, y: 2.5063257, z: 3.8864975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3456578326267923112}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7096259989720587335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073388285703853979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2bd686696e7ca4d95980e87b834dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialPercentage: 0
+  _speed: 0
+  _initialOperation: 0
+  _firstMovement: 1
