@@ -9,6 +9,7 @@ public class Chewing_MouthState : MouthState {
 			param._tmp_camera.GetComponent<Camera>().enabled = false;
 			param._tmp_camera.GetComponent<AudioListener>().enabled = false;
 			SceneLoader.SetActiveScene(param._game_scene);
+			param._mono_behaivour.StartCoroutine(SceneLoader.LoadSceneAndThen(param._NPC_scene, () => { param._fsm.LoadNPC(); }));
 		}));
 		_num_chewings = param._num_chewings;
 		param._chewings_counter.OnNewIteration += (int num) => {

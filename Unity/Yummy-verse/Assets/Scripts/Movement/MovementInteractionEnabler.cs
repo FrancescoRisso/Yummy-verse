@@ -6,6 +6,7 @@ public class MovementInteractionEnabler : MonoBehaviour {
 	private CharacterViewPitch _pitch_controller;
 	private PlayerMouseInteract _mouse_interact;
 	private CharacterMovement _movement;
+	private CharacterController _controller;
 
 	[SerializeField]
 	private bool _has_pitch_controller = true;
@@ -20,10 +21,12 @@ public class MovementInteractionEnabler : MonoBehaviour {
 			_yaw_controller = GetComponentInParent<CharacterViewYaw>();
 			_pitch_controller = GetComponentInParent<CharacterViewPitch>();
 			_movement = GetComponentInParent<CharacterMovement>();
+			_controller = GetComponentInParent<CharacterController>();
 		} else {
 			_yaw_controller = GetComponentInChildren<CharacterViewYaw>();
 			_pitch_controller = GetComponentInChildren<CharacterViewPitch>();
 			_movement = GetComponentInChildren<CharacterMovement>();
+			_controller = GetComponentInChildren<CharacterController>();
 		}
 
 		_mouse_interact = GetComponentInChildren<PlayerMouseInteract>();
@@ -42,6 +45,7 @@ public class MovementInteractionEnabler : MonoBehaviour {
 		if(_pitch_controller) _pitch_controller.enabled = true;
 		if(_mouse_interact) _mouse_interact.enabled = true;
 		if(_movement) _movement.enabled = true;
+		if(_controller) _controller.enabled = true;
 	}
 
 	public void Disable() {
@@ -51,5 +55,6 @@ public class MovementInteractionEnabler : MonoBehaviour {
 		if(_pitch_controller) _pitch_controller.enabled = false;
 		if(_mouse_interact) _mouse_interact.enabled = false;
 		if(_movement) _movement.enabled = false;
+		if(_controller) _controller.enabled = false;
 	}
 }
