@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9566c303cf600f34abebcf9b293a926a
+guid: 8c6a4f1efb840b84793d0f6ac165847b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -12,8 +12,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: info
+    second: {fileID: 2100000, guid: 3046e47529dc07d43924901a28decd82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sbarraMetallica
+    second: {fileID: 5537521731969454231, guid: 9566c303cf600f34abebcf9b293a926a, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: titolo
-    second: {fileID: 2100000, guid: c07b69fdea995804e8ea6a861b9275a0, type: 2}
+    second: {fileID: 2100000, guid: 6476bc5d4dd6c704f9870f0ce1f58a20, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
