@@ -7,9 +7,7 @@ public class EmptyingCart_ExpulsionRoomState : ExpulsionRoomState {
 	public override void PrepareBeforeAction(ExpulsionRoomParam param) {
 		_param = param;
 		param._expulsion_button.activated += OnButtonPress;
-		param._botola_state.OnPercentageChange += (float perc) => {
-			if(perc == 1) _open_botola = true;
-		};
+		
 	}
 
 	private void OnButtonPress() {
@@ -21,7 +19,7 @@ public class EmptyingCart_ExpulsionRoomState : ExpulsionRoomState {
 	public override void StateAction(ExpulsionRoomParam param) {}
 
 	public override ExpulsionRoomState Transition(ExpulsionRoomParam param) {
-		if(_open_botola) throw new NotImplementedException();
+		if(_open_botola) return new BotolaOpening_ExpulsionRoomState();
 		return this;
 	}
 }
