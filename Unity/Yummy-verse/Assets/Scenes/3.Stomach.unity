@@ -1020,6 +1020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spara acido
       objectReference: {fileID: 0}
+    - target: {fileID: 8251096045716210634, guid: 78322f323f1ef7f4487b34eed2440142, type: 3}
+      propertyPath: liquidParticleSystem
+      value: 
+      objectReference: {fileID: 4738632990131993032, guid: 346fb69bcea02c64fba8a4f1db2173f8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
