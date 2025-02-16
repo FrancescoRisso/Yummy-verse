@@ -13,7 +13,7 @@ public class LoadingFood_MouthState : MouthState {
 
 	public override MouthState Transition(MouthParameter param) {
 		if(_called) {
-			param._NPC.ExecMovement(Movimenti.bocca2ascensore);
+			// param._NPC.ExecMovement(Movimenti.bocca2ascensore);
 			param._lift_doors._toggle.Invoke();
 			return new GoingToLift_MouthState();
 		}

@@ -14,13 +14,12 @@ public class StomachParameter {
 	public AudioSource _audio;
 	public SceneReference _prev_scene;
 	public Action _liftArrived;
-	public NpcMovementSequence _NPC;
 	public GameObject _cart;
 	public GameObject _player;
 
 	public StomachParameter(PercentageToggleManager chain, PercentageToggleManager acid_plane, PercentageToggleManager doors,
 		SceneReference next_scene, MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio,
-		SceneReference prev_scene, Action liftArrived, NpcMovementSequence nPC, GameObject cart, GameObject player) {
+		SceneReference prev_scene, Action liftArrived, GameObject cart, GameObject player) {
 		_chain = chain;
 		_acid_plane = acid_plane;
 		_doors = doors;
@@ -31,7 +30,6 @@ public class StomachParameter {
 		_audio = audio;
 		_prev_scene = prev_scene;
 		_liftArrived = liftArrived;
-		_NPC = nPC;
 		_cart = cart;
 		_player = player;
 	}
@@ -63,8 +61,6 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 
 	public Action _liftArrived;
 
-	private NpcMovementSequence _NPC;
-
 	private GameObject _cart;
 	private GameObject _player;
 
@@ -81,11 +77,6 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 		Assert.IsNotNull(_audio, $"{name} is missing a reference to the music source");
 		Assert.AreNotEqual(_prev_scene.SceneName, "", $"{name} is missing a reference to the previous scene");
 
-		GameObject NPC = GameObject.FindGameObjectWithTag("NPC");
-		Assert.IsNotNull(NPC, $"{name} cannot find the NPC");
-		_NPC = NPC.GetComponent<NpcMovementSequence>();
-		Assert.IsNotNull(_NPC, $"{name} cannot find the NPC movement sequence");
-
 		_cart = GameObject.FindGameObjectWithTag("Carrello");
 		Assert.IsNotNull(_cart, $"{name} cannot find the Carrello");
 
@@ -97,6 +88,6 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 
 	protected override StomachParameter GetParams() {
 		return new StomachParameter(
-			_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _NPC, _cart, _player);
+			_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _cart, _player);
 	}
 }
