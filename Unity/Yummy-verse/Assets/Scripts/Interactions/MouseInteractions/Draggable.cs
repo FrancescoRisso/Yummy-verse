@@ -34,4 +34,12 @@ public class Draggable : MouseInteractable {
 		// Smetti di considerare gli input
 		_processing = false;
 	}
+
+	public void StartDraggingByChild() {
+		OnMouseClick();
+	}
+
+	public void StopDraggingByChild() {
+		OnMouseRelease();
+	}
 }
