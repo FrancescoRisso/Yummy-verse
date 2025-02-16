@@ -3,6 +3,10 @@ using UnityEngine;
 public class Dark_MainMenuState : MainMenuState {
 	private float _time = 0;
 
+	public override void PrepareBeforeAction(MainMenuParameter param) {
+		param._monoBehaviour.StartCoroutine(SceneLoader.LoadScene(param._game_scene));
+	}
+
 	public override void StateAction(MainMenuParameter param) {
 		_time += Time.deltaTime;
 	}

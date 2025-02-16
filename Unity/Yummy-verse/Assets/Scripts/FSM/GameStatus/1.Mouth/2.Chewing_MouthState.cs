@@ -5,12 +5,11 @@ public class Chewing_MouthState : MouthState {
 	private int _num_chewings;
 
 	public override void PrepareBeforeAction(MouthParameter param) {
-		param._mono_behaivour.StartCoroutine(SceneLoader.LoadSceneAndThen(param._game_scene, () => {
-			param._tmp_camera.GetComponent<Camera>().enabled = false;
-			param._tmp_camera.GetComponent<AudioListener>().enabled = false;
-			SceneLoader.SetActiveScene(param._game_scene);
-			param._mono_behaivour.StartCoroutine(SceneLoader.LoadSceneAndThen(param._NPC_scene, () => { param._fsm.LoadNPC(); }));
-		}));
+		param._tmp_camera.GetComponent<Camera>().enabled = false;
+		param._tmp_camera.GetComponent<AudioListener>().enabled = false;
+		SceneLoader.SetActiveScene(param._game_scene);
+		param._player.Enable();
+
 		_num_chewings = param._num_chewings;
 		param._chewings_counter.OnNewIteration += (int num) => {
 			if(num == _num_chewings - 1) param._mono_behaivour.StartCoroutine(SceneLoader.LoadScene(param._next_scene));
