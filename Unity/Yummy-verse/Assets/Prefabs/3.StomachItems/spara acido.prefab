@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f67a4dc167995439b960acef835c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liquidParticleSystem: {fileID: 4738632990131993032, guid: 9a5128077ed498d46b237a1a9d9a1e53, type: 3}
+  liquidParticleSystem: {fileID: 4738632990131993032, guid: 346fb69bcea02c64fba8a4f1db2173f8, type: 3}
   _corpo_principale: {fileID: 8754261745958022358}
 --- !u!114 &7798401741913842530
 MonoBehaviour:
