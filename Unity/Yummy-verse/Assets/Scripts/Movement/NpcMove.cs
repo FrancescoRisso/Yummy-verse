@@ -23,6 +23,9 @@ public class NPCSequenceAndMovement : MonoBehaviour {
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float reachThreshold = 0.2f;
 
+    [Header("Rotazione")]
+    [SerializeField] private float rotationSpeed = 5f; // Nuova variabile per una rotazione più fluida
+
     [Header("Gravity")]
     [SerializeField] private float gravity = 20f;
 
@@ -96,9 +99,9 @@ public class NPCSequenceAndMovement : MonoBehaviour {
             }
         } else {
             Vector3 horizontalMovement = direction.normalized * moveSpeed;
-            // Ruota gradualmente verso il waypoint
+            // Ruota gradualmente verso il waypoint usando rotationSpeed per una transizione più fluida
             Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * moveSpeed);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             // Combina il movimento orizzontale con la gravità
             Vector3 movement = (horizontalMovement + verticalVelocity) * Time.deltaTime;
