@@ -1,33 +1,54 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(AudioSource))]
 public class CharacterMovement : MonoBehaviour {
-	[SerializeField]
-	private float MoveSpeed = 10;
+    [SerializeField]
+    private float MoveSpeed = 10;
 
-	[SerializeField]
-	private float SprintSpeed = 30;
+    [SerializeField]
+    private float SprintSpeed = 30;
 
-	protected CharacterController movementController;
+    [SerializeField]
+    private AudioClip footstepSound; // Aggiungi questa variabile per il suono dei passi
 
-	private Vector3 fallVelocity;
+    protected CharacterController movementController;
 
+    private Vector3 fallVelocity;
 
-	private void Start() {
-		movementController = GetComponent<CharacterController>();  //  Character Controller
-	}
+    private AudioSource audioSource;  // Variabile per l'AudioSource
+    private bool isPlayingFootstep = false;
 
-	private void Update() {
-		Vector3 walkDirection = Vector3.zero;
-		walkDirection += transform.forward * Input.GetAxisRaw("Vertical");
-		walkDirection += transform.right * Input.GetAxisRaw("Horizontal");
+    private void Start() {
+        movementController = GetComponent<CharacterController>();  // Character Controller
+        audioSource = GetComponent<AudioSource>();  // Ottieni il componente AudioSource
+    }
 
-		walkDirection.Normalize();
+    private void Update() {
+        Vector3 walkDirection = Vector3.zero;
+        walkDirection += transform.forward * Input.GetAxisRaw("Vertical");
+        walkDirection += transform.right * Input.GetAxisRaw("Horizontal");
 
-		fallVelocity += -9.81f * Time.deltaTime * transform.up;  // Gravity
+        walkDirection.Normalize();
 
-		float currMoveSpeed = Input.GetKey(KeyCode.LeftShift) ? SprintSpeed : MoveSpeed;
+        fallVelocity += -9.81f * Time.deltaTime * transform.up;  
 
-		movementController.Move(Time.deltaTime * (currMoveSpeed * walkDirection + fallVelocity));
-	}
+        float currMoveSpeed = Input.GetKey(KeyCode.LeftShift) ? SprintSpeed : MoveSpeed;
+
+        movementController.Move(Time.deltaTime * (currMoveSpeed * walkDirection + fallVelocity));
+
+        if (walkDirection.magnitude > 0 && movementController.isGrounded) {
+            if (!isPlayingFootstep) {
+                audioSource.clip = footstepSound;  
+                audioSource.loop = true;         
+                audioSource.Play();
+                isPlayingFootstep = true;
+            }
+        } else {
+            if (isPlayingFootstep) {
+                audioSource.Stop();
+                isPlayingFootstep = false;
+            }
+        }
+    }
 }
