@@ -31,17 +31,16 @@ public class CharacterMovement : MonoBehaviour {
 
         walkDirection.Normalize();
 
-        fallVelocity += -9.81f * Time.deltaTime * transform.up;  // Gravity
+        fallVelocity += -9.81f * Time.deltaTime * transform.up;  
 
         float currMoveSpeed = Input.GetKey(KeyCode.LeftShift) ? SprintSpeed : MoveSpeed;
 
         movementController.Move(Time.deltaTime * (currMoveSpeed * walkDirection + fallVelocity));
 
-        // Riproduci il suono solo se il personaggio si sta muovendo e tocca il suolo
         if (walkDirection.magnitude > 0 && movementController.isGrounded) {
             if (!isPlayingFootstep) {
-                audioSource.clip = footstepSound;  // Imposta il suono dei passi
-                audioSource.loop = true;          // Imposta il loop per il suono
+                audioSource.clip = footstepSound;  
+                audioSource.loop = true;         
                 audioSource.Play();
                 isPlayingFootstep = true;
             }
