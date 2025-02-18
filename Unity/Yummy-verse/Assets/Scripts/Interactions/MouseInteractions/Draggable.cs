@@ -3,9 +3,9 @@ using UnityEngine.Assertions;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Draggable : MouseInteractable {
-	private Rigidbody _rigidbody;
-	private CharacterViewPitch _character_pitch;
-	private Transform _parent;
+	protected Rigidbody _rigidbody;
+	protected CharacterViewPitch _character_pitch;
+	protected Transform _parent;
 
 	void Start() {
 		_rigidbody = GetComponent<Rigidbody>();
@@ -17,11 +17,12 @@ public class Draggable : MouseInteractable {
 
 	protected override void OnMouseClick() {
 		// Abilita il movimento cinematico per disattivare il movimento fisico
+		BeforeDragging();
 		_rigidbody.isKinematic = true;
 
 		// Salva il parent precedente della gerarchia, e settati come figlio della camera
 		_parent = gameObject.transform.parent;
-		transform.SetParent(_character_pitch.transform);
+		transform.SetParent(_character_pitch.transform, true);
 	}
 	protected override void OnMouseHold() {}
 	protected override void OnMouseRelease() {
@@ -29,7 +30,7 @@ public class Draggable : MouseInteractable {
 		_rigidbody.isKinematic = false;
 
 		// Ritorna nella posizione originale della gerarchia
-		transform.SetParent(_parent);
+		transform.SetParent(_parent, true);
 
 		// Smetti di considerare gli input
 		_processing = false;
@@ -42,4 +43,6 @@ public class Draggable : MouseInteractable {
 	public void StopDraggingByChild() {
 		OnMouseRelease();
 	}
+
+	protected virtual void BeforeDragging() {}
 }

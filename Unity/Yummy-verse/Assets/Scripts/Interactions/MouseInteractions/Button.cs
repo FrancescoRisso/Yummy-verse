@@ -24,8 +24,8 @@ public class Button : OneShotInteractable {
 		_perc = GetComponent<PercentageToggleManager>();
 		Assert.IsNotNull(_button_top, $"{name} cannot find its percentage toggle manager");
 
-		_original_pos = _button_top.transform.position;
-		_pressed_pos = _button_top.transform.position - _delta_h * transform.up;
+		_original_pos = _button_top.transform.localPosition;
+		_pressed_pos = _button_top.transform.localPosition - _delta_h * Vector3.up;
 	}
 
 	protected override void LocalActionOnClick() {
@@ -47,8 +47,8 @@ public class Button : OneShotInteractable {
 	}
 
 	private void UpdatePosition(float perc) {
-		Vector3 pos = _button_top.transform.position;
-		_button_top.transform.position = perc * _original_pos + (1 - perc) * _pressed_pos;
+		Vector3 pos = _button_top.transform.localPosition;
+		_button_top.transform.localPosition = perc * _original_pos + (1 - perc) * _pressed_pos;
 
 		if(perc == 0) {
 			_perc._speed = _release_speed;

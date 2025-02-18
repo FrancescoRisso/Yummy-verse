@@ -258,10 +258,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1351772231044676103, guid: 60f26cd0ba773d54ba871f07e98eb0de, type: 3}
-      propertyPath: _perc_notifier
-      value: 
-      objectReference: {fileID: 1554894239}
     - target: {fileID: 5136969622075572806, guid: 60f26cd0ba773d54ba871f07e98eb0de, type: 3}
       propertyPath: m_Name
       value: mela
