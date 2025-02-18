@@ -21,6 +21,9 @@ public class ShooterInteractionManager : InteractionManager {
 	[SerializeField]
 	private GameObject _corpo_principale;
 
+	[SerializeField]
+	private AudioSource shootingSound;
+
 	protected override bool ShouldCheckMouseClick() {
 		return true;
 	}
@@ -64,6 +67,10 @@ public class ShooterInteractionManager : InteractionManager {
 		currentParticleSystem.Play();
 		isShooting = true;
 		_shooter.enabled = true;
+
+		if (shootingSound != null) {
+			shootingSound.Play();
+		}
 	}
 
 	// Ferma il Particle System e lo distrugge
@@ -75,6 +82,10 @@ public class ShooterInteractionManager : InteractionManager {
 			currentParticleSystem = null;
 			isShooting = false;
 			_shooter.enabled = false;
+
+			if (shootingSound != null) {
+				shootingSound.Stop();
+			}
 		}
 	}
 
