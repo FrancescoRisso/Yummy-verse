@@ -13,8 +13,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
+  - Can stand on cart
+  - Ignore mouse raycast
   - 
   - 
   - 

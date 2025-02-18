@@ -22,7 +22,7 @@ public abstract class InteractionManager : MonoBehaviour {
 		if(ShouldCheckMouseClick() && Input.GetMouseButtonDown(0)) {
 			if(MouseClickWithRaycast()) {
 				Ray ray = new(transform.position, transform.forward);
-				if(Physics.Raycast(ray, out RaycastHit hit, MouseClickRaycastRange())) {
+				if(Physics.Raycast(ray, out RaycastHit hit, MouseClickRaycastRange(), ~((1 << 7) | (1 << 2)))) {
 					MouseInteractable target = hit.collider.GetComponent<MouseInteractable>();
 					if(target != null) MouseClickAction(target);
 				}
