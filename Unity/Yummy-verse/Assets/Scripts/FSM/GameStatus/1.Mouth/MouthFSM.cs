@@ -5,7 +5,7 @@ using Utilities;
 public class MouthParameter {
 	public MouthParameter(int num_chewings, PercentageCycleNotifier chewings_counter, PercentageToggleManager lift_doors,
 		VideoPlayerManager video_player, MonoBehaviour mono_behaivour, SceneReference game_scene, GameObject tmp_camera, SceneReference next_scene,
-		MouthFSM fsm, Button call_lift, float door_open_time, CameraEnabler player) {
+		MouthFSM fsm, Button call_lift, float door_open_time, CameraEnabler player, AudioSource opening_doors_audio) {
 		_num_chewings = num_chewings;
 		_chewings_counter = chewings_counter;
 		_lift_doors = lift_doors;
@@ -18,6 +18,7 @@ public class MouthParameter {
 		_call_lift = call_lift;
 		_door_open_time = door_open_time;
 		_player = player;
+		_opening_doors_audio = opening_doors_audio;
 	}
 
 	public int _num_chewings { set; get; }
@@ -32,6 +33,7 @@ public class MouthParameter {
 	public Button _call_lift { set; get; }
 	public float _door_open_time { set; get; }
 	public CameraEnabler _player { set; get; }
+	public AudioSource _opening_doors_audio { set; get; }
 }
 
 public abstract class MouthState : FSMState<MouthState, MouthParameter> {}
@@ -68,6 +70,9 @@ public class MouthFSM : FSM<MouthState, MouthParameter> {
 
 	private CameraEnabler _player;
 
+	[SerializeField]
+	private AudioSource _opening_doors_audio;
+
 	protected override MouthState GetInitialState() {
 		Assert.IsNotNull(_chewings_counter, $"{name} does not have the chewing counter");
 		Assert.IsNotNull(_lift_doors, $"{name} does not have the lift doors");
@@ -75,7 +80,8 @@ public class MouthFSM : FSM<MouthState, MouthParameter> {
 		Assert.AreNotEqual(_game_scene.SceneName, "", $"{name} does not have the game scene reference");
 		Assert.AreNotEqual(_next_scene.SceneName, "", $"{name} does not have the next scene reference");
 		Assert.IsNotNull(_tmp_camera, $"{name} does not have the temporary camera");
-		Assert.IsNotNull(_call_lift, $"{name} does not have the button to call the lift camera");
+		Assert.IsNotNull(_call_lift, $"{name} does not have the button to call the lift");
+		Assert.IsNotNull(_opening_doors_audio, $"{name} does not have the audio source for the lift arriving");
 
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		Assert.IsNotNull(player, $"{name} cannot find the player");
@@ -87,6 +93,6 @@ public class MouthFSM : FSM<MouthState, MouthParameter> {
 
 	protected override MouthParameter GetParams() {
 		return new MouthParameter(_num_chewings, _chewings_counter, _lift_doors, _video_player, this, _game_scene, _tmp_camera, _next_scene, this,
-			_call_lift, _door_open_time, _player);
+			_call_lift, _door_open_time, _player, _opening_doors_audio);
 	}
 }

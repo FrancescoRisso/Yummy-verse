@@ -6,7 +6,10 @@ public class LoadingFood_MouthState : MouthState {
 	private bool _called = false;
 
 	public override void PrepareBeforeAction(MouthParameter param) {
-		param._call_lift.activated += () => { _called = true; };
+		param._call_lift.activated += () => {
+			_called = true;
+			param._opening_doors_audio.Play();
+		};
 	}
 
 	public override void StateAction(MouthParameter param) {}

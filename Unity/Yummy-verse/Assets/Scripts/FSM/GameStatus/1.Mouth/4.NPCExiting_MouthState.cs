@@ -14,10 +14,11 @@ public class NPCExiting_MouthState : MouthState {
 	}
 
 	public override MouthState Transition(MouthParameter param) {
-		if(_time > param._door_open_time) {
-			param._lift_doors._toggle.Invoke();
-			return new LoadingFood_MouthState();
-		}
-		return this;
+		// if(_time > param._door_open_time) {
+		// 	param._lift_doors._toggle.Invoke();
+		// 	return new LoadingFood_MouthState();
+		// }
+		// return this;
+		return new LoadingFood_MouthState();
 	}
 }
