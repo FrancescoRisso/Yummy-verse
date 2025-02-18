@@ -7,18 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: eb314933498918c4c96a7f7e67517a00, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 61d6ccb4ddd33014f9a77284ec29156b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: casetta
     second: {fileID: 2100000, guid: d8f995d5acc96694abc2ccd1c02c5510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dettagliGialli
+    second: {fileID: 2100000, guid: eb314933498918c4c96a7f7e67517a00, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -28,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: metallic.001
-    second: {fileID: 2100000, guid: 397653bf1100d594c97fe0a5b5516b4d, type: 2}
+    second: {fileID: 2100000, guid: 2d662a267f132704a9966842294b1b57, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,6 +34,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: pavimentoStomaco
     second: {fileID: 2100000, guid: 4652aa24ad0453544bf2b06476a5fcce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pulsanteAscensore
+    second: {fileID: 2100000, guid: 61d6ccb4ddd33014f9a77284ec29156b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
