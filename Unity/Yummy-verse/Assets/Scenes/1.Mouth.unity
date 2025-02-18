@@ -800,6 +800,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 729f33872edfaa043b1516b0b4f6ff05, type: 3}
+--- !u!1001 &1429470123552362685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4098056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932601689281899906, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298100396616748649, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+      propertyPath: m_Name
+      value: Lift opening audio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+--- !u!82 &1429470123552362686 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7973810797724032214, guid: d76577c1b4670da498401b8d36b0ab61, type: 3}
+  m_PrefabInstance: {fileID: 1429470123552362685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5392049225958542780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -893,6 +955,10 @@ PrefabInstance:
       propertyPath: _video_player
       value: 
       objectReference: {fileID: 1778694764}
+    - target: {fileID: 4349983081781897162, guid: 7aec35ed33d3a1241bbed17fc53d7e88, type: 3}
+      propertyPath: _opening_doors_audio
+      value: 
+      objectReference: {fileID: 1429470123552362686}
     - target: {fileID: 7554888170753290213, guid: 7aec35ed33d3a1241bbed17fc53d7e88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.41419026
@@ -1074,3 +1140,4 @@ SceneRoots:
   - {fileID: 1977901710}
   - {fileID: 531783253}
   - {fileID: 1778694763}
+  - {fileID: 1429470123552362685}
