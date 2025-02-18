@@ -14,12 +14,11 @@ public class StomachParameter {
 	public AudioSource _audio;
 	public SceneReference _prev_scene;
 	public Action _liftArrived;
-	public GameObject _cart;
 	public GameObject _player;
 
 	public StomachParameter(PercentageToggleManager chain, PercentageToggleManager acid_plane, PercentageToggleManager doors,
 		SceneReference next_scene, MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio,
-		SceneReference prev_scene, Action liftArrived, GameObject cart, GameObject player) {
+		SceneReference prev_scene, Action liftArrived, GameObject player) {
 		_chain = chain;
 		_acid_plane = acid_plane;
 		_doors = doors;
@@ -30,7 +29,6 @@ public class StomachParameter {
 		_audio = audio;
 		_prev_scene = prev_scene;
 		_liftArrived = liftArrived;
-		_cart = cart;
 		_player = player;
 	}
 }
@@ -61,7 +59,6 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 
 	public Action _liftArrived;
 
-	private GameObject _cart;
 	private GameObject _player;
 
 	public void setActionHandler(Action handler) {
@@ -77,9 +74,6 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 		Assert.IsNotNull(_audio, $"{name} is missing a reference to the music source");
 		Assert.AreNotEqual(_prev_scene.SceneName, "", $"{name} is missing a reference to the previous scene");
 
-		_cart = GameObject.FindGameObjectWithTag("Carrello");
-		Assert.IsNotNull(_cart, $"{name} cannot find the Carrello");
-
 		_player = GameObject.FindGameObjectWithTag("Player");
 		Assert.IsNotNull(_player, $"{name} cannot find the player");
 
@@ -87,7 +81,6 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 	}
 
 	protected override StomachParameter GetParams() {
-		return new StomachParameter(
-			_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _cart, _player);
+		return new StomachParameter(_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _player);
 	}
 }

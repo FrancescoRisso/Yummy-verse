@@ -21,6 +21,7 @@ public class MoveObject : MonoBehaviour {
 	void Start() {
 		Assert.IsNotNull(_perc, $"{name} does not have a percentage manager assigned");
 		_initial_pos = transform.position;
+		if(_perc._speed == 0) _perc._speed = 1;
 
 		_perc.OnPercentageChange += OnPercChange;
 	}
@@ -38,5 +39,17 @@ public class MoveObject : MonoBehaviour {
 		transform.position = _initial_pos + perc * _delta * dir;
 
 		if(perc == 1 && _destroy) Destroy(gameObject);
+	}
+
+	public void SetDelta(float delta) {
+		_delta = delta;
+	}
+
+	public void SetDirection(Direction dir) {
+		_movement_direction = dir;
+	}
+
+	public void Trigger() {
+		_perc._toggle.Invoke();
 	}
 }

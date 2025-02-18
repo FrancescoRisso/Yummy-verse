@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4584610487514088773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.133
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_Name
+      value: Sostanza galleggiante (cetriolo)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6365177153405352021}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2781104753164453711}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5373776030637186819}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8475270024447883821}
+  m_SourcePrefab: {fileID: 100100000, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+--- !u!1 &3701579713882617876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+  m_PrefabInstance: {fileID: 4584610487514088773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6365177153405352021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701579713882617876}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09078346, y: 0.07368517, z: 0.29341787}
+  m_Center: {x: 0.00019824877, y: 0.036772065, z: 0.00817523}
+--- !u!114 &2781104753164453711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701579713882617876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6dada3dac7ca48b7bee1fcc68120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroy: 1
+  _delta: 0
+  _perc: {fileID: 5373776030637186819}
+  _movement_direction: 0
+--- !u!114 &5373776030637186819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701579713882617876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2bd686696e7ca4d95980e87b834dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialPercentage: 0
+  _speed: 0
+  _initialOperation: 0
+  _firstMovement: 1
+--- !u!114 &8475270024447883821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701579713882617876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7003696dddef4342afd54c8a688b224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
