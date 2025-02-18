@@ -42,6 +42,7 @@ public class ShooterInteractionManager : InteractionManager {
 	protected override void EkeyAction(EkeyInteractable target) {
 		_player_camera_enabler.Enable();
 		_my_camera_enabler.Disable();
+		this.enabled = false;
 	}
 
 	// Metodo invocato al click del mouse.
