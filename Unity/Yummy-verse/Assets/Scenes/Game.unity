@@ -170,46 +170,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1341416244832441548, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341416244832441548, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: footstepSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 4b1b49c55832dd44d82d4d2dcedd80e4, type: 3}
-    - target: {fileID: 2207482702113515752, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2680002125084066913, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2680002125084066913, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4b1b49c55832dd44d82d4d2dcedd80e4, type: 3}
-    - target: {fileID: 2680002125084066913, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2956027811928341761, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795137435727549111, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7867610856035464553, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8358749783905269296, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8374508943788340400, guid: 5f7df48d5d5938c4fb3d1daeaf229131, type: 3}
       propertyPath: m_Name
       value: Player
