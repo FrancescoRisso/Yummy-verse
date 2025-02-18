@@ -808,10 +808,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 541889144362382296, guid: 731abe77ab59def489ab7695f30d23e8, type: 3}
-      propertyPath: decayManager
-      value: 
-      objectReference: {fileID: 1142624635}
     - target: {fileID: 3984132554869458629, guid: 731abe77ab59def489ab7695f30d23e8, type: 3}
       propertyPath: notifier
       value: 
@@ -820,6 +816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tavoloBocca
       objectReference: {fileID: 0}
+    - target: {fileID: 6990753552760487132, guid: 731abe77ab59def489ab7695f30d23e8, type: 3}
+      propertyPath: decayManager
+      value: 
+      objectReference: {fileID: 1142624635}
     - target: {fileID: 7753322256512381723, guid: 731abe77ab59def489ab7695f30d23e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.617
