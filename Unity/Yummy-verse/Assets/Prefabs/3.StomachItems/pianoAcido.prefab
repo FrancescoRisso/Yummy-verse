@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a99c98e193ebee44ea3ac7ca35481553, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.87
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a99c98e193ebee44ea3ac7ca35481553, type: 3}
       propertyPath: m_LocalPosition.z
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destroy: 1
-  _delta: -5
+  _delta: -5.1
   _perc: {fileID: 1563088925110123201}
   _movement_direction: 0
 --- !u!114 &1563088925110123201
@@ -101,6 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initialPercentage: 0
-  _speed: 0.5
+  _speed: 0.25
   _initialOperation: 0
   _firstMovement: 1

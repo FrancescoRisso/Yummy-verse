@@ -84,10 +84,10 @@ PrefabInstance:
       addedObject: {fileID: 5888724467199509780}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e3d3a769fdd58844a2632b459d88f23, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -2588855894674941998}
+      addedObject: {fileID: 7021911790973028378}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e3d3a769fdd58844a2632b459d88f23, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7021911790973028378}
+      addedObject: {fileID: 7797577529978048320}
   m_SourcePrefab: {fileID: 100100000, guid: 8e3d3a769fdd58844a2632b459d88f23, type: 3}
 --- !u!1 &8314426833437763085 stripped
 GameObject:
@@ -142,20 +142,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-2588855894674941998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8314426833437763085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7003696dddef4342afd54c8a688b224, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyDelay: 0.5
-  autoGravityVelocityThreshold: 0.1
 --- !u!114 &7021911790973028378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +154,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9940f1b74f6ee394e98ca46c228ccf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7797577529978048320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8314426833437763085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0004ffa7d88624c99fa42d368252da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _threshold_y: -1

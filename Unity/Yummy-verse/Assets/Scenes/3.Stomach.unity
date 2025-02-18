@@ -122,367 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &33669167 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-  m_PrefabInstance: {fileID: 1422913274}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &115525423
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 7291276885301044138, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (tortellino)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.829
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.952
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5040556
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -2.2020099e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.86367124
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 8.374911e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 119.463
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a2caac36ea7b71147954248635b05602, type: 3}
---- !u!1 &116083602
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116083603}
-  m_Layer: 0
-  m_Name: Sostanze galleggianti
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &116083603
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116083602}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.76081204, y: -1.1439258, z: 2.7664714}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 217663185}
-  - {fileID: 140748699}
-  - {fileID: 1701681262}
-  - {fileID: 1597893397}
-  - {fileID: 2037366329}
-  - {fileID: 1969422347}
-  - {fileID: 1241412237}
-  - {fileID: 214259248}
-  - {fileID: 33669167}
-  - {fileID: 179753716}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &140748699 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-  m_PrefabInstance: {fileID: 1533719581}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &179753716 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-  m_PrefabInstance: {fileID: 1921883284}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &214259248 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-  m_PrefabInstance: {fileID: 1163369831}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &217663185 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-  m_PrefabInstance: {fileID: 1260510176}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &770786389
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.2524353
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.959
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.082999945
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.4712157
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.882018
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 123.774
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9099699676103446299, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (carota) (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
---- !u!1001 &864425869
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 3701579713882617876, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (cetriolo) (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.395
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.923
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.678
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.95072687
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.3100297
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -36.122
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
---- !u!1001 &1163369831
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 4998685843637498154, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (mela) (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.374
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.953
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
---- !u!4 &1241412237 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-  m_PrefabInstance: {fileID: 864425869}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1254919889 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 772221762993781390, guid: 2d153afc2eca3a144b75e83f1f37452b, type: 3}
   m_PrefabInstance: {fileID: 1867497533397545900}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1260510176
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.25056466
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.959
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.549
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9908659
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.13485098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 15.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9099699676103446299, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (carota)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
 --- !u!1001 &1289779804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,125 +184,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42409aa311c95c40ad4595f8ac32de1, type: 3}
---- !u!1001 &1422913274
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 8093310940723800789, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (sushi) (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.864
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.916
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.268
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 23acf86dceb347542861c922d0b27944, type: 3}
---- !u!1001 &1533719581
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 3701579713882617876, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (cetriolo)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.923
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9870161
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.16062179
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -18.486
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041267700112269998, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 80da39d61375eff4f9eafe0efffacf2e, type: 3}
---- !u!4 &1597893397 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-  m_PrefabInstance: {fileID: 2133315121}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1613097905 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 589737767486053683, guid: bd421f8a9aadf2c4ea92877bb749964f, type: 3}
@@ -670,11 +195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76e8e293823d9a4bb8205c46261ad1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1701681262 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-  m_PrefabInstance: {fileID: 2082378791}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1742390017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,63 +264,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 729f33872edfaa043b1516b0b4f6ff05, type: 3}
---- !u!1001 &1921883284
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 7291276885301044138, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (tortellino) (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.434
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.952
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.256
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.62119853
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -8.6022357e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.78365326
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 9.9474896e-18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 256.807
-      objectReference: {fileID: 0}
-    - target: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a2caac36ea7b71147954248635b05602, type: 3}
 --- !u!1001 &1956277015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -858,73 +321,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78322f323f1ef7f4487b34eed2440142, type: 3}
---- !u!4 &1969422347 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8431706108075333025, guid: 8d875adc16064b64ba1348d022380d2a, type: 3}
-  m_PrefabInstance: {fileID: 770786389}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2037366329 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7954484073858267408, guid: a2caac36ea7b71147954248635b05602, type: 3}
-  m_PrefabInstance: {fileID: 115525423}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2082378791
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 4998685843637498154, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (mela)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.129
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.953
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.526
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626463675225811856, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 207c02c186733df4cb2f1ef99726226f, type: 3}
 --- !u!114 &2131859230 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2341486612491796674, guid: 729f33872edfaa043b1516b0b4f6ff05, type: 3}
@@ -936,63 +332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2bd686696e7ca4d95980e87b834dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2133315121
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 116083603}
-    m_Modifications:
-    - target: {fileID: 8093310940723800789, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_Name
-      value: Sostanza galleggiante (sushi)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.916
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.683
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870657258014355567, guid: 23acf86dceb347542861c922d0b27944, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 23acf86dceb347542861c922d0b27944, type: 3}
 --- !u!1001 &1233016702241513046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1423,6 +762,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7029835898ddb7046b062ee93a78b59a, type: 3}
+--- !u!1001 &8575713594366081141
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.76081204
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1439258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7664714
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853909323270194663, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194895913899168740, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+      propertyPath: m_Name
+      value: Sostanze galleggianti
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
 --- !u!1001 &8609661241107602482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1506,4 +902,4 @@ SceneRoots:
   - {fileID: 8609661241107602482}
   - {fileID: 5150436741836598868}
   - {fileID: 1233016702241513046}
-  - {fileID: 116083603}
+  - {fileID: 8575713594366081141}
