@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sostanza_stella
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ddd2f173223a1e34e9d79468ddc7bf7c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64,10 +68,10 @@ PrefabInstance:
       addedObject: {fileID: 9180328222887962897}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd2f173223a1e34e9d79468ddc7bf7c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9124464164679780509}
+      addedObject: {fileID: 4477120363089927008}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd2f173223a1e34e9d79468ddc7bf7c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4477120363089927008}
+      addedObject: {fileID: -928363027077471075}
   m_SourcePrefab: {fileID: 100100000, guid: ddd2f173223a1e34e9d79468ddc7bf7c, type: 3}
 --- !u!1 &4734312124962008558 stripped
 GameObject:
@@ -104,8 +108,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4734312124962008558}
   serializedVersion: 4
-  m_Mass: 10
-  m_Drag: 30
+  m_Mass: 1
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -123,18 +127,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9124464164679780509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4734312124962008558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0673a227f4ea65f48860114dcba2ef59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4477120363089927008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,3 +142,15 @@ MonoBehaviour:
   _shape: 3
   _position_preparing_time: 0.5
   _insertion_time: 0.5
+--- !u!114 &-928363027077471075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734312124962008558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940f1b74f6ee394e98ca46c228ccf71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

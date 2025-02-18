@@ -726,7 +726,6 @@ MonoBehaviour:
   lucina_rossa: {fileID: 3734987488081052190}
   lucina_verde: {fileID: 1075983761597716435}
   emissionIntensity: 2
-  _acceptedShapes: 00000000010000000200000003000000
 --- !u!4 &4581596052613139049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7e2d2080f76e9d349a0f9267027e9a23, type: 3}

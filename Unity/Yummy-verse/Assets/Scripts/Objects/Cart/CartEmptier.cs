@@ -24,8 +24,6 @@ public class CartEmptier : MonoBehaviour {
 	[SerializeField]
 	private float _wait_before_lowering;
 
-	private float _time = 0;
-
 
 	void Start() {
 		Assert.IsNotNull(_button, $"{name} does not have its button assigned");
@@ -60,7 +58,6 @@ public class CartEmptier : MonoBehaviour {
 
 		_button.activated -= StartEmptying;
 		_emptying = true;
-		_time = 0;
 
 		_perc._toggle.Invoke();
 	}
