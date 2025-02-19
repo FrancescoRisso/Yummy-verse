@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCExiting_MouthState : MouthState {
 	public override void PrepareBeforeAction(MouthParameter param) {
 		// param._NPC.ExecMovement(Movimenti.ascensore2bocca);
-		param._NPC.AfterChewingExplanation();
+		param._NPC.AfterExplanation();
 	}
 
 	private float _time = 0;
