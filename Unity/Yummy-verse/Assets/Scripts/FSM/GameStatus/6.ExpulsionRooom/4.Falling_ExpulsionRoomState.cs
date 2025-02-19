@@ -6,8 +6,11 @@ public class Falling_ExpulsionRoomState : ExpulsionRoomState {
 	public override void PrepareBeforeAction(ExpulsionRoomParam param) {
 		param._player.AddComponent<Gravity>();
 
+		Debug.Log(param._video);
 		param._video.Play();
 		param._video.VideoFinished += () => _video_finished = true;
+
+		param._sciacquone.Play();
 	}
 
 	public override void StateAction(ExpulsionRoomParam param) {}
