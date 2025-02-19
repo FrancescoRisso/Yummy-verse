@@ -5,7 +5,7 @@ using Utilities;
 public class MouthParameter {
 	public MouthParameter(int num_chewings, PercentageCycleNotifier chewings_counter, PercentageToggleManager lift_doors,
 		VideoPlayerManager video_player, MonoBehaviour mono_behaivour, SceneReference game_scene, GameObject tmp_camera, SceneReference next_scene,
-		MouthFSM fsm, Button call_lift, float door_open_time, CameraEnabler player, AudioSource opening_doors_audio, NPCSequenceAndMovement nPC) {
+		MouthFSM fsm, Button call_lift, float door_open_time, CameraEnabler player, AudioSource opening_doors_audio, NPC nPC) {
 		_num_chewings = num_chewings;
 		_chewings_counter = chewings_counter;
 		_lift_doors = lift_doors;
@@ -35,7 +35,7 @@ public class MouthParameter {
 	public float _door_open_time { set; get; }
 	public CameraEnabler _player { set; get; }
 	public AudioSource _opening_doors_audio { set; get; }
-	public NPCSequenceAndMovement _NPC { set; get; }
+	public NPC _NPC { set; get; }
 }
 
 public abstract class MouthState : FSMState<MouthState, MouthParameter> {}
@@ -76,7 +76,7 @@ public class MouthFSM : FSM<MouthState, MouthParameter> {
 	private AudioSource _opening_doors_audio;
 
 	[SerializeField]
-	private NPCSequenceAndMovement _NPC;
+	private NPC _NPC;
 
 	protected override MouthState GetInitialState() {
 		Assert.IsNotNull(_chewings_counter, $"{name} does not have the chewing counter");

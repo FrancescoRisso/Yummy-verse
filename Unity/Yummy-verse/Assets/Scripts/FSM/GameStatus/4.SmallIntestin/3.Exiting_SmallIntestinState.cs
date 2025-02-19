@@ -1,9 +1,18 @@
+using UnityEngine;
+
 public class Exiting_SmallIntestinState : SmallIntestinState {
 	private SmallIntestinParam _param;
 
 	public override void PrepareBeforeAction(SmallIntestinParam param) {
+		param._NPC_start.NextAnimation();
 		_param = param;
 		param._exit_trigger.Triggered += OnRoomExit;
+		param._before_tube_trigger.Triggered += ComingCloseToTube;
+	}
+
+	private void ComingCloseToTube() {
+		_param._before_tube_trigger.Triggered -= ComingCloseToTube;
+		_param._NPC_end.NextAnimation();
 	}
 
 	private void OnRoomExit() {

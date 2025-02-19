@@ -18,11 +18,14 @@ public class ExpulsionRoomParam {
 	public SceneReference _this_scene;
 	public SceneReference _final_scene;
 	public SceneReference _game_scene;
+	public NPC_Espulsione _NPC;
+	public AudioSource _sciacquone;
+	public PercentageToggleManager _sciacquone_volume;
 
 	public ExpulsionRoomParam(SceneReference prev_scene, SceneReference next_scene, MonoBehaviour monoBehaviour, ExpulsionRoomFSM fsm,
 		Trigger enter_trigger, AudioSource audio, Button expulsion_button, PercentageToggleManager botola_state, GameObject player,
 		Attractor attractor, VideoPlayerManager video, float wait_before_restarting, SceneReference this_scene, SceneReference final_scene,
-		SceneReference game_scene) {
+		SceneReference game_scene, NPC_Espulsione nPC, AudioSource sciacquone, PercentageToggleManager sciacquone_volume) {
 		_prev_scene = prev_scene;
 		_next_scene = next_scene;
 		_monoBehaviour = monoBehaviour;
@@ -38,6 +41,9 @@ public class ExpulsionRoomParam {
 		_this_scene = this_scene;
 		_final_scene = final_scene;
 		_game_scene = game_scene;
+		_NPC = nPC;
+		_sciacquone = sciacquone;
+		_sciacquone_volume = sciacquone_volume;
 	}
 }
 
@@ -82,6 +88,14 @@ public class ExpulsionRoomFSM : FSM<ExpulsionRoomState, ExpulsionRoomParam> {
 	[Range(0.1f, 10)]
 	private float _wait_before_restarting;
 
+	[SerializeField]
+	private NPC_Espulsione _NPC;
+
+	[SerializeField]
+	private AudioSource _sciacquone;
+
+	[SerializeField]
+	private PercentageToggleManager _sciacquone_volume;
 
 	protected override ExpulsionRoomState GetInitialState() {
 		Assert.AreNotEqual(_prev_scene.SceneName, "", $"{name} is missing a reference to the previous scene");
@@ -94,6 +108,9 @@ public class ExpulsionRoomFSM : FSM<ExpulsionRoomState, ExpulsionRoomParam> {
 		Assert.IsNotNull(_expulsion_button, $"{name} is missing a reference to the expulsion button");
 		Assert.IsNotNull(_botola_state, $"{name} is missing a reference to the percentage toggle manager for the botola");
 		Assert.IsNotNull(_attractor, $"{name} cannot find the attractor");
+		Assert.IsNotNull(_NPC, $"{name} cannot find the NPC");
+		Assert.IsNotNull(_sciacquone, $"{name} cannot find the audio for the sciacquone");
+		Assert.IsNotNull(_sciacquone_volume, $"{name} cannot find the volume manager for the sciacquone");
 
 		_player = GameObject.FindGameObjectWithTag("Player");
 		Assert.IsNotNull(_player, $"{name} cannot find the player");
@@ -106,6 +123,6 @@ public class ExpulsionRoomFSM : FSM<ExpulsionRoomState, ExpulsionRoomParam> {
 
 	protected override ExpulsionRoomParam GetParams() {
 		return new ExpulsionRoomParam(_prev_scene, _next_scene, this, this, _enter_trigger, _audio, _expulsion_button, _botola_state, _player,
-			_attractor, _video, _wait_before_restarting, _this_scene, _final_scene, _game_scene);
+			_attractor, _video, _wait_before_restarting, _this_scene, _final_scene, _game_scene, _NPC, _sciacquone, _sciacquone_volume);
 	}
 }

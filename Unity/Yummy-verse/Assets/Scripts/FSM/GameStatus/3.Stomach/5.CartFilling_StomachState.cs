@@ -1,12 +1,16 @@
 using UnityEngine;
 
 public class CartFilling_StomachState : StomachState {
+	private StomachParameter _param;
+
 	public override void PrepareBeforeAction(StomachParameter param) {
-		// param._NPC.ExecMovementWithCallback(Movimenti.finestra2sotto, () => {
-		// 	Transform playerParent = param._player.transform.parent;
-		// 	param._cart.transform.SetParent(playerParent);
-		// 	param._cart.GetComponentInChildren<CameraEnabler>().Enable();
-		// });
+		param._end_of_ramp_trigger.Triggered += StartSecondNPC;
+		_param = param;
+	}
+
+	private void StartSecondNPC() {
+		_param._end_of_ramp_trigger.Triggered += StartSecondNPC;
+		_param._NPC_below_speaking.NextAnimation();
 	}
 
 	public override void StateAction(StomachParameter param) {}

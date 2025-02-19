@@ -6,6 +6,7 @@ public class EmptyingCart_ExpulsionRoomState : ExpulsionRoomState {
 
 	public override void PrepareBeforeAction(ExpulsionRoomParam param) {
 		_param = param;
+		param._NPC.NextAnimation();
 		param._expulsion_button.activated += OnButtonPress;
 		param._monoBehaviour.StartCoroutine(SceneLoader.LoadScene(param._next_scene));
 	}
