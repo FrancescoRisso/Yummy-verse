@@ -3,7 +3,37 @@ guid: 5a2de5caffe9a2f4dabbaa6c50f34a54
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gialloBaseSparaAcido
+    second: {fileID: 2100000, guid: 34a7d5f4f0f1e38429459bbd895e2068, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: manici
+    second: {fileID: 2100000, guid: 52bc968ee4b9a184faf67c613543a783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalloBase
+    second: {fileID: 2100000, guid: bab44158e8b88fd4a8425f9b58f4b02e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalloNero
+    second: {fileID: 2100000, guid: 423f6ad064878904e81768537d78ec2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: snesore
+    second: {fileID: 2100000, guid: b4007d17f189c28479003da7daf4cebe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: text
+    second: {fileID: 2100000, guid: 3a2704dbc37a5f74b9ede314ec57329f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
