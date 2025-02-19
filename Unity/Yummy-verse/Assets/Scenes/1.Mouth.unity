@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OminoSaluto
       objectReference: {fileID: 0}
+    - target: {fileID: 7288622294539446393, guid: 141716ae2e0cde7418f60e28dfe04647, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b4eace414f377f24eada48a7bfc91874, type: 2}
     - target: {fileID: 8370515657859687916, guid: 141716ae2e0cde7418f60e28dfe04647, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.76792854
