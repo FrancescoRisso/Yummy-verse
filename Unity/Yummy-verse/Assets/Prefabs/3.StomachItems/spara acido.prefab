@@ -297,6 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   liquidParticleSystem: {fileID: 4738632990131993032, guid: 346fb69bcea02c64fba8a4f1db2173f8, type: 3}
   _corpo_principale: {fileID: 8754261745958022358}
+  shootingSound: {fileID: 0}
 --- !u!114 &7798401741913842530
 MonoBehaviour:
   m_ObjectHideFlags: 0
