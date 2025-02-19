@@ -65,7 +65,6 @@ public class CartEmptier : MonoBehaviour {
 	private void OnCollisionEnter(Collision collision) {
 		if(!_emptying) {
 			DraggableOnCart item = collision.collider.GetComponent<DraggableOnCart>();
-			Debug.Log($"{collision.collider} - {item}");
 			if(item) {
 				_items.Add(item);
 				item.Drag(transform);
