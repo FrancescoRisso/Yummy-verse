@@ -72,7 +72,7 @@ Animator:
   m_GameObject: {fileID: 4610571962591327095}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4cb49bc503804dd41be276d7ac026ed5, type: 2}
-  m_Controller: {fileID: 9100000, guid: 8a811dc6bfe7e1141a4eb5fa513bd0ac, type: 2}
+  m_Controller: {fileID: 9100000, guid: 89175145db97a4d449bac69b7a87c8db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7032082768713790125}
+  _audioClip: {fileID: 8300000, guid: 2d1dc5ecc908efc4480bda9b5cdff2dc, type: 3}
 --- !u!1 &5613343269396839337
 GameObject:
   m_ObjectHideFlags: 0

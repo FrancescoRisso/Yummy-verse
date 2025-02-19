@@ -65,7 +65,6 @@ public class NPC_Intestino : NPC {
 	}
 
 	private IEnumerator FollowPlayer() {
-		Debug.Log("Follow");
 		_animator.SetBool("Walking", true);
 
 		foreach(Transform wp in _waypoints) {
