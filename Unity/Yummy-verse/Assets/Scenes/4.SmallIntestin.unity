@@ -658,14 +658,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tubo
       objectReference: {fileID: 0}
-    - target: {fileID: 3962734968349393539, guid: b6b7ac35e75626948a7b1e68085784a4, type: 3}
-      propertyPath: m_Size.y
-      value: 1.4216276
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962734968349393539, guid: b6b7ac35e75626948a7b1e68085784a4, type: 3}
-      propertyPath: m_Center.y
-      value: -0.21081352
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
