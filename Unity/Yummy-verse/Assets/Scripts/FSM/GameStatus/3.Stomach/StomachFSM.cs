@@ -17,10 +17,12 @@ public class StomachParameter {
 	public Action _liftArrived;
 	public GameObject _player;
 	public AcidDestroyedCounter _all_destroyed;
+	public NPC_StomacoSopra _NPC_above;
+	public NPC_StomacoSotto _NPC_below_speaking;
 
 	public StomachParameter(GameObject chain, PercentageToggleManager acid_plane, PercentageToggleManager doors, SceneReference next_scene,
 		MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio, SceneReference prev_scene, Action liftArrived,
-		GameObject player, AcidDestroyedCounter all_destroyed) {
+		GameObject player, AcidDestroyedCounter all_destroyed, NPC_StomacoSopra nPC_above, NPC_StomacoSotto nPC_below_speaking) {
 		_chain = chain;
 		_acid_plane = acid_plane;
 		_doors = doors;
@@ -33,6 +35,8 @@ public class StomachParameter {
 		_liftArrived = liftArrived;
 		_player = player;
 		_all_destroyed = all_destroyed;
+		_NPC_above = nPC_above;
+		_NPC_below_speaking = nPC_below_speaking;
 	}
 }
 
@@ -67,6 +71,12 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 	[SerializeField]
 	private AcidDestroyedCounter _all_destroyed;
 
+	[SerializeField]
+	private NPC_StomacoSopra _NPC_above;
+
+	[SerializeField]
+	private NPC_StomacoSotto _NPC_below_speaking;
+
 	public void setActionHandler(Action handler) {
 		_liftArrived += handler;
 	}
@@ -80,6 +90,8 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 		Assert.IsNotNull(_audio, $"{name} is missing a reference to the music source");
 		Assert.AreNotEqual(_prev_scene.SceneName, "", $"{name} is missing a reference to the previous scene");
 		Assert.IsNotNull(_all_destroyed, $"{name} is missing a reference to the destroyed food counter");
+		Assert.IsNotNull(_NPC_above, $"{name} is missing a reference to the NPC above");
+		Assert.IsNotNull(_NPC_below_speaking, $"{name} is missing a reference to the NPC below (the one speaking)");
 
 		_player = GameObject.FindGameObjectWithTag("Player");
 		Assert.IsNotNull(_player, $"{name} cannot find the player");
@@ -88,7 +100,7 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 	}
 
 	protected override StomachParameter GetParams() {
-		return new StomachParameter(
-			_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _player, _all_destroyed);
+		return new StomachParameter(_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _player,
+			_all_destroyed, _NPC_above, _NPC_below_speaking);
 	}
 }

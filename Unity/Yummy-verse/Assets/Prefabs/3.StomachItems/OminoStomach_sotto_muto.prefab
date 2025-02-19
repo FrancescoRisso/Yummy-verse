@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6912321689864451749}
   - component: {fileID: 6565055289228156404}
   - component: {fileID: 2961261307787781344}
-  - component: {fileID: 8199530107636378887}
+  - component: {fileID: 3785491582647616511}
   m_Layer: 0
-  m_Name: OminoStomach_ Mov
+  m_Name: OminoStomach_sotto_muto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8199530107636378887
+--- !u!114 &3785491582647616511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,9 +103,8 @@ MonoBehaviour:
   reachThreshold: 0.2
   rotationSpeed: 5
   gravity: 20
-  audioSource: {fileID: 14103582011543421}
-  audioClips:
-  - {fileID: 8300000, guid: e59f2e04d83e2aa4181e088b39416e1a, type: 3}
+  audioSource: {fileID: 0}
+  audioClips: []
 --- !u!1 &7270112820237801079
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8370515657859687916}
   - component: {fileID: 5265272854664083856}
   - component: {fileID: 7462813570689571196}
-  - component: {fileID: 8696337199789072615}
+  - component: {fileID: 6156918038438222291}
   m_Layer: 0
   m_Name: OminoSaluto
   m_TagString: Untagged
@@ -83,7 +83,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8696337199789072615
+--- !u!114 &6156918038438222291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,21 +92,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4921039040209546186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3717f76735484344e964ca0522cfd263, type: 3}
+  m_Script: {fileID: 11500000, guid: d7e7eb076ae81c94286aca780de5843f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movimento: 0
-  greetingDuration: 0.5
-  movementDelay: 3.3
-  waypoints: []
-  moveSpeed: 0.3
-  reachThreshold: 0.2
-  rotationSpeed: 5
-  gravity: 9.9
   audioSource: {fileID: 3648212459443457031}
-  audioClips:
+  _audioClips:
   - {fileID: 8300000, guid: d8354572db3be1c4092628753bde9d78, type: 3}
   - {fileID: 8300000, guid: 2754023ec8bb67c419804175d9014f5a, type: 3}
+  _rotation_speed: 1
 --- !u!1 &5995943804213027558
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +143,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -159,8 +152,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.5
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -195,7 +188,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

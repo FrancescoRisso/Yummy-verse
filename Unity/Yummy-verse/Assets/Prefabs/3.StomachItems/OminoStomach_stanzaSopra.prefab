@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6912321689864451749}
   - component: {fileID: 6565055289228156404}
   - component: {fileID: 2961261307787781344}
-  - component: {fileID: 3785491582647616511}
+  - component: {fileID: 8200982373587728536}
   m_Layer: 0
-  m_Name: OminoStomach_
+  m_Name: OminoStomach_stanzaSopra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ Animator:
   m_GameObject: {fileID: 5292982513190600417}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e0ac9fb1a0f285b469ea12dcebaeb6dc, type: 3}
-  m_Controller: {fileID: 9100000, guid: d09f91339f2c5b54686b86cb8c42a676, type: 2}
+  m_Controller: {fileID: 9100000, guid: 93c885aed61be4a4f9ef4d2bef765864, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -83,7 +83,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3785491582647616511
+--- !u!114 &8200982373587728536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5292982513190600417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8444a6b56f0ea84a90556973bbbbda8, type: 3}
+  m_Script: {fileID: 11500000, guid: ae9d64ef335a8344baaf1fd452868a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Movimento: 0
@@ -103,8 +103,10 @@ MonoBehaviour:
   reachThreshold: 0.2
   rotationSpeed: 5
   gravity: 20
-  audioSource: {fileID: 0}
-  audioClips: []
+  audioSource: {fileID: 14103582011543421}
+  audioClips:
+  - {fileID: 8300000, guid: 63ee6a6812409974a88f12e26afb7e03, type: 3}
+  - {fileID: 8300000, guid: 6c794620b99f2ee4ebbe9389073d1f64, type: 3}
 --- !u!1 &7270112820237801079
 GameObject:
   m_ObjectHideFlags: 0
