@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbb5f270ba32f4c97022e69e2a15c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabCacca: {fileID: 3059095285568948555, guid: a452da40e66ae6547bfaaf1e905218b6, type: 3}
+  prefabCacca: {fileID: 8185808702291418693, guid: e371b52e0601f0a4f94dce7487241713, type: 3}
   puntoEspulsione: {fileID: 7398835163870301565}
   numeroCacche: 3
   intervalloEspulsione: 0.5
