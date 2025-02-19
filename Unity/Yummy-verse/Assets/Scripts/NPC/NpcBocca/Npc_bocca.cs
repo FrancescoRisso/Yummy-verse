@@ -10,7 +10,6 @@ public class NPC_Bocca : NPC {
 	private AudioClip[] _audioClips = new AudioClip[2];
 
 	[SerializeField]
-	private float _rotation_speed = 1;
 
 	protected override void RunNthAnimation(int n) {
 		switch(n) {
