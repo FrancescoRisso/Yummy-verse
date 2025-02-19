@@ -6,7 +6,7 @@ public class Shooting_StomachState : StomachState {
 
 	public override void PrepareBeforeAction(StomachParameter param) {
 		param._NPC_above.NextAnimation();
-		param._audio.Play();
+		// param._audio.Play();
 
 		param._all_destroyed.AllItemsDestroyed += () => {
 			param._chain.AddComponent<Chain>();

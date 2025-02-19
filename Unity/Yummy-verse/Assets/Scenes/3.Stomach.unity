@@ -241,6 +241,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+--- !u!114 &1327299955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8200982373587728536, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+  m_PrefabInstance: {fileID: 1327299954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9d64ef335a8344baaf1fd452868a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1353485643 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7082097878782715419, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
@@ -393,6 +404,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2bd686696e7ca4d95980e87b834dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2140779538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5292982513190600417, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_Name
+      value: OminoStomach_sotto_parla
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.009384155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.548
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9116664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+--- !u!114 &2140779539 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8199530107636378887, guid: eff1dd5895f852c499c14034b6fa97e7, type: 3}
+  m_PrefabInstance: {fileID: 2140779538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8444a6b56f0ea84a90556973bbbbda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1867497533397545900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,6 +550,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2131859230}
     - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
+      propertyPath: _NPC_above
+      value: 
+      objectReference: {fileID: 1327299955}
+    - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
       propertyPath: _acid_plane
       value: 
       objectReference: {fileID: 8609661241107602483}
@@ -482,6 +565,10 @@ PrefabInstance:
       propertyPath: _all_destroyed
       value: 
       objectReference: {fileID: 1353485643}
+    - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
+      propertyPath: _NPC_below_speaking
+      value: 
+      objectReference: {fileID: 2140779539}
     - target: {fileID: 4082320747147692295, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
       propertyPath: m_Name
       value: StomachManager
@@ -1016,3 +1103,4 @@ SceneRoots:
   - {fileID: 4679564378946934808}
   - {fileID: 1327299954}
   - {fileID: 1476786040}
+  - {fileID: 2140779538}

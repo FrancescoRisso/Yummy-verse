@@ -12,9 +12,6 @@ public abstract class NPC : MonoBehaviour {
 
 	protected abstract AudioClip GetNthAudioClip(int n);
 	protected abstract void RunNthAnimation(int n);
-	protected virtual string NeutralPosition() {
-		return "Breathing";
-	}
 	protected virtual int NumInteractions() {
 		return 0;
 	}
@@ -34,8 +31,6 @@ public abstract class NPC : MonoBehaviour {
 
 		_player = GameObject.FindGameObjectWithTag("Player");
 		Assert.IsNotNull(_player, $"{name} cannot find the player");
-
-		SetNeutralPosition();
 	}
 
 	public void NextAnimation() {
@@ -51,10 +46,6 @@ public abstract class NPC : MonoBehaviour {
 
 	protected bool IsSpeaking() {
 		return audioSource.isPlaying;
-	}
-
-	protected void SetNeutralPosition() {
-		_animator.SetTrigger(NeutralPosition());
 	}
 
 	// OLD STUFF
