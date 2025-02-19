@@ -64,9 +64,13 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: d8087b689b097ba4ebbfd8db7c23ab25, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6620212585953690205, guid: cceecf58c8b97ae498f4f6fe1fb3ed6e, type: 3}
     - target: {fileID: 919132149155446097, guid: d8087b689b097ba4ebbfd8db7c23ab25, type: 3}
       propertyPath: m_Name
-      value: Tortellino 1
+      value: Sostanza galleggiante (tortellino)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

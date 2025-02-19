@@ -64,9 +64,17 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ae8c3093816188448891e1898a6ee6b7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -6687241154986163064, guid: 8e3d3a769fdd58844a2632b459d88f23, type: 3}
+    - target: {fileID: -5754084199372789682, guid: ae8c3093816188448891e1898a6ee6b7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1841798508015924576, guid: 8e3d3a769fdd58844a2632b459d88f23, type: 3}
     - target: {fileID: 919132149155446097, guid: ae8c3093816188448891e1898a6ee6b7, type: 3}
       propertyPath: m_Name
-      value: mela 1
+      value: Sostanza galleggiante (mela)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

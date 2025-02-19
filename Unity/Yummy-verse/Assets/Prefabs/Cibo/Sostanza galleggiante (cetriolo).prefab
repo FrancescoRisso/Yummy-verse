@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4248051653567921917, guid: a6921a1d7184821408a9213c5aea5178, type: 3}
     - target: {fileID: 919132149155446097, guid: a8fde97abccf953499e1f4eafc809806, type: 3}
       propertyPath: m_Name
       value: Sostanza galleggiante (cetriolo)
