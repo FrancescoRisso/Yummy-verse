@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000006, guid: 37ce94dd943caa64b9c018dd0da3fd6b, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -311,6 +311,17 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 2146263133476902485, guid: fb473a9deb0139647b9b4b869366fda2, type: 3}
   m_PrefabInstance: {fileID: 8726064361037000097}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1107660965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1443970974635339027, guid: fb473a9deb0139647b9b4b869366fda2, type: 3}
+  m_PrefabInstance: {fileID: 8726064361037000097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2bd686696e7ca4d95980e87b834dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &2142160264 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 7181136446186547748, guid: 1bf6a54dc3866ef4184027738b54d31a, type: 3}
@@ -652,6 +663,10 @@ PrefabInstance:
       propertyPath: _expulsion_button
       value: 
       objectReference: {fileID: 772102631}
+    - target: {fileID: 2641540291650827208, guid: eab9902da59bf2b45b2012b0629a0d0a, type: 3}
+      propertyPath: _sciacquone_volume
+      value: 
+      objectReference: {fileID: 1107660965}
     - target: {fileID: 3456578326267923112, guid: eab9902da59bf2b45b2012b0629a0d0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.349705

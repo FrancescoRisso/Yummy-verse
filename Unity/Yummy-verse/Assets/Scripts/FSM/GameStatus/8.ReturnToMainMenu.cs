@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Utilities;
@@ -14,6 +12,9 @@ public class ReturnToMainMenu : MonoBehaviour {
 	void Start() {
 		Assert.AreNotEqual(_menu_scene.SceneName, "", $"{name} does not have the menu scene reference");
 		Assert.IsNotNull(_video, $"{name} does not have the video player assinged");
-		_video.VideoFinished += () => StartCoroutine(SceneLoader.LoadSceneReplace(_menu_scene));
+		_video.VideoFinished += () => {
+			StartCoroutine(SceneLoader.LoadSceneReplace(_menu_scene));
+			Cursor.lockState = CursorLockMode.None;
+		};
 	}
 }
