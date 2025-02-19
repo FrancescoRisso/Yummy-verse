@@ -39,4 +39,8 @@ public class SceneLoader : MonoBehaviour {
 	public static void SetActiveScene(SceneReference scene) {
 		SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene.SceneName));
 	}
+
+	public static void MoveObjToScene(GameObject gameObject, SceneReference scene) {
+		SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetSceneByName(scene.SceneName));
+	}
 }

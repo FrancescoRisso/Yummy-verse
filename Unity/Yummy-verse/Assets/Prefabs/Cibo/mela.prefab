@@ -149,3 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _perc_notifier: {fileID: 0}
   step: {fileID: 7881824427509947396, guid: 20259692724dc574aa5009846ccf61a7, type: 3}
+  _current_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 0ccac78630510f341ac534b56240f4c8, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/1.Mouth.unity
