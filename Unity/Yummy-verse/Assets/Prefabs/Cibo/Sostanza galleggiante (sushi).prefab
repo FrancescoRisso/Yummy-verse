@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f8bcb31125656c145895f32106022761, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8bcb31125656c145895f32106022761, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8bcb31125656c145895f32106022761, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8bcb31125656c145895f32106022761, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,11 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8bcb31125656c145895f32106022761, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: f8bcb31125656c145895f32106022761, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -4583603875266698472, guid: e3b8fbe49e1bb1f4f954731940cf7cae, type: 3}
     - target: {fileID: 919132149155446097, guid: f8bcb31125656c145895f32106022761, type: 3}
       propertyPath: m_Name
-      value: Sushi 1
+      value: Sostanza galleggiante (sushi)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
