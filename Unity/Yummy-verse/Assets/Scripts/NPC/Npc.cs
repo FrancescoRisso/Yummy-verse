@@ -11,6 +11,9 @@ public abstract class NPC : MonoBehaviour {
 	private AudioSource audioSource;
 
 	protected abstract AudioClip GetNthAudioClip(int n);
+	protected virtual bool NthAudioClipCanBeNull(int n) {
+		return false;
+	}
 	protected abstract void RunNthAnimation(int n);
 	protected virtual int NumInteractions() {
 		return 0;
@@ -33,11 +36,14 @@ public abstract class NPC : MonoBehaviour {
 
 	protected float _rotation_speed_npc;
 
+	private Vector3 verticalVelocity = Vector3.zero;
+
 	void Start() {
 		Assertions();
 
 		if(NumInteractions() != 0) Assert.IsNotNull(audioSource, $"{name} does not have an audio source assigned");
-		for(int i = 0; i < NumInteractions(); i++) Assert.IsNotNull(GetNthAudioClip(i), $"{name} does not have the {i}-th audio clip assigned");
+		for(int i = 0; i < NumInteractions(); i++)
+			if(!NthAudioClipCanBeNull(i)) Assert.IsNotNull(GetNthAudioClip(i), $"{name} does not have the {i}-th audio clip assigned");
 
 		_animator = GetComponent<Animator>();
 		Assert.IsNotNull(_animator, $"{name} cannot find an animator assigned");
@@ -54,8 +60,9 @@ public abstract class NPC : MonoBehaviour {
 		if(next_audio != null) {
 			audioSource.clip = next_audio;
 			audioSource.Play();
-			RunNthAnimation(_interaction_num);
 		}
+
+		RunNthAnimation(_interaction_num);
 
 		_interaction_num++;
 	}
@@ -65,6 +72,8 @@ public abstract class NPC : MonoBehaviour {
 	}
 
 	private void WalkTowards(Transform wp) {
+		ApplyGravity();
+
 		Vector3 targetPos = new Vector3(wp.position.x, transform.position.y, wp.position.z);
 		Vector3 direction = targetPos - transform.position;
 		float distance = direction.magnitude;
@@ -83,5 +92,14 @@ public abstract class NPC : MonoBehaviour {
 
 	void Update() {
 		if(_is_walking) WalkTowards(_dest);
+	}
+
+	void ApplyGravity() {
+		if(_controller.isGrounded)
+			verticalVelocity.y = 0;
+		else
+			verticalVelocity.y += -9.81f * Time.deltaTime;
+
+		_controller.Move(verticalVelocity * Time.deltaTime);
 	}
 }

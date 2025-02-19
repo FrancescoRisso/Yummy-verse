@@ -246,6 +246,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3465980155734820008, guid: 373aa29eeb37d8d428a0ed15a15de6ba, type: 3}
   m_PrefabInstance: {fileID: 3095341743316371546}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1139322060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5292982513190600417, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_Name
+      value: OminoStomach_stanzaSopra
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.009384155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18692625
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9116664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
 --- !u!4 &1191645566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3614751806399638196, guid: 373aa29eeb37d8d428a0ed15a15de6ba, type: 3}
@@ -313,67 +370,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42409aa311c95c40ad4595f8ac32de1, type: 3}
---- !u!1001 &1327299954
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5292982513190600417, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_Name
-      value: OminoStomach_stanzaSopra
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.324
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.276
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.818
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.130526
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.99144495
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 165
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
---- !u!114 &1327299955 stripped
+--- !u!114 &1332342331 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8200982373587728536, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
-  m_PrefabInstance: {fileID: 1327299954}
+  m_PrefabInstance: {fileID: 1139322060}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -875,7 +875,7 @@ PrefabInstance:
     - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
       propertyPath: _NPC_above
       value: 
-      objectReference: {fileID: 1327299955}
+      objectReference: {fileID: 1332342331}
     - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
       propertyPath: _acid_plane
       value: 
@@ -1429,10 +1429,10 @@ SceneRoots:
   - {fileID: 5150436741836598868}
   - {fileID: 8575713594366081141}
   - {fileID: 4679564378946934808}
-  - {fileID: 1327299954}
   - {fileID: 1476786040}
   - {fileID: 2140779538}
   - {fileID: 177323365}
   - {fileID: 1345753363}
   - {fileID: 143065639}
+  - {fileID: 1139322060}
   - {fileID: 3095341743316371546}

@@ -2,6 +2,7 @@ public class Exiting_SmallIntestinState : SmallIntestinState {
 	private SmallIntestinParam _param;
 
 	public override void PrepareBeforeAction(SmallIntestinParam param) {
+		param._NPC_start.NextAnimation();
 		_param = param;
 		param._exit_trigger.Triggered += OnRoomExit;
 	}
