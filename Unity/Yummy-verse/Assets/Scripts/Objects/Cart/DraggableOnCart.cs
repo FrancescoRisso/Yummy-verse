@@ -18,7 +18,6 @@ public class DraggableOnCart : Draggable {
 	}
 
 	protected override void BeforeDragging() {
-		// Debug.Log(_on_cart, _original_parent);
 		if(_on_cart) transform.SetParent(_original_parent, true);
 	}
 }

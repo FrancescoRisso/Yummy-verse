@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 [RequireComponent(typeof(MoveObject))]
 public class AcidSprayable : MonoBehaviour {
 	private MoveObject _drop_script;
+
+	public Action _destroyed;
 
 	void Start() {
 		_drop_script = GetComponent<MoveObject>();
@@ -18,6 +21,7 @@ public class AcidSprayable : MonoBehaviour {
 
 	public void Drop() {
 		_drop_script.Trigger();
+		_destroyed?.Invoke();
 		Destroy(this);
 	}
 }
