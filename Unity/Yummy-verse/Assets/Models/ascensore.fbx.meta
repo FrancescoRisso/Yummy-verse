@@ -52,6 +52,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: emergenza
+    second: {fileID: 2100000, guid: 94a2ddf8fca58e84dae5c560676d32c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: luce
     second: {fileID: 2100000, guid: f68210c451d839340a9a8ad12b17139f, type: 2}
   - first:

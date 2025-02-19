@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2bd686696e7ca4d95980e87b834dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialPercentage: 1
+  _initialPercentage: 0
   _speed: 0.5
   _initialOperation: 0
-  _firstMovement: 2
+  _firstMovement: 1
 --- !u!1001 &5400531732395640069
 PrefabInstance:
   m_ObjectHideFlags: 0
