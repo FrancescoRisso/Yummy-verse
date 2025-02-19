@@ -33,7 +33,7 @@ public class Tube : MonoBehaviour {
         for (int i = 0; i < numeroCacche; i++) {
             GameObject cacca = Instantiate(prefabCacca, puntoEspulsione.position, Quaternion.identity);
 
-            Draggable draggable = cacca.AddComponent<Draggable>();
+            // Draggable draggable = cacca.AddComponent<Draggable>();
             Rigidbody rb = cacca.GetComponent<Rigidbody>();
 
             if (rb != null) {
