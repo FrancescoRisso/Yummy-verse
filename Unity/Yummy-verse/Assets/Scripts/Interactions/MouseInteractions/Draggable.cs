@@ -11,7 +11,10 @@ public class Draggable : MouseInteractable {
 		_rigidbody = GetComponent<Rigidbody>();
 		Assert.IsNotNull(_rigidbody, $"{name} cannot find its rigidbody");
 
-		_character_pitch = FindAnyObjectByType<CharacterViewPitch>();
+		GameObject player = GameObject.FindGameObjectWithTag("Player");
+		Assert.IsNotNull(player, $"{name} cannot find the player");
+
+		_character_pitch = player.GetComponentInChildren<CharacterViewPitch>();
 		Assert.IsNotNull(_character_pitch, $"{name} cannot find the player pitch");
 	}
 
