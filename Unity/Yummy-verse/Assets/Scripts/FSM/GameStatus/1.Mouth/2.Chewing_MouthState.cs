@@ -10,6 +10,8 @@ public class Chewing_MouthState : MouthState {
 		SceneLoader.SetActiveScene(param._game_scene);
 		param._player.Enable();
 
+		param._NPC.InitialExplanation();
+
 		_num_chewings = param._num_chewings;
 		param._chewings_counter.OnNewIteration += (int num) => {
 			if(num == _num_chewings) {

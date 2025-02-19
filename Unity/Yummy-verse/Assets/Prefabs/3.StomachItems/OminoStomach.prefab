@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6912321689864451749}
   - component: {fileID: 6565055289228156404}
   - component: {fileID: 2961261307787781344}
-  - component: {fileID: 6073788108564093082}
+  - component: {fileID: 8200982373587728536}
   m_Layer: 0
   m_Name: OminoStomach
   m_TagString: Untagged
@@ -71,7 +71,7 @@ Animator:
   m_GameObject: {fileID: 5292982513190600417}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e0ac9fb1a0f285b469ea12dcebaeb6dc, type: 3}
-  m_Controller: {fileID: 9100000, guid: b4eace414f377f24eada48a7bfc91874, type: 2}
+  m_Controller: {fileID: 9100000, guid: 93c885aed61be4a4f9ef4d2bef765864, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -82,7 +82,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6073788108564093082
+--- !u!114 &8200982373587728536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,19 +91,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 5292982513190600417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3717f76735484344e964ca0522cfd263, type: 3}
+  m_Script: {fileID: 11500000, guid: ae9d64ef335a8344baaf1fd452868a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Movimento: 0
-  greetingDuration: 0.5
-  movementDelay: 3.3
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  moveSpeed: 0.3
+  greetingDuration: 2
+  movementDelay: 0.5
+  waypoints: []
+  moveSpeed: 3
   reachThreshold: 0.2
-  gravity: 9.9
+  rotationSpeed: 5
+  gravity: 20
+  audioSource: {fileID: 0}
+  audioClips: []
 --- !u!1001 &7973515122333309801
 PrefabInstance:
   m_ObjectHideFlags: 0

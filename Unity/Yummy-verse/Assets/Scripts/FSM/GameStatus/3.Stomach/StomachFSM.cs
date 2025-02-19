@@ -1,10 +1,11 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Utilities;
 
 public class StomachParameter {
-	public PercentageToggleManager _chain;
+	public GameObject _chain;
 	public PercentageToggleManager _acid_plane;
 	public PercentageToggleManager _doors;
 	public SceneReference _next_scene;
@@ -15,10 +16,11 @@ public class StomachParameter {
 	public SceneReference _prev_scene;
 	public Action _liftArrived;
 	public GameObject _player;
+	public AcidDestroyedCounter _all_destroyed;
 
-	public StomachParameter(PercentageToggleManager chain, PercentageToggleManager acid_plane, PercentageToggleManager doors,
-		SceneReference next_scene, MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio,
-		SceneReference prev_scene, Action liftArrived, GameObject player) {
+	public StomachParameter(GameObject chain, PercentageToggleManager acid_plane, PercentageToggleManager doors, SceneReference next_scene,
+		MonoBehaviour monoBehaviour, StomachFSM stomachFsm, Trigger exit_trigger, AudioSource audio, SceneReference prev_scene, Action liftArrived,
+		GameObject player, AcidDestroyedCounter all_destroyed) {
 		_chain = chain;
 		_acid_plane = acid_plane;
 		_doors = doors;
@@ -30,6 +32,7 @@ public class StomachParameter {
 		_prev_scene = prev_scene;
 		_liftArrived = liftArrived;
 		_player = player;
+		_all_destroyed = all_destroyed;
 	}
 }
 
@@ -37,7 +40,7 @@ public abstract class StomachState : FSMState<StomachState, StomachParameter> {}
 
 public class StomachFSM : FSM<StomachState, StomachParameter> {
 	[SerializeField]
-	private PercentageToggleManager _chain;
+	private GameObject _chain;
 
 	[SerializeField]
 	private PercentageToggleManager _acid_plane;
@@ -61,6 +64,9 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 
 	private GameObject _player;
 
+	[SerializeField]
+	private AcidDestroyedCounter _all_destroyed;
+
 	public void setActionHandler(Action handler) {
 		_liftArrived += handler;
 	}
@@ -73,6 +79,7 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 		Assert.IsNotNull(_exit_trigger, $"{name} is not assigned the exit trigger");
 		Assert.IsNotNull(_audio, $"{name} is missing a reference to the music source");
 		Assert.AreNotEqual(_prev_scene.SceneName, "", $"{name} is missing a reference to the previous scene");
+		Assert.IsNotNull(_all_destroyed, $"{name} is missing a reference to the destroyed food counter");
 
 		_player = GameObject.FindGameObjectWithTag("Player");
 		Assert.IsNotNull(_player, $"{name} cannot find the player");
@@ -81,6 +88,7 @@ public class StomachFSM : FSM<StomachState, StomachParameter> {
 	}
 
 	protected override StomachParameter GetParams() {
-		return new StomachParameter(_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _player);
+		return new StomachParameter(
+			_chain, _acid_plane, _doors, _next_scene, this, this, _exit_trigger, _audio, _prev_scene, _liftArrived, _player, _all_destroyed);
 	}
 }
