@@ -17,7 +17,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pagina diario e libro
+      name: Pagina Libro
     second: {fileID: 2100000, guid: b944ecf62f0ac734da1447522167bf5d, type: 2}
   - first:
       type: UnityEngine:Material
@@ -37,11 +37,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: diario
-    second: {fileID: 2100000, guid: 02fce829b7858ee41a4b96e12def06c4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: gomma
     second: {fileID: 2100000, guid: ba5833ad6520d4b4ebbebf4a95cf43ba, type: 2}
   - first:
@@ -49,6 +44,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: matita rossa
     second: {fileID: 2100000, guid: 250a031512debcd468c8d0808fb1550c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pagina Diario
+    second: {fileID: 2100000, guid: 02fce829b7858ee41a4b96e12def06c4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

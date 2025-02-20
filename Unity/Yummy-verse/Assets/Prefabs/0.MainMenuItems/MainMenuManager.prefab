@@ -60,3 +60,7 @@ MonoBehaviour:
     m_SceneAsset: {fileID: 102900000, guid: 2a9279b027a280141af001f7385170c6, type: 3}
     m_IsDirty: 0
     m_ScenePath: Assets/Scenes/Game.unity
+  _libro: {fileID: 0}
+  _libro_normal: {fileID: 2100000, guid: b944ecf62f0ac734da1447522167bf5d, type: 2}
+  _libro_hover: {fileID: 2100000, guid: 2c273256c2432d14c81b06045b5233f1, type: 2}
+  _libro_selected: {fileID: 2100000, guid: bdae6095b28b5cc44920d10ca103d4b5, type: 2}
