@@ -10,7 +10,6 @@ public class Falling_ExpulsionRoomState : ExpulsionRoomState {
 		param._video.VideoFinished += () => _video_finished = true;
 
 		param._sciacquone.Play();
-		param._sciacquone_volume._toggle.Invoke();
 	}
 
 	public override void StateAction(ExpulsionRoomParam param) {}

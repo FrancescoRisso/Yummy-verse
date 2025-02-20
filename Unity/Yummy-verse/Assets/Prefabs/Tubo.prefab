@@ -435,6 +435,10 @@ MonoBehaviour:
   puntoEspulsione: {fileID: 7398835163870301565}
   numeroCacche: 3
   intervalloEspulsione: 0.5
+  _next_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 661ba08aeb0c627438256b1fe07daee7, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/5.LargeIntestin.unity
 --- !u!54 &5536543780594660487
 Rigidbody:
   m_ObjectHideFlags: 0
