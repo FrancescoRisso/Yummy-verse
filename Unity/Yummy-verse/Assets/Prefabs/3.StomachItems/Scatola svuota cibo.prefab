@@ -104,6 +104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 5878405207996700082}
   _doors: {fileID: 3145233102673232508}
+  lucina_rossa: {fileID: 4409014870476449213}
+  lucina_verde: {fileID: 6731108268823863944}
+  emissionIntensity: 2
 --- !u!1 &5278846314066759820
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +563,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f39434d6d5714134f8cf2a363d56c13b, type: 3}
+--- !u!1 &4409014870476449213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5592113735166445607, guid: f39434d6d5714134f8cf2a363d56c13b, type: 3}
+  m_PrefabInstance: {fileID: 8121356247523143066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6731108268823863944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3304913377107955474, guid: f39434d6d5714134f8cf2a363d56c13b, type: 3}
+  m_PrefabInstance: {fileID: 8121356247523143066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8592414020965321329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f39434d6d5714134f8cf2a363d56c13b, type: 3}
