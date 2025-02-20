@@ -76,4 +76,9 @@ public class CartEmptier : MonoBehaviour {
 			}
 		}
 	}
+
+	private void OnCollisionExit(Collision collision) {
+		DraggableOnCart item = collision.collider.GetComponent<DraggableOnCart>();
+		if(item) _items.Remove(item);
+	}
 }
