@@ -5,7 +5,7 @@ public class FillingBoxes_SmallIntestinState : SmallIntestinState {
 	private int _count = 0;
 
 	public override void PrepareBeforeAction(SmallIntestinParam param) {
-		// param._audio.Play();
+		param._audio.Play();
 		_param = param;
 
 		param._NPC_start.NextAnimation();
