@@ -1,3 +1,4 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Utilities;
@@ -5,6 +6,7 @@ using Utilities;
 public class ShooterInteractionManager : InteractionManager {
 	private CameraEnabler _player_camera_enabler;
 	private CameraEnabler _my_camera_enabler;
+
 
 	// Riferimento al prefab del Particle System (da assegnare manualmente nell’Inspector)
 	[SerializeField]
@@ -23,6 +25,21 @@ public class ShooterInteractionManager : InteractionManager {
 
 	[SerializeField]
 	private AudioSource shootingSound;
+
+	private Transform _player_original_parent;
+
+	private string _player_original_scene;
+
+	private GameObject _player;
+
+	public void PlayerShoots(GameObject player) {
+		_player = player;
+		_player_original_parent = player.transform.parent;
+		_player_original_scene = player.scene.name;
+		player.transform.SetParent(gameObject.transform);
+		player.transform.localPosition = new Vector3(-0.00124992942f, player.transform.localPosition.y, -0.307500005f);
+		player.transform.localEulerAngles = new Vector3(0, 0, 0);
+	}
 
 	protected override bool ShouldCheckMouseClick() {
 		return true;
@@ -45,6 +62,8 @@ public class ShooterInteractionManager : InteractionManager {
 	protected override void EkeyAction(EkeyInteractable target) {
 		_player_camera_enabler.Enable();
 		_my_camera_enabler.Disable();
+		_player.transform.SetParent(_player_original_parent);
+		SceneLoader.MoveObjToScene(_player, _player_original_scene);
 		this.enabled = false;
 	}
 
@@ -68,9 +87,7 @@ public class ShooterInteractionManager : InteractionManager {
 		isShooting = true;
 		_shooter.enabled = true;
 
-		if (shootingSound != null) {
-			shootingSound.Play();
-		}
+		if(shootingSound != null) { shootingSound.Play(); }
 	}
 
 	// Ferma il Particle System e lo distrugge
@@ -83,9 +100,7 @@ public class ShooterInteractionManager : InteractionManager {
 			isShooting = false;
 			_shooter.enabled = false;
 
-			if (shootingSound != null) {
-				shootingSound.Stop();
-			}
+			if(shootingSound != null) { shootingSound.Stop(); }
 		}
 	}
 

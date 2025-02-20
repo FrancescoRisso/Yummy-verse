@@ -8,11 +8,13 @@ public class EquipShooter : EkeyInteractable {
 
 	private ShooterInteractionManager _shooter_interaction_manager;
 
-	void Start() {
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		Assert.IsNotNull(player, $"{name} cannot find the player");
+	GameObject _player;
 
-		_player_camera_enabler = player.GetComponentInChildren<CameraEnabler>();
+	void Start() {
+		_player = GameObject.FindGameObjectWithTag("Player");
+		Assert.IsNotNull(_player, $"{name} cannot find the player");
+
+		_player_camera_enabler = _player.GetComponentInChildren<CameraEnabler>();
 		Assert.IsNotNull(_player_camera_enabler, $"{name} cannot find the player's camera enabler");
 
 		_my_camera_enabler = GetComponentInChildren<CameraEnabler>();
@@ -26,5 +28,6 @@ public class EquipShooter : EkeyInteractable {
 		_player_camera_enabler.Disable();
 		_my_camera_enabler.Enable();
 		_shooter_interaction_manager.enabled = true;
+		_shooter_interaction_manager.PlayerShoots(_player);
 	}
 }

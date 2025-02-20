@@ -43,4 +43,8 @@ public class SceneLoader : MonoBehaviour {
 	public static void MoveObjToScene(GameObject gameObject, SceneReference scene) {
 		SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetSceneByName(scene.SceneName));
 	}
+
+	public static void MoveObjToScene(GameObject gameObject, string sceneName) {
+		SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetSceneByName(sceneName));
+	}
 }
