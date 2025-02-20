@@ -10,18 +10,18 @@ public class CharacterMovement : MonoBehaviour {
     private float SprintSpeed = 30;
 
     [SerializeField]
-    private AudioClip footstepSound; // Aggiungi questa variabile per il suono dei passi
+    private AudioClip footstepSound; 
 
     protected CharacterController movementController;
 
     private Vector3 fallVelocity;
 
-    private AudioSource audioSource;  // Variabile per l'AudioSource
+    private AudioSource audioSource;  
     private bool isPlayingFootstep = false;
 
     private void Start() {
-        movementController = GetComponent<CharacterController>();  // Character Controller
-        audioSource = GetComponent<AudioSource>();  // Ottieni il componente AudioSource
+        movementController = GetComponent<CharacterController>();  
+        audioSource = GetComponent<AudioSource>();  
     }
 
     private void Update() {
