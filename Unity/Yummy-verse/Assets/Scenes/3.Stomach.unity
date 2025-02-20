@@ -907,7 +907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18692625
+      value: 0.272
       objectReference: {fileID: 0}
     - target: {fileID: 6912321689864451749, guid: 662c1d49f21330b4fb6e45275e2f41e0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1008,10 +1008,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: stomachfede - Copia
       objectReference: {fileID: 0}
-    - target: {fileID: 6081507773380767949, guid: e42409aa311c95c40ad4595f8ac32de1, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 927fbbd732e5d4e47866510fc52e9f52, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
