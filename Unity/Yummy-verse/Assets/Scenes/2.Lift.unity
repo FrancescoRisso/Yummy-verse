@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ascensore
       objectReference: {fileID: 0}
+    - target: {fileID: 3620958487812299258, guid: 9cb8aa37f1903744ba2a6c2ffe45149b, type: 3}
+      propertyPath: wrongChoiceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b175ac127f8dde48847b992357f7e25, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

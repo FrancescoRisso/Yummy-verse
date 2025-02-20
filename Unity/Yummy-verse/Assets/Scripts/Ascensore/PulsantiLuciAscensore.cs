@@ -26,6 +26,9 @@ public class PulsantiLuciAscensore : MonoBehaviour {
     [SerializeField] private float emissionIntensity = 1.5f; 
     [SerializeField] private string emissionColorHex = "#6B0000"; 
 
+    [SerializeField] private AudioClip wrongChoiceSound;
+    private AudioSource _audioSource;
+
     private Coroutine emergencyLightsCoroutine;
     private Coroutine screenEmissionCoroutine;
     private bool emergencyActive = false;
@@ -67,6 +70,13 @@ public class PulsantiLuciAscensore : MonoBehaviour {
             Debug.LogError($"Colore esadecimale non valido: {emissionColorHex}. Usando bianco di default.");
             emissionColor = Color.white;
         }
+
+        _audioSource = GetComponent<AudioSource>();
+        if (_audioSource == null) {
+            _audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        _audioSource.clip = wrongChoiceSound;
+        _audioSource.loop = true; 
     }
 
     private void CorrectChoice() {
@@ -80,6 +90,10 @@ public class PulsantiLuciAscensore : MonoBehaviour {
             emergencyActive = true;
             emergencyLightsCoroutine = StartCoroutine(EmergencyLightsBlink());
             ChangeScreenMaterial();
+
+            if (wrongChoiceSound != null) {
+                _audioSource.Play();
+            }
         }
     }
 
@@ -117,6 +131,10 @@ public class PulsantiLuciAscensore : MonoBehaviour {
 
             luceEmergenza1.GetComponent<MeshRenderer>().material = _inactive_light;
             luceEmergenza2.GetComponent<MeshRenderer>().material = _inactive_light;
+        }
+
+        if (_audioSource.isPlaying) {
+            _audioSource.Stop();
         }
 
         StopScreenEmissionBlink();
@@ -180,5 +198,3 @@ public class PulsantiLuciAscensore : MonoBehaviour {
         }
     }
 }
-
-
