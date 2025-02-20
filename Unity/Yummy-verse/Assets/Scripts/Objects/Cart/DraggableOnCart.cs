@@ -7,6 +7,8 @@ public class DraggableOnCart : Draggable {
 	private bool _on_cart = false;
 
 	public void Drag(Transform parent) {
+		if(_on_cart) return;
+
 		_original_parent = transform.parent;
 		transform.SetParent(parent, true);
 		_on_cart = true;

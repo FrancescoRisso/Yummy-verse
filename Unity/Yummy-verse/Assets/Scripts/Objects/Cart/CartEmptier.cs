@@ -24,9 +24,12 @@ public class CartEmptier : MonoBehaviour {
 	[SerializeField]
 	private float _wait_before_lowering;
 
+	[SerializeField]
+	private ItemPicker _picker;
 
 	void Start() {
 		Assert.IsNotNull(_button, $"{name} does not have its button assigned");
+		Assert.IsNotNull(_picker, $"{name} does not have its item picker assigned");
 
 		_perc = GetComponent<PercentageToggleManager>();
 		Assert.IsNotNull(_perc, $"{name} does not have its percentage toggle manager assigned");
@@ -51,6 +54,7 @@ public class CartEmptier : MonoBehaviour {
 		_items = new List<DraggableOnCart>();
 		_button.activated += StartEmptying;
 		_emptying = false;
+		_picker.enabled = true;
 	}
 
 	private void StartEmptying() {
@@ -58,6 +62,7 @@ public class CartEmptier : MonoBehaviour {
 
 		_button.activated -= StartEmptying;
 		_emptying = true;
+		_picker.enabled = false;
 
 		_perc._toggle.Invoke();
 	}
