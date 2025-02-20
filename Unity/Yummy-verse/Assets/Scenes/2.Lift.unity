@@ -180,9 +180,9 @@ PrefabInstance:
       value: ascensore
       objectReference: {fileID: 0}
     - target: {fileID: 3620958487812299258, guid: 9cb8aa37f1903744ba2a6c2ffe45149b, type: 3}
-      propertyPath: wrongChoiceSound
+      propertyPath: luceAscensore
       value: 
-      objectReference: {fileID: 8300000, guid: 8b175ac127f8dde48847b992357f7e25, type: 3}
+      objectReference: {fileID: 2928008029219184927}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8000460091772392959, guid: 8efa6e1ea8fe0bd408c19399646311f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.703
+      value: 0.977
       objectReference: {fileID: 0}
     - target: {fileID: 8000460091772392959, guid: 8efa6e1ea8fe0bd408c19399646311f9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -267,6 +267,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8efa6e1ea8fe0bd408c19399646311f9, type: 3}
+--- !u!108 &2928008029219184927 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7581815161872165423, guid: 8efa6e1ea8fe0bd408c19399646311f9, type: 3}
+  m_PrefabInstance: {fileID: 2928008029219184926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3012261563988754276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,6 +380,10 @@ PrefabInstance:
     - target: {fileID: 2129341943694285446, guid: 6d8d4fb975961874bbdc9f1a1d3676a5, type: 3}
       propertyPath: m_Name
       value: Porta ascensore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129341943694285446, guid: 6d8d4fb975961874bbdc9f1a1d3676a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

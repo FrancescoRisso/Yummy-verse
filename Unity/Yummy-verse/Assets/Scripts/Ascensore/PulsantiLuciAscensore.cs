@@ -20,6 +20,8 @@ public class PulsantiLuciAscensore : MonoBehaviour {
     [SerializeField] private GameObject luceEmergenza1;
     [SerializeField] private GameObject luceEmergenza2;
     [SerializeField] private GameObject schermo;
+    [SerializeField] private GameObject plafoniera;
+    [SerializeField] private Light luceAscensore;
     [SerializeField] private Material schermoMaterialeGrigio;
     [SerializeField] private Material schermoMaterialeTexture;
     [SerializeField] private float blinkInterval = 0.3f;
@@ -64,7 +66,11 @@ public class PulsantiLuciAscensore : MonoBehaviour {
         Assert.IsNotNull(schermoMaterialeGrigio, "Materiale GRIGIO non assegnato!");
         Assert.IsNotNull(schermoMaterialeTexture, "Materiale con TEXTURE non assegnato!");
 
+        Assert.IsNotNull(plafoniera, "Plafoniera non assegnata!");
+
         ResetScreenMaterial();
+        ResetPlafonieraColor();
+
 
         if (!ColorUtility.TryParseHtmlString(emissionColorHex, out emissionColor)) {
             Debug.LogError($"Colore esadecimale non valido: {emissionColorHex}. Usando bianco di default.");
@@ -83,6 +89,7 @@ public class PulsantiLuciAscensore : MonoBehaviour {
         OnCorrectButtonPress?.Invoke();
         StopEmergencyLights();
         ResetScreenMaterial();
+        ResetPlafonieraColor();
     }
 
     private void WrongChoice() {
@@ -90,6 +97,7 @@ public class PulsantiLuciAscensore : MonoBehaviour {
             emergencyActive = true;
             emergencyLightsCoroutine = StartCoroutine(EmergencyLightsBlink());
             ChangeScreenMaterial();
+            ChangePlafonieraColor();
 
             if (wrongChoiceSound != null) {
                 _audioSource.Play();
@@ -152,6 +160,16 @@ public class PulsantiLuciAscensore : MonoBehaviour {
         }
     }
 
+    private void ChangePlafonieraColor() {
+        MeshRenderer plafonieraRenderer = plafoniera.GetComponent<MeshRenderer>();
+        Material[] materials = plafonieraRenderer.materials;
+        luceAscensore.color = Color.red;
+
+        if (materials.Length > 1) {
+            materials[1].SetColor("_EmissionColor", Color.red * emissionIntensity);
+        }
+    }
+
     private void ResetScreenMaterial() {
         MeshRenderer screenRenderer = schermo.GetComponent<MeshRenderer>();
         Material[] materials = screenRenderer.materials;
@@ -162,6 +180,16 @@ public class PulsantiLuciAscensore : MonoBehaviour {
         }
 
         StopScreenEmissionBlink();
+    }
+
+    private void ResetPlafonieraColor() {
+        MeshRenderer plafonieraRenderer = plafoniera.GetComponent<MeshRenderer>();
+        Material[] materials = plafonieraRenderer.materials;
+        luceAscensore.color = Color.white;
+
+        if (materials.Length > 1) {
+            materials[1].SetColor("_EmissionColor", Color.white * emissionIntensity);
+        }
     }
 
     private void StartScreenEmissionBlink() {

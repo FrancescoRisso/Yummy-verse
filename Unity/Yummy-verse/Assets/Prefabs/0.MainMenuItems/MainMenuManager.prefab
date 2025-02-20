@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd7df30c7060c245b9d18af47473779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dark_time: 1
+  _dark_time: 0.5
   _this_scene:
     m_SceneAsset: {fileID: 102900000, guid: d8c1b39d84298224f8f5e78e49b1e6f4, type: 3}
     m_IsDirty: 0

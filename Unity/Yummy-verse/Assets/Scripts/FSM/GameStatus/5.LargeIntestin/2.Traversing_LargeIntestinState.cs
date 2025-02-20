@@ -3,7 +3,7 @@ public class Traversing_LargeIntestinState : LargeIntestinState {
 
 	public override void PrepareBeforeAction(LargeIntestinParam param) {
 		param._exit_trigger.Triggered += OnRoomExit;
-		// param._audio.Play();
+		param._audio.Play();
 		param._NPC.NextAnimation();
 		_param = param;
 	}

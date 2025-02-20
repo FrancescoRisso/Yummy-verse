@@ -398,7 +398,8 @@ PrefabInstance:
       value: luce emergenzaScocca2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5050422055867433376, guid: a9833e6b8b139a7498eae721c30ad995, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a9833e6b8b139a7498eae721c30ad995, type: 3}
       insertIndex: -1
@@ -442,11 +443,19 @@ MonoBehaviour:
   luceEmergenza1: {fileID: 6269527035319999442}
   luceEmergenza2: {fileID: 7655520665668331948}
   schermo: {fileID: 5716879177388935195}
+  plafoniera: {fileID: 3835221260595705620}
+  luceAscensore: {fileID: 0}
   schermoMaterialeGrigio: {fileID: 2100000, guid: 50f346bec51b0ca499d148fa1ee6ced6, type: 2}
   schermoMaterialeTexture: {fileID: 2100000, guid: 4b7450215da2fa8498ffd91dfd560733, type: 2}
   blinkInterval: 0.3
   emissionIntensity: 1.5
   emissionColorHex: '#6B0000'
+  wrongChoiceSound: {fileID: 8300000, guid: 8b175ac127f8dde48847b992357f7e25, type: 3}
+--- !u!1 &3835221260595705620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1426190353086166733, guid: a9833e6b8b139a7498eae721c30ad995, type: 3}
+  m_PrefabInstance: {fileID: 2806773889510605273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5716879177388935195 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1610662858922178110, guid: a9833e6b8b139a7498eae721c30ad995, type: 3}
