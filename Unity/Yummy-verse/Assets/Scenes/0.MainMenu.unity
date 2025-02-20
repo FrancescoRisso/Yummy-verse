@@ -133,6 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5c2acfe90234b43b04c172e7bcaae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &210709384 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 503555452362276838, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+  m_PrefabInstance: {fileID: 4179660038098094297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &259529011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6285869840838508638, guid: 16ba263c1666a6a4f9c7c4f5acf680df, type: 3}
@@ -389,6 +394,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3316112978952536365, guid: bd9dedf22b5b61f4f841a09ca48559cb, type: 3}
+      propertyPath: _libro
+      value: 
+      objectReference: {fileID: 210709384}
+    - target: {fileID: 3316112978952536365, guid: bd9dedf22b5b61f4f841a09ca48559cb, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 278860361}
@@ -463,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613155410049857635, guid: 16ba263c1666a6a4f9c7c4f5acf680df, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.67
+      value: 0.118
       objectReference: {fileID: 0}
     - target: {fileID: 7613155410049857635, guid: 16ba263c1666a6a4f9c7c4f5acf680df, type: 3}
       propertyPath: m_LocalPosition.y
@@ -471,7 +480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613155410049857635, guid: 16ba263c1666a6a4f9c7c4f5acf680df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.328
+      value: -1.336
       objectReference: {fileID: 0}
     - target: {fileID: 7613155410049857635, guid: 16ba263c1666a6a4f9c7c4f5acf680df, type: 3}
       propertyPath: m_LocalRotation.w
