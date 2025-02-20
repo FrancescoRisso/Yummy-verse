@@ -15,6 +15,7 @@ public class cibiMasticati : MonoBehaviour {
 	[SerializeField]
 	private SceneReference _current_scene;
 
+
 	void Start() {
 		Assert.IsNotNull(_perc_notifier, $"{name} does not have a percentage cycle notifier");
 		Assert.IsNotNull(step, $"{name} does not have a step prefab assigned");
@@ -35,8 +36,8 @@ public class cibiMasticati : MonoBehaviour {
 		if(!prefabInstanziato) {
 			prefabInstanziato = true;
 
-			GameObject nuovoStep = Instantiate(step, transform.position, Quaternion.identity);
-			nuovoStep.transform.SetParent(transform.parent);
+        	GameObject nuovoStep = Instantiate(step, transform.position, Quaternion.identity);
+			nuovoStep.transform.SetParent(null);
 			SceneLoader.MoveObjToScene(nuovoStep, _current_scene);
 
 			cibiMasticati nuovoScript = nuovoStep.GetComponent<cibiMasticati>();
