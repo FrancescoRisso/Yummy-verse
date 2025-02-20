@@ -29,7 +29,7 @@ public class CartEmptier : MonoBehaviour {
 		Assert.IsNotNull(_button, $"{name} does not have its button assigned");
 
 		_perc = GetComponent<PercentageToggleManager>();
-		Assert.IsNotNull(_button, $"{name} does not have its percentage toggle manager assigned");
+		Assert.IsNotNull(_perc, $"{name} does not have its percentage toggle manager assigned");
 
 		_button.activated += StartEmptying;
 		_perc.OnPercentageChange += (float val) => {
