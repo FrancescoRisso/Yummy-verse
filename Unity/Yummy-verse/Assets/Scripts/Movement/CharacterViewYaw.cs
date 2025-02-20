@@ -16,14 +16,19 @@ public class CharacterViewYaw : MonoBehaviour {
 
 	private float yaw = 0.0f;
 
+	private bool _initialized = false;
+
 	public void UpdateInitialYaw() {
-		InitialYaw = transform.eulerAngles.y;
-		yaw = InitialYaw;
+		if(!_initialized || !_clamp) {
+			InitialYaw = transform.eulerAngles.y;
+			yaw = InitialYaw;
+		}
 	}
 
 	void Start() {
 		Cursor.lockState = CursorLockMode.Locked;  // keep confined to center of screen
 		UpdateInitialYaw();
+		_initialized = true;
 	}
 
 	void Update() {
