@@ -1218,6 +1218,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouth_music
       objectReference: {fileID: 0}
+    - target: {fileID: 8197232133503633164, guid: e83f148215d86c0439b6a8193a79be63, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197232133503633164, guid: e83f148215d86c0439b6a8193a79be63, type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197232133503633164, guid: e83f148215d86c0439b6a8193a79be63, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197232133503633164, guid: e83f148215d86c0439b6a8193a79be63, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 32ad842d5d196c742a95fbe4b66f7fbf, type: 3}
+    - target: {fileID: 8197232133503633164, guid: e83f148215d86c0439b6a8193a79be63, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9088472955903036814, guid: e83f148215d86c0439b6a8193a79be63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
