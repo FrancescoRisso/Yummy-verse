@@ -1892,12 +1892,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1759940300 stripped
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1779217510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2529,7 +2523,7 @@ PrefabInstance:
     - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
       propertyPath: _chain
       value: 
-      objectReference: {fileID: 1759940300}
+      objectReference: {fileID: 0}
     - target: {fileID: 3964379611177337750, guid: 11abdc5384d91f743bf3d399a360b7f6, type: 3}
       propertyPath: _doors
       value: 
@@ -3181,3 +3175,16 @@ SceneRoots:
   - {fileID: 1139322060}
   - {fileID: 3095341743316371546}
   - {fileID: 155005432900051120}
+  - {fileID: 1858824394}
+  - {fileID: 1853278358}
+  - {fileID: 1138122670}
+  - {fileID: 1843459920}
+  - {fileID: 122125749}
+  - {fileID: 635278270}
+  - {fileID: 1779217510}
+  - {fileID: 225812696}
+  - {fileID: 969804963}
+  - {fileID: 1825317662}
+  - {fileID: 655653615}
+  - {fileID: 248123321}
+  - {fileID: 1132304651}
