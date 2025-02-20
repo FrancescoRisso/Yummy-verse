@@ -255,10 +255,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1190674029875544611, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.21
-      objectReference: {fileID: 0}
     - target: {fileID: 3996569513865643094, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.022768
@@ -302,30 +298,6 @@ PrefabInstance:
     - target: {fileID: 4340760171957346028, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
       propertyPath: m_Name
       value: intestino
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690646173552615824, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.44556418
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690646173552615824, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.7468811
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690646173552615824, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.1323333
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690646173552615824, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.2240273
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690646173552615824, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.97458285
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690646173552615824, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 205.891
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1116,18 +1088,6 @@ PrefabInstance:
     - target: {fileID: 8094161803278415307, guid: 57e1180e0a2a6244c9c4780401d887f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8995022686854137160, guid: 57e1180e0a2a6244c9c4780401d887f8, type: 3}
-      propertyPath: m_Volume
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8995022686854137160, guid: 57e1180e0a2a6244c9c4780401d887f8, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 32ad842d5d196c742a95fbe4b66f7fbf, type: 3}
-    - target: {fileID: 8995022686854137160, guid: 57e1180e0a2a6244c9c4780401d887f8, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
