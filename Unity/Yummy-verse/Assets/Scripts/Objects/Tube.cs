@@ -1,46 +1,49 @@
 using System.Collections;
+using UnityEditor.SearchService;
 using UnityEngine;
+using Utilities;
 
 public class Tube : MonoBehaviour {
-    public GameObject prefabCacca;  
-    public Transform puntoEspulsione; 
-    public int numeroCacche = 3; 
-    public float intervalloEspulsione = 0.5f; 
-    private bool playerVicino = false; 
-    private bool caccheGenerate = false; 
+	public GameObject prefabCacca;
+	public Transform puntoEspulsione;
+	public int numeroCacche = 3;
+	public float intervalloEspulsione = 0.5f;
+	private bool playerVicino = false;
+	private bool caccheGenerate = false;
 
-    void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Carrello")) {
-            playerVicino = true;
-            ControllaEspulsione();
-        }
-    }
+	[SerializeField]
+	private SceneReference _next_scene;
 
-    void OnTriggerExit(Collider other) {
-        if (other.CompareTag("Carrello")) {
-            playerVicino = false;
-        }
-    }
+	void OnTriggerEnter(Collider other) {
+		if(other.CompareTag("Carrello")) {
+			playerVicino = true;
+			ControllaEspulsione();
+		}
+	}
 
-    void ControllaEspulsione() {
-        if (playerVicino && !caccheGenerate) {  
-            caccheGenerate = true; 
-            StartCoroutine(EspelliCacche());
-        }
-    }
+	void OnTriggerExit(Collider other) {
+		if(other.CompareTag("Carrello")) { playerVicino = false; }
+	}
 
-    IEnumerator EspelliCacche() {
-        for (int i = 0; i < numeroCacche; i++) {
-            GameObject cacca = Instantiate(prefabCacca, puntoEspulsione.position, Quaternion.identity);
+	void ControllaEspulsione() {
+		if(playerVicino && !caccheGenerate) {
+			caccheGenerate = true;
+			StartCoroutine(EspelliCacche());
+		}
+	}
 
-            // Draggable draggable = cacca.AddComponent<Draggable>();
-            Rigidbody rb = cacca.GetComponent<Rigidbody>();
+	IEnumerator EspelliCacche() {
+		for(int i = 0; i < numeroCacche; i++) {
+			GameObject cacca = Instantiate(prefabCacca, puntoEspulsione.position, Quaternion.identity);
 
-            if (rb != null) {
-                rb.velocity = Vector3.down * 2; 
-            }
+			SceneLoader.MoveObjToScene(cacca, _next_scene);
 
-            yield return new WaitForSeconds(intervalloEspulsione);
-        }
-    }
+			// Draggable draggable = cacca.AddComponent<Draggable>();
+			Rigidbody rb = cacca.GetComponent<Rigidbody>();
+
+			if(rb != null) { rb.velocity = Vector3.down * 2; }
+
+			yield return new WaitForSeconds(intervalloEspulsione);
+		}
+	}
 }
