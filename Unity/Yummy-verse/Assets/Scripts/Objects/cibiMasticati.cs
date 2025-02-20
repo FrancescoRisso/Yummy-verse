@@ -36,9 +36,11 @@ public class cibiMasticati : MonoBehaviour {
 		if(!prefabInstanziato) {
 			prefabInstanziato = true;
 
-        	GameObject nuovoStep = Instantiate(step, transform.position, Quaternion.identity);
-			nuovoStep.transform.SetParent(null);
-			SceneLoader.MoveObjToScene(nuovoStep, _current_scene);
+			GameObject nuovoStep = Instantiate(step, transform.position, Quaternion.identity);
+			nuovoStep.transform.SetParent(transform.parent);
+
+			nuovoStep.transform.position = transform.position;
+			nuovoStep.transform.rotation = transform.rotation;
 
 			cibiMasticati nuovoScript = nuovoStep.GetComponent<cibiMasticati>();
 
