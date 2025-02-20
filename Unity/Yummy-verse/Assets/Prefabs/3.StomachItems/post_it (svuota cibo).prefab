@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6897176725526567275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.024999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.024999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8766999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.035300016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21800002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.17181654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.005637171
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9797208
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.10292986
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.749
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -159.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459123891766844002, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 2266447363687842008, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
+      propertyPath: m_Name
+      value: post_it (svuota cibo) Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5811544d52fe0a549829e4b074976a93, type: 3}
