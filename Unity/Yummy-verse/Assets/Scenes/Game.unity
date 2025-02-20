@@ -122,6 +122,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1257721481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3278713697153012347, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_Name
+      value: carrello per gli intestini
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.6823187
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.0685472
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.403554
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9986295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.05233651
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
 --- !u!1001 &1562684474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255,7 +312,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3278713697153012347, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
       propertyPath: m_Name
-      value: carrello
+      value: carrello fino allo stomaco
       objectReference: {fileID: 0}
     - target: {fileID: 5902473397613425069, guid: ddcf747cbcb775a4ea4dc77fbdf7e55e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -309,3 +366,4 @@ SceneRoots:
   - {fileID: 1562684474}
   - {fileID: 1765012087}
   - {fileID: 7487274578136766455}
+  - {fileID: 1257721481}
