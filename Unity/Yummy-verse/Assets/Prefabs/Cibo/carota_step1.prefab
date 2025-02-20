@@ -70,20 +70,38 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6363723103001312837}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7836880395341211302}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
-      insertIndex: -1
       addedObject: {fileID: -6851768104031274820}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7302128415353612032}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1990730899679404608}
   m_SourcePrefab: {fileID: 100100000, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
 --- !u!1 &8691952884623097223 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f070c7dd4102f4d45b72c296a3e47d0e, type: 3}
   m_PrefabInstance: {fileID: 8386103593168077014}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &6363723103001312837
+--- !u!114 &-6851768104031274820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8691952884623097223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c92bee4972bf942b5b8efb796e1d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _perc_notifier: {fileID: 0}
+  step: {fileID: 2270783353064265041, guid: b5e91fb357b05794ba43716938124bbb, type: 3}
+  _current_scene:
+    m_SceneAsset: {fileID: 102900000, guid: 0ccac78630510f341ac534b56240f4c8, type: 3}
+    m_IsDirty: 0
+    m_ScenePath: Assets/Scenes/1.Mouth.unity
+--- !u!65 &-7302128415353612032
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,9 +120,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.24589624, y: 0.047775667, z: 0.047906794}
-  m_Center: {x: -0.031306077, y: 0.023910673, z: -0.000638404}
---- !u!54 &7836880395341211302
+  m_Size: {x: 0.24589622, y: 0.047775667, z: 0.047906786}
+  m_Center: {x: -0.031306073, y: 0.023910673, z: -0.00063840393}
+--- !u!54 &-1990730899679404608
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,21 +149,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-6851768104031274820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8691952884623097223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83c92bee4972bf942b5b8efb796e1d12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _perc_notifier: {fileID: 0}
-  step: {fileID: 2270783353064265041, guid: b5e91fb357b05794ba43716938124bbb, type: 3}
-  _current_scene:
-    m_SceneAsset: {fileID: 102900000, guid: 0ccac78630510f341ac534b56240f4c8, type: 3}
-    m_IsDirty: 0
-    m_ScenePath: Assets/Scenes/1.Mouth.unity
