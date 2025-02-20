@@ -3,7 +3,17 @@ guid: 0013d5c8c0ad86b4eba2bf84377a73c1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piastrelle
+    second: {fileID: 2100000, guid: 11e5028db6fd3094197385fd90a3ecc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: soffitto
+    second: {fileID: 2100000, guid: ee442a1b9bb181b47b0d7f3cffbd6644, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
