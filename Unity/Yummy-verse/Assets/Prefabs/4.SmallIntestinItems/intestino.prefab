@@ -212,6 +212,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6366807, y: 1, z: 0.015900105}
   m_Center: {x: -0.108002014, y: 1.0964284e-10, z: -0.0042316793}
+--- !u!1 &804155201606154966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6530201701704889761}
+  - component: {fileID: 3014843541258501404}
+  m_Layer: 0
+  m_Name: GameObject (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6530201701704889761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804155201606154966}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.97341716, z: -0, w: -0.22903952}
+  m_LocalPosition: {x: 1.449, y: 0.262, z: 5.339}
+  m_LocalScale: {x: 0.8399906, y: 0.32973, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2222694629637254723}
+  m_LocalEulerAnglesHint: {x: 0, y: 206.481, z: 0}
+--- !u!65 &3014843541258501404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804155201606154966}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.015900105}
+  m_Center: {x: 0, y: 0, z: -0.004231617}
 --- !u!1 &836973372675600382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1498,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4936295581817602056}
+  - {fileID: 6530201701704889761}
   - {fileID: 3135165492742325304}
   - {fileID: 7690646173552615824}
   - {fileID: 1561871543244320682}
