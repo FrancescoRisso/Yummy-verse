@@ -549,18 +549,6 @@ PrefabInstance:
       value: morte
       objectReference: {fileID: 0}
     - target: {fileID: 9018112283718580669, guid: d53acd43eae948947898b14433ddd4ee, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.03241516
-      objectReference: {fileID: 0}
-    - target: {fileID: 9018112283718580669, guid: d53acd43eae948947898b14433ddd4ee, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.03241516
-      objectReference: {fileID: 0}
-    - target: {fileID: 9018112283718580669, guid: d53acd43eae948947898b14433ddd4ee, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.03241516
-      objectReference: {fileID: 0}
-    - target: {fileID: 9018112283718580669, guid: d53acd43eae948947898b14433ddd4ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.476
       objectReference: {fileID: 0}
@@ -616,18 +604,6 @@ PrefabInstance:
     - target: {fileID: 5823822500877973697, guid: b034a88a50566c94c9c1a0b39d782485, type: 3}
       propertyPath: m_Name
       value: LampadarioTondo
-      objectReference: {fileID: 0}
-    - target: {fileID: 6600464070677258875, guid: b034a88a50566c94c9c1a0b39d782485, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33897617
-      objectReference: {fileID: 0}
-    - target: {fileID: 6600464070677258875, guid: b034a88a50566c94c9c1a0b39d782485, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33897617
-      objectReference: {fileID: 0}
-    - target: {fileID: 6600464070677258875, guid: b034a88a50566c94c9c1a0b39d782485, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33897617
       objectReference: {fileID: 0}
     - target: {fileID: 6600464070677258875, guid: b034a88a50566c94c9c1a0b39d782485, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1288,18 +1264,6 @@ PrefabInstance:
     - target: {fileID: 69254764783919288, guid: 6443586100360ed449c9fbfc59538dc1, type: 3}
       propertyPath: m_Name
       value: exit
-      objectReference: {fileID: 0}
-    - target: {fileID: 846072530845481474, guid: 6443586100360ed449c9fbfc59538dc1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4490241
-      objectReference: {fileID: 0}
-    - target: {fileID: 846072530845481474, guid: 6443586100360ed449c9fbfc59538dc1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4490241
-      objectReference: {fileID: 0}
-    - target: {fileID: 846072530845481474, guid: 6443586100360ed449c9fbfc59538dc1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.05438362
       objectReference: {fileID: 0}
     - target: {fileID: 846072530845481474, guid: 6443586100360ed449c9fbfc59538dc1, type: 3}
       propertyPath: m_LocalPosition.x

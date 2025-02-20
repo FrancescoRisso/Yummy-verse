@@ -18,6 +18,8 @@ public class BotolaOpening_ExpulsionRoomState : ExpulsionRoomState {
 		Attractor a = param._attractor.GetComponent<Attractor>();
 		Assert.IsNotNull(a, $"{param._monoBehaviour.name} cannot find the attractor script");
 		a.enabled = true;
+
+		param._player.GetComponentInChildren<Destroyable>().Destroy();
 	}
 
 	public override void StateAction(ExpulsionRoomParam param) {
