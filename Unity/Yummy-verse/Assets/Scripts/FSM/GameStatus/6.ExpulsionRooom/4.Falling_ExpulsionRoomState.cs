@@ -10,13 +10,12 @@ public class Falling_ExpulsionRoomState : ExpulsionRoomState {
 		param._video.VideoFinished += () => _video_finished = true;
 
 		param._sciacquone.Play();
-		param._scorreggia.Play();
 	}
 
 	public override void StateAction(ExpulsionRoomParam param) {}
 
 	public override ExpulsionRoomState Transition(ExpulsionRoomParam param) {
 		if(_video_finished) return new Black_ExpulsionRoomState();
-		return this;
+		return this;
 	}
 }
