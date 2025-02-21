@@ -35,10 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/8.MainMenuOpeningEye.unity
     guid: 465939b909d8ea343bc34618b0760f04
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TMP.unity
     guid: cd3691d0380e79d4a8c9e4303c61cb4f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/waypoints.unity
     guid: 667d4245955c91c48849297539deca7d
   m_configObjects: {}

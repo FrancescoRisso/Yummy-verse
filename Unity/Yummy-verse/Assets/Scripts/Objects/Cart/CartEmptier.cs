@@ -52,19 +52,20 @@ public class CartEmptier : MonoBehaviour {
 
 	private void StopEmptying() {
 		_items = new List<DraggableOnCart>();
-		_button.activated += StartEmptying;
 		_emptying = false;
 		_picker.enabled = true;
 	}
 
 	private void StartEmptying() {
-		foreach(DraggableOnCart item in _items) item.Undrag();
+		if(!_emptying) {
+			Debug.LogError("Start emptying");
+			foreach(DraggableOnCart item in _items) item.Undrag();
 
-		_button.activated -= StartEmptying;
-		_emptying = true;
-		_picker.enabled = false;
+			_emptying = true;
+			_picker.enabled = false;
 
-		_perc._toggle.Invoke();
+			_perc._toggle.Invoke();
+		}
 	}
 
 	private void OnCollisionEnter(Collision collision) {
