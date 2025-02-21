@@ -1552,6 +1552,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1107660962}
     - target: {fileID: 2641540291650827208, guid: eab9902da59bf2b45b2012b0629a0d0a, type: 3}
+      propertyPath: _scorreggia
+      value: 
+      objectReference: {fileID: 978690685}
+    - target: {fileID: 2641540291650827208, guid: eab9902da59bf2b45b2012b0629a0d0a, type: 3}
       propertyPath: _botola_state
       value: 
       objectReference: {fileID: 260513851476341511}
