@@ -380,6 +380,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: tavoloMenuPrincipale
       objectReference: {fileID: 0}
+    - target: {fileID: 4736681209336040759, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.052683637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736681209336040759, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16497768
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736681209336040759, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.68896174
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736681209336040759, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736681209336040759, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736681209336040759, guid: 9a4cd98ecc64df14baf6aabbccf434fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.68
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

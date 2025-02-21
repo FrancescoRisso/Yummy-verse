@@ -300,7 +300,8 @@ PrefabInstance:
       value: intestino
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4843773182129001945, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cfedb962e2f2544286d3a43c904f2fe, type: 3}
