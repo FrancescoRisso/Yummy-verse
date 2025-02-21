@@ -2285,7 +2285,9 @@ PrefabInstance:
       value: Sostanze galleggianti
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1190374004625030862, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
+    - {fileID: 5078281805893650496, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6de76b83ff1431a4abff1e7367e55c09, type: 3}
