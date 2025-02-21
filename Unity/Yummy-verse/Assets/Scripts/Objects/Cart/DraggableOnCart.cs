@@ -21,5 +21,6 @@ public class DraggableOnCart : Draggable {
 
 	protected override void BeforeDragging() {
 		if(_on_cart) transform.SetParent(_original_parent, true);
+		_on_cart = false;
 	}
 }
