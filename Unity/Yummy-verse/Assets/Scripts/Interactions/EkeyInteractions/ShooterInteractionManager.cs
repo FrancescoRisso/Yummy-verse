@@ -1,7 +1,5 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.Assertions;
-using Utilities;
 
 public class ShooterInteractionManager : InteractionManager {
 	private CameraEnabler _player_camera_enabler;
